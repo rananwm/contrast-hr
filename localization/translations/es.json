@@ -1,0 +1,797 @@
+{
+  "welcome": {
+    "title": "Bienvenidos al año escolar 2019-2020",
+    "message": "Estamos emocionados de tenerlo de regreso para otro gran año en las Escuelas Laboratorio de la Universidad de Chicago. "
+  },
+  "bottom_navigation": {
+    "home": "Hogar",
+    "perks": "Beneficios",
+    "notifications": "Notificaciones",
+    "challenges": "Bienestar"
+  },
+  "profile": {
+    "general": {
+      "general": "General",
+      "first_name": "Nombre de pila",
+      "last_name": "Apellido",
+      "dob": "Fecha de nacimiento",
+      "gender": "Género",
+      "male": "Masculino",
+      "female": "Femenino",
+      "phone_work": "Trabajo telefonico",
+      "phone_mobile": "Teléfono móvil",
+      "email_notification": "Notificaciónes de Correo Electrónico",
+      "address": "DIRECCIÓN",
+      "city": "Ciudad",
+      "province": "Provincia"
+    },
+    "preferences": {
+      "profile_image": "Imagen de perfil",
+      "family_image": "Imagen familiar",
+      "partner": "Pareja",
+      "children": "niños",
+      "pets": "Mascotas",
+      "college": "Universidad/Título",
+      "community": "Actividades comunitarias",
+      "beverages": "Bebidas",
+      "food": "Alimento",
+      "dessert": "Postre y galletas",
+      "lunch": "Almuerzo",
+      "dinner": "Cena",
+      "wine": "Vino",
+      "music": "Música",
+      "movies": "Cine",
+      "tv": "Programas de televisión",
+      "books": "Libros",
+      "sports_to_watch": "Deportes para ver",
+      "sports_to_play": "Deportes para jugar",
+      "professional_teams": "Equipos profesionales",
+      "other_hobbies": "Otros pasatiempos",
+      "vacation_activities": "Actividades de vacaciones",
+      "local_attractions": "Atracciones locales",
+      "allergies": "Alergias"
+    },
+    "summary": {
+      "employment_summary": "Resumen de empleo",
+      "salary": "Salario",
+      "bonus": "Prima",
+      "time_off": "Tiempo libre",
+      "date": "Fecha",
+      "hour_week": "Horas/Semana",
+      "period": "Período",
+      "vacation": "Vacaciones",
+      "wellness_sick": "Bienestar/Enfermo",
+      "bonus_reason": "Razón de bonificación",
+      "bonus_amount": "Monto del bono",
+      "compensation_summary": "Resumen de compensación",
+      "annual_salary": "Salario Anual",
+      "earning_to_date": "Ganancias hasta la fecha",
+      "year": "Año",
+      "earnings": "Ganancias",
+      "profile_assets": "Resumen de activos"
+    },
+    "assets": {
+      "asset_end": "Fin del activo",
+      "asset_identifier": "Identificador de activo",
+      "asset_start": "Inicio de activos",
+      "asset_type": "Tipo de activo",
+      "asset_value": "Valor del activo",
+      "asset_value_annual": "Valor del activo anual",
+      "asset_value_end": "Fin del valor del activo",
+      "asset_value_halflife": "Vida media del valor del activo",
+      "asset_value_start": "Inicio del valor del activo",
+      "color": "Color",
+      "condition": "Condición",
+      "created": "Fecha de creación",
+      "description": "Descripción",
+      "id": "IDENTIFICACIÓN",
+      "make": "Hacer",
+      "model": "Modelo",
+      "name": "Nombre",
+      "spec": "Especificación",
+      "tags": "Etiquetas"
+    },
+    "qualification": {
+      "label": "Calificaciones",
+      "active": "Activo",
+      "name": "Nombre",
+      "completed": "Terminado",
+      "expires": "Vence",
+      "cost": "Costo",
+      "expired": "Venció",
+      "no_active_qualification": "Sin calificaciones activas",
+      "no_expired_qualification": "No hay calificaciones vencidas",
+      "desc": "Describa todas las calificaciones (B. Comm, CPA, Png, etc.), capacitación y certificaciones. "
+    },
+    "select_image": "Seleccionar imagen",
+    "language_preference": "Preferencia de Idioma",
+    "language": "Idioma",
+    "bio": "Biografía",
+    "label": "Perfil",
+    "logout": "Cerrar sesión"
+  },
+  "perks": {
+    "employee_perks": "Beneficios para empleados",
+    "perks_description": "A continuación se enumeran los beneficios para empleados que se ofrecen actualmente bajo el programa Exectras.",
+    "filter_employee": "Filtrar beneficios para empleados",
+    "virtual_primary_care": {
+      "title": "Atención Primaria Virtual",
+      "description": "Usted y su familia obtienen acceso a pedido utilizando nuestro socio, **Walmart Health Virtual Care (WHVC)** para tratar enfermedades, lesiones y problemas de salud conductual comunes.",
+      "label": "Aprende más",
+      "details": {
+        "title": "Usted y toda su familia tienen acceso a atención en línea a pedido las 24 horas del día, los 7 días de la semana, los 365 días del año para sus inquietudes de salud.",
+        "desc1": "A través de nuestro socio Walmart Health Virtual Care (WHVC), usted y toda su familia pueden hablar con un proveedor de atención médica autorizado y altamente calificado por teléfono (donde esté permitido), en su computadora o mediante una aplicación móvil para discutir sus inquietudes de salud desde casa. ",
+        "desc2": "Dependiendo del programa que haya seleccionado su empleador, usted paga solo $15* por visita a un proveedor médico y solo $65* por visita para hablar con un terapeuta autorizado para recibir atención para muchos de los problemas de salud conductual más comunes.",
+        "desc3": "*($0 proveedor médico / $25 terapeuta autorizado si su empleador ha seleccionado una membresía mejorada)",
+        "did_you_know": "¿SABÍAS?",
+        "connect_doctor": "Conéctese con un médico",
+        "did_you_know_review": {
+          "0": {
+            "percentage": "36%",
+            "desc": "de las personas entre 18 y 49 años no tienen un proveedor de atención primaria"
+          },
+          "1": {
+            "percentage": "19%",
+            "desc": "de los adultos tienen menores probabilidades de muerte prematura si tienen un proveedor de atención primaria"
+          },
+          "2": {
+            "percentage": "300x",
+            "desc": "aumento del usuario de telesalud desde inicios de 2019"
+          }
+        },
+        "walmart_desc": "Entonces, ¿qué diferencia a esta Atención Primaria Virtual respecto a un proveedor de Atención Primaria tradicional?",
+        "walmart_table_label1": "Atención virtual de salud de Walmart",
+        "walmart_table_label2": "PCP estándar",
+        "walmart_table": {
+          "0": "Cita dentro de las 72 horas",
+          "1": "Atención de urgencia virtual 24 horas al día, 7 días a la semana, 365 días al año",
+          "2": "Equipo de navegación de atención dedicada",
+          "3": "Disponible a nivel nacional",
+          "4": "Chatea con tu equipo de atención las 24 horas del día, los 7 días de la semana, los 365 días del año ",
+          "5": "Referencias inteligentes",
+          "6": "Acceso a la tarjeta de descuento para medicamentos recetados de terceros"
+        },
+        "walmart_pre_desc0": "El 80% de los problemas de atención primaria se pueden diagnosticar y gestionar sin una visita en persona según los datos de pacientes de Walmart Health Virtual Care (WHVC).",
+        "walmart_pre_desc1": "Puede que el concepto no sea nuevo, pero sí lo es la forma en que nuestro socio WHVC lo proporciona. ",
+        "saving": [
+          {
+            "title": "Ahorro de costes",
+            "list": [
+              "Tarifa de visita de $0 (o dólares bajos)",
+              "Acceso a tarjeta de descuento de medicamentos recetados de terceros",
+              "Referencias inteligentes"
+            ]
+          },
+          {
+            "title": "Conveniencia",
+            "list": [
+              "Cuida tu horario",
+              "Visitas de VPC dentro de las 72 horas",
+              "Atención de urgencia virtual 24 horas al día, 7 días a la semana"
+            ]
+          },
+          {
+            "title": "Conexión",
+            "list": [
+              "Ver el mismo PCP virtual",
+              "Equipo de navegación de atención dedicada",
+              "Chat bajo demanda: 24 horas al día, 7 días a la semana"
+            ]
+          },
+          {
+            "title": "Acceso",
+            "list": [
+              "Continuidad de la atención",
+              "Gestión continua de la atención crónica",
+              "Trabajo de laboratorio"
+            ]
+          }
+        ],
+        "what_we_treat": "Lo que tratamos",
+        "urgent_care": {
+          "title": "Atención de urgencias",
+          "subtitle": "Para el 80% de los problemas de salud cotidianos, puede recibir la atención de urgencia que necesita ahora, por lo que no tendrá que viajar a una sala de emergencias o a un centro de atención de urgencia y esperar un diagnóstico y tratamiento.",
+          "description": "Los profesionales de atención médica autorizados de WHVC pueden evaluar afecciones comunes directamente por teléfono (cuando esté permitido).",
+          "points": [
+            "Abrasiones",
+            "Acné",
+            "Alergias",
+            "Asma",
+            "Vaginosis bacteriana",
+            "Control de la natalidad",
+            "Mordeduras y picaduras",
+            "Dolor de cuerpo",
+            "Bronquitis",
+            "moretones",
+            "Tos",
+            "Anticuerpo OVID-19",
+            "Pruebas",
+            "Detección de COVID-19",
+            "Deshidración",
+            "Diarrea",
+            "Fiebre",
+            "Gripe",
+            "Congelación",
+            "Gota",
+            "dolores de cabeza",
+            "Urticaria",
+            "Ojos que pican",
+            "piojos",
+            "Recargas de medicamentos",
+            "Migrañas",
+            "Laceraciones leves",
+            "Congestión nasal",
+            "Náuseas",
+            "Ojo rosa",
+            "Infecciones respiratorias",
+            "Salud sexual",
+            "Infecciones de los senos",
+            "Infecciones de la piel",
+            "Dolor de garganta",
+            "Torceduras y esguinces",
+            "Medicamentos de viaje",
+            "Infecciones del tracto urinario",
+            "Vómitos",
+            "Las infecciones por hongos"
+          ],
+          "note1": "1 - Dentro de las capacidades clínicas de WHVC.",
+          "note2": "2 - Los proveedores de atención virtual solo pueden tratar infecciones del tracto urinario en pacientes mujeres."
+        },
+        "mens_health": {
+          "title": "Salud de los hombres",
+          "subtitle": "Si tiene inquietudes de salud personales, puede discutirlas sin el compromiso de tiempo, los inconvenientes y el estigma de visitar el consultorio de un médico.",
+          "description": "Los profesionales de atención médica autorizados de WHVC evalúan condiciones comunes directamente por teléfono (cuando esté permitido).",
+          "points": [
+            "Acné",
+            "Herpes labial",
+            "Agrandamiento de la próstata",
+            "Disfunción eréctil*",
+            "Perdida de cabello",
+            "Tiña inguinal",
+            "Bajo deseo sexual*",
+            "Ansiedad por el desempeño*",
+            "eyaculación precoz",
+            "Prostatitis",
+            "Piojos púbicos",
+            "Dejar de fumar*",
+            "Salud sexual",
+            "Incontinencia urinaria",
+            "Verrugas"
+          ],
+          "note": "*Estas condiciones a menudo tienen una base psicológica y, a menudo, se abordan mejor mediante una combinación de telesalud y salud teleconductual."
+        },
+        "women_health": {
+          "title": "La salud de la mujer",
+          "subtitle": "Puede abordar todas sus inquietudes personales de salud y recibir atención de forma privada y rápida, según su horario, desde la comodidad de su hogar, oficina o incluso mientras está de vacaciones.",
+          "description": "Los profesionales de atención médica autorizados de WHVC evalúan condiciones comunes directamente por teléfono (cuando esté permitido).",
+          "points": [
+            "Acné",
+            "Control de la natalidad",
+            "herpes labial",
+            "Dispareunia/vulvodinia",
+            "endometriosis",
+            "adelgazamiento de pestañas",
+            "Perdida de cabello",
+            "Sofocos",
+            "Bajo deseo sexual*",
+            "Mastitis",
+            "Dolor durante las relaciones sexuales",
+            "Ansiedad por el desempeño*",
+            "Depresión post-parto*",
+            "Síndrome premenstrual",
+            "Piojos púbicos",
+            "Salud sexual",
+            "Dejar de fumar*",
+            "Incontinencia urinaria",
+            "Infecciones del tracto urinario",
+            "Atrofia vulvovaginal",
+            "Verrugas"
+          ],
+          "note": "*Estas condiciones a menudo tienen una base psicológica y, a menudo, se abordan mejor mediante una combinación de telesalud y salud teleconductual."
+        },
+        "talk_therapy": {
+          "title": "Terapia de conversación",
+          "subtitle": "Nuestro socio, Walmart Health Virtual Care, hace que sea sencillo y fácil recibir terapia de conversación desde la comodidad y privacidad de su hogar, oficina o incluso mientras viaja.",
+          "description": "Hable con uno de los terapeutas autorizados de WHVC que puede brindar atención para muchos de los problemas de salud mental más comunes directamente por teléfono (cuando esté permitido).",
+          "points": [
+            "Abuso",
+            "TDAH/TDA",
+            "Control de la ira",
+            "Ansiedad",
+            "Trastorno bipolar",
+            "Estrés del cuidador",
+            "Codependencia",
+            "Concentración",
+            "Desorden de conducta",
+            "Terapia de conducta cognitiva",
+            "Depresión",
+            "Divorcio",
+            "Violencia doméstica",
+            "Empleo",
+            "Problemas LGBTQ",
+            "duelo/pérdida",
+            "Insomnio",
+            "Salud materna/postparto",
+            "Cambios de humor",
+            "Problemas de hombres",
+            "Trastorno obsesivo compulsivo",
+            "Ataques de pánico",
+            "Crianza de los hijos",
+            "Entrenamiento de rendimiento",
+            "trastorno de estrés postraumático",
+            "Relaciones",
+            "Abuso sexual",
+            "Sexualidad",
+            "Ansiedad social",
+            "Espiritualidad",
+            "Manejo del estrés",
+            "Trauma",
+            "Cuestiones de mujeres"
+          ],
+          "note": "  Nota: Los terapeutas de WHVC no recetan medicamentos, sino que brindan psicoterapia para identificar sus necesidades, establecer un plan de tratamiento y medir su progreso."
+        },
+        "teen_therapy": {
+          "title": "Terapia para adolescentes",
+          "subtitle": "Como padre, puede programar una visita de 50 minutos con un terapeuta autorizado en tan solo 72 horas para todos sus hijos de 10 a 17 años.",
+          "description": "Los terapeutas autorizados de WHVC se especializan en niños.",
+          "points": [
+            "Abuso",
+            "TDAH/TDA",
+            "Control de la ira",
+            "Ansiedad",
+            "Trastorno bipolar",
+            "Acoso",
+            "Codependencia",
+            "Trastornos cognitivos",
+            "Concentración",
+            "Desorden de conducta",
+            "Depresión",
+            "Violencia doméstica",
+            "Problemas femeninos",
+            "duelo/pérdida",
+            "Problemas LGBTQ",
+            "Problemas masculinos",
+            "Cambios de humor",
+            "Trastorno obsesivo compulsivo",
+            "Ataques de pánico",
+            "Entrenamiento de rendimiento",
+            "Relaciones",
+            "Abuso sexual",
+            "Sexualidad",
+            "Ansiedad social",
+            "Trauma/TEPT"
+          ],
+          "note": "Nota: Los terapeutas de WHVC no recetan medicamentos, sino que brindan psicoterapia para identificar sus necesidades, establecer un plan de tratamiento y medir su progreso."
+        },
+        "psychiatry": {
+          "title": "Psiquiatría",
+          "subtitle": "Si es necesario, puede recibir una visita inicial de 45 minutos. ",
+          "description": "Los psiquiatras y enfermeras psiquiátricas profesionales de WHVC pueden ayudar con muchos de los problemas de salud mental más comunes directamente por teléfono (cuando esté permitido).",
+          "points": [
+            "Abuso",
+            "TDAH/AÑADIR 1",
+            "Control de la ira",
+            "Ansiedad",
+            "Trastorno bipolar",
+            "Codependencia",
+            "Trastornos cognitivos",
+            "Concentración",
+            "Desorden de conducta",
+            "Depresión",
+            "Divorcio",
+            "Violencia doméstica",
+            "Empleo",
+            "Insomnio",
+            "Problemas LGBTQ",
+            "duelo/pérdida",
+            "Salud materna/postparto",
+            "Manejo de medicamentos",
+            "Cambios de humor",
+            "problemas de hombres",
+            "Trastorno obsesivo compulsivo",
+            "Ataques de pánico",
+            "Crianza de los hijos",
+            "Entrenamiento de rendimiento",
+            "Relaciones",
+            "Abuso sexual",
+            "Sexualidad",
+            "Ansiedad social",
+            "Manejo del estrés",
+            "Trauma/TEPT",
+            "Problemas de mujeres"
+          ],
+          "note": "1 - Los proveedores de WHVC no prescriben sustancias controladas."
+        },
+        "footer_note1": "*El Servicio Walmart Health Virtual Care (WHVC) no cumple con los requisitos de cobertura mínima esencial (MEC) impuestos por la Ley de Protección al Paciente y Atención Médica Asequible (PPACA) ni con ningún requisito de cobertura mínima acreditable (MCC) impuesto por las leyes estatales. ",
+        "footer_note2": "El Servicio WHVC no es un seguro y no pretende reemplazar el seguro médico; ",
+        "footer_note3": "*Walmart Health Virtual Care (WHVC) ofrece consultas médicas y servicios de psicoterapia a través de telesalud a pacientes de todo el país. "
+      }
+    },
+    "employee_wellness": {
+      "title": "Bienestar de los empleados",
+      "description": "Bienvenido a su propio programa de bienestar personalizado. ",
+      "label": "Aprende más",
+      "details": {
+        "title": "Aplicación de bienestar en línea",
+        "desc": "Es como un asistente personal para tu bienestar. ",
+        "join": "Únase a un próximo desafío",
+        "within": "El por qué dentro",
+        "date": "25 de marzo de 2024 » 31 de marzo de 2024",
+        "wellness_desc": "Embárcate en un viaje transformador con 'The Why Within'. ",
+        "health_well": "Programas de salud y bienestar",
+        "health_well_desc": "Con su cuenta se incluye una variedad de programas de salud y bienestar. ",
+        "join_fun": "Únase a desafíos divertidos y realice un seguimiento del progreso de su salud.",
+        "access_well": "Accede al bienestar",
+        "well_member": "Su membresía de Wellness incluye su propia cuenta de bienestar personal con acceso a:",
+        "points": [
+          "¡Desafíos de fitness y bienestar! ",
+          "Acceso a alimentos saludables",
+          "Vídeos y seguimiento de fitness.",
+          "Seguimiento nutricional y recetas.",
+          "Boletín semanal de bienestar entregado en su bandeja de entrada.",
+          "Herramientas para fijar objetivos.",
+          "¡Aplicación móvil gratuita!"
+        ]
+      }
+    },
+    "prescription_savings": {
+      "title": "Mercado de ahorros para medicamentos recetados",
+      "description": "Ahorre hasta un 88% en sus medicamentos recetados. ",
+      "label": "Ahorre en recetas",
+      "details": {
+        "desc1": "Disfrute de importantes ahorros en medicamentos para usted, sus empleados y familiares.",
+        "desc2": "Ahorre hasta un 88 % en medicamentos recetados para usted, sus empleados y sus familias",
+        "desc3": "**rxless** es su mercado integral de ahorro en recetas. ",
+        "desc4": "**rxless** se acepta en más de 70,000 farmacias en los EE. UU., Puerto Rico, Guam y las Islas Vírgenes de los EE. UU., incluidas CVS, Walgreens, Rite Aid, Walmart, Target, Kroger, Safeway y muchas más. ",
+        "desc5": "Tenga en cuenta que otros proveedores de descuentos de farmacia inflan las tarifas, cobran por suscripciones mensuales, exigen membresía para obtener “descuentos premium” o le piden que pague por adelantado para que no tenga la oportunidad de comparar precios. ",
+        "desc6": "Con **rxless**, nunca le exigiremos que comparta información personal o de salud. ",
+        "terms": "términos aquí",
+        "how_works": "Así es como funciona:",
+        "ready_to_start": "¿Listo para empezar a ahorrar?",
+        "get_started": "Obtenga su tarjeta de descuento en recetas gratis",
+        "click_here": "haga clic aquí",
+        "contact": "¿Preguntas? ",
+        "get_card": "para obtener tu tarjeta gratis.",
+        "full_terms": "Vea nuestros términos completos aquí",
+        "get_cards": "Haga clic aquí para obtener su tarjeta gratis.",
+        "step1_title": "Busque su medicamento y encuentre los descuentos más precisos cerca de usted.",
+        "step1_desc": "Escriba el nombre de su medicamento en la barra de búsqueda, seleccione su medicamento y luego confirme la concentración, la forma y la cantidad.",
+        "step2_title": "Muestre la oferta al farmacéutico.",
+        "step2_desc": "Revisa los precios de descuento, encuentra el mejor, guárdalo y preséntalo en la farmacia con tu guion.",
+        "step3_title": "Ahorre al instante y nunca pague más del precio cotizado.",
+        "step3_desc": "La farmacia ingresará los códigos del plan con su guión y le dará el precio del Plan RxLess Assurance. ",
+        "points": [
+          "BUSQUE nuestro mercado de ahorros de recetas para su medicamento en el cuadro a continuación, seleccione la farmacia que prefiera y elija cómo recibir su tarjeta gratuita.",
+          "MUESTRA tu tarjeta de descuento sin receta en la farmacia.",
+          "AHORRE hasta un 88% en sus medicamentos, incluidos futuros resurtidos."
+        ],
+        "work_points": [
+          "Haga clic a continuación para obtener su tarjeta de descuento gratuita para medicamentos recetados. ",
+          "Elija recibir su tarjeta por mensaje de texto, por correo electrónico o impresa.",
+          "Muestre la tarjeta en la farmacia cuando entregue su receta.",
+          "Ahorre hasta un 88% en sus medicamentos, incluidos futuros resurtidos."
+        ]
+      }
+    },
+    "auto_home_insurance": {
+      "title": "Programas de seguros para automóviles y viviendas",
+      "description": "Ahorre tiempo y dinero obteniendo múltiples cotizaciones de las mejores compañías en seguros de automóvil, vivienda, inquilinos, mascotas, viajes y garantía del hogar.",
+      "label": "Obtenga una cotización",
+      "details": {
+        "title": "Seguro de hogar y automóvil",
+        "save_time": "Ahorre tiempo y dinero obteniendo múltiples cotizaciones de las mejores compañías en seguros de automóvil, vivienda, inquilinos, mascotas, viajes y garantía del hogar.",
+        "save_time1": "Ya no tendrás que hacer toda la investigación tú mismo. ",
+        "switch_carries": "Cambie de operador en cualquier momento",
+        "help_switch": "Ayudamos a que el cambio de proveedor a mitad de póliza sea simple y rápido.",
+        "lets_help": "También permítanos ayudarle con sus necesidades de seguro. ",
+        "make_it_easy": "Así es como funciona:",
+        "policy": "Una llamada rápida con un agente de seguros autorizado para confirmar su información, responder sus preguntas y encontrar descuentos adicionales. ",
+        "call": "Llame a Opciones para miembros al",
+        "call_desc": "¡Pida su cotización GRATUITA y sin compromiso hoy!",
+        "go_online": "Inscríbase en línea",
+        "work_points": [
+          "Haga una llamada rápida: ¡comuníquese con un agente de seguros autorizado para obtener una cotización GRATUITA y sin compromiso hoy!",
+          "Confirmar detalles: verifique su información y obtenga respuestas a sus preguntas.",
+          "Encuentre descuentos: descubra descuentos adicionales para los que podría ser elegible.",
+          "Obtenga su póliza: asegure su nueva póliza de seguro sin esfuerzo."
+        ],
+        "points": [
+          "Condominios e inquilinos",
+          "Seguro para mascotas",
+          "Seguro de viaje",
+          "Recreativo",
+          "Cobertura de vehículo (barco, vehículo recreativo, motocicleta y más)",
+          "Garantía del hogar",
+          "Responsabilidad general personal"
+        ]
+      }
+    },
+    "id_theft_resolution": {
+      "title": "Resolución de robo de identidad",
+      "description": "Este servicio, proporcionado por **ID Resolución**, brinda asistencia experta si ha sufrido un robo de identidad, ya sea financiero, criminal o médico. ",
+      "label": "Aprende más",
+      "details": {
+        "desc1": "Aquí en Exectras nos tomamos muy en serio la gestión de su identidad. ",
+        "desc2": "Los especialistas con experiencia en resolución de fraudes pueden ayudar a resolver el robo de identidad financiera, el robo de identidad criminal y el robo de identidad médica.",
+        "desc3": "El especialista en fraude trabaja con todos los acreedores, agencias, autoridades policiales, asociaciones profesionales, agencias de informes crediticios y empresas de cobranza.",
+        "desc4": "El Especialista en Fraude también trabaja con la víctima cuando es necesario, para colocar alertas de fraude, congelamientos y supresiones de crédito en las tres agencias de crédito.",
+        "desc5": " Cuando procede, y sin coste adicional durante un período de 12 meses, se proporciona a la víctima un amplio conjunto de productos de seguimiento.",
+        "desc6": "Los servicios proactivos también incluyen:",
+        "think": "¿Crees que eres una víctima? ",
+        "identity": "Gestión de identidad integrada",
+        "more_info": "Más información",
+        "program_detail": "Detalles del programa",
+        "works_points": [
+          "Si cree que le han robado su identidad o que está en riesgo, comuníquese con nuestro socio ID Resolution.",
+          "Se le pedirá que proporcione su número de grupo y nombre para que se pueda verificar su cuenta.",
+          "Número de grupo: EXECTRAS"
+        ],
+        "points": [
+          "Mitigación del riesgo de identidad de bebés y menores",
+          "Fallecido"
+        ],
+        "identityPoints": [
+          "Asistencia para el reemplazo de documentos personales en caso de catástrofe",
+          "Reubicación de Residencia",
+          "Respuesta de viaje de identidad",
+          "Servicios inmobiliarios",
+          "Mitigación del riesgo de identidad de bebés y menores",
+          "Mitigación del riesgo de identidad del personal militar desplegado",
+          "Mitigación del riesgo de identidad del personal militar desplegado",
+          "Asistencia por robo de identidad médica"
+        ]
+      }
+    },
+    "interest_free_credit_line": {
+      "title": "Línea de crédito sin intereses",
+      "description": "¡Accede a **Zebit**, una tienda en línea que otorga hasta $2,500 de crédito sin intereses! ",
+      "label": "Más información",
+      "details": {
+        "title": "¡Alivia tu mayor fuente de estrés!",
+        "subtitle": "Ayuda financiera cuando más la necesitas",
+        "desc1": "Como parte de su membresía de Exectras, tiene acceso a crédito sin intereses, proporcionado por nuestro socio, Zebit.",
+        "desc2": "Las líneas de crédito sin intereses puestas a su disposición no se basan en su puntaje crediticio. ",
+        "desc3": "Tampoco tendrá que solicitar un anticipo de su salario que pueda poner en peligro su relación empleado-empleador. ",
+        "how_it_work": "Así es como funciona:",
+        "eligible": "Requisitos de elegibilidad",
+        "join_zebit": "¡ÚNASE A ZEBIT HOY!",
+        "credit_points": [
+          "Únase a Zebit verificando su empleo. ",
+          "Compra en Zebit Market con tu crédito. ",
+          "Pague a tiempo utilizando su tarjeta de débito vinculada a su cuenta bancaria o su tarjeta de crédito."
+        ],
+        "points": [
+          "Existen algunos requisitos para aprovechar el programa Zebit. ",
+          "Empleado continuo en su organización durante al menos un año.",
+          "18 años o más",
+          "Inscrito en depósito directo",
+          "El programa es sencillo y, sin embargo, ofrece una gran libertad a los empleados responsables que lo necesitan."
+        ]
+      }
+    },
+    "financial_literacy_program": {
+      "title": "Programa de educación financiera",
+      "description": "Utilice esta poderosa herramienta, proporcionada por **Enrich**, para aprender sobre los principios financieros y mejorar su toma de decisiones financieras.",
+      "label": "Aprende más",
+      "details": {
+        "title": "Mejora de la toma de decisiones financieras",
+        "subtitle": "Ayudándole a comprender principios financieros importantes y mejorar su toma de decisiones financieras.",
+        "take_advantage": "Aproveche una plataforma de bienestar financiero galardonada.",
+        "desc1": "Exectras se ha asociado con una organización que ha demostrado ser un recurso invaluable para las personas que buscan mejorar su bienestar financiero.  ",
+        "desc2": "El programa proporciona un centro personalizado de contenido financiero profundamente informativo, con recomendaciones sobre artículos y videos y una gran cantidad de recursos.",
+        "desc3": "Su empleador se preocupa por su salud financiera",
+        "free_account": "¡Regístrese para obtener su cuenta GRATIS hoy!",
+        "process_start": "El proceso comienza con una evaluación de salud personal en profundidad para determinar sus mayores necesidades o intereses y luego ofrece módulos educativos ricos, interactivos y atractivos en las siguientes áreas:",
+        "work_points": [
+          "Regístrese para obtener su cuenta Enrich gratuita.",
+          "Realice una evaluación financiera de 5 minutos.",
+          "Reciba un análisis gratuito de su personalidad monetaria.",
+          "¡Vuelva con frecuencia para desarrollar habilidades financieras y explorar sus últimas recomendaciones!"
+        ],
+        "points": [
+          "Gasto inteligente",
+          "Bancario",
+          "Tu cheque de pago",
+          "Tarjetas de crédito",
+          "Informes de crédito",
+          "El robo de identidad",
+          "Ahorro",
+          "Educación"
+        ]
+      }
+    },
+    "voluntary_benefits": {
+      "title": "Beneficios voluntarios",
+      "description": "Los accidentes ocurren en lugares donde usted y su familia pasan la mayor parte del tiempo (en el trabajo, en el hogar y en el patio de recreo) y son inesperados. La forma en que los cuidas no debería ser así. Nuestra asociación con  **Koru Risk Management** ofrece opciones asequibles para beneficios voluntarios como seguro contra accidentes, discapacidad y cuidados intensivos.",
+      "solution_label": "Aprende más",
+      "details": {
+        "desc": "Nuestro equipo de beneficios voluntarios gestiona el marketing, la inscripción, la educación y la administración continua del programa de planes voluntarios para que los empleadores o las personas puedan acceder a opciones de beneficios competitivas y diversas.",
+        "solution_title": "Las soluciones incluyen",
+        "button": "OBTÉN MI COTIZACIÓN PERSONALIZADA",
+        "points": [
+          "Regístrese llamando al número que aparece a continuación o haga clic en \"Obtener mi cotización personalizada\" y complete el formulario en línea.",
+          "Un miembro del equipo de Koru lo ayudará con su cotización y revisará sus opciones. "
+        ],
+        "solutions": [
+          {
+            "title": "Enfermedades críticas",
+            "desc": "El seguro de enfermedades críticas lo protege en caso de un diagnóstico de enfermedad grave en el futuro. Este tipo de plan complementa el seguro médico existente con fondos adicionales que satisfacen las demandas que surgen de las emergencias médicas críticas."
+          },
+          {
+            "title": "Seguro de discapacidad",
+            "desc": "el seguro de discapacidad interviene para ayudarle a cubrir los gastos; le paga un porcentaje de su salario si una enfermedad o lesión le impide trabajar. Con una variedad de opciones que se adaptan a sus necesidades específicas, la póliza adecuada sigue funcionando cuando usted no puede hacerlo."
+          },
+          {
+            "title": "Seguro de accidentes",
+            "desc": "Los accidentes ocurren inesperadamente y pueden provocar lesiones, pero todos tienen derecho a una recuperación perfecta para reanudar su vida diaria. En caso de accidente, este seguro proporciona seguridad financiera mediante el pago único de una prestación. Este pago puede cubrir una variedad de necesidades, desde cubrir facturas médicas no incluidas en tu seguro, hasta financiar asistencia adicional en el hogar, cubrir costos de transporte o cualquier otra cosa que pueda surgir."
+          }
+        ]
+      }
+    },
+    "benefits_discounts": {
+      "title": "Descuentos exclusivos para miembros de Exectras",
+      "description": "Los miembros de Exectras disfrutan de descuentos en automóviles, viajes, electrónica y envío para uso personal y profesional. ",
+      "visit_web": "Visitar sitio web",
+      "learn_more": "Más información",
+      "call_instructions": "Llámanos o inscríbete en línea. ",
+      "details": "1-800-MEMBERS proporciona información completa sobre cada programa de beneficios para miembros disponible, inscribe a los miembros en los programas deseados y mantiene contacto después de la venta para garantizar una satisfacción continua. ",
+      "feature_program": "Los programas destacados incluyen",
+      "desc1": "Los miembros de Exectras disfrutan de descuentos en automóviles, viajes, electrónica y envío para uso personal y profesional.",
+      "benefits": [
+        {
+          "title": "UPS",
+          "desc": "Los miembros ahora tienen acceso a precios de tarifa fija nuevos y mejorados con ahorros del 50 % en servicios nacionales al día siguiente/diferidos, del 30 % en servicios terrestres comerciales/residenciales y hasta un 50 % en servicios adicionales."
+        },
+        {
+          "title": "Soluciones empresariales ODP™",
+          "desc": "Ahorre hasta un 75% de descuento en los precios regulares en nuestra Lista de Mejor Valor de productos preferidos. "
+        },
+        {
+          "title": "lenovo",
+          "desc": "Ahorre hasta un 30% del precio diario en la web pública de computadoras, portátiles y tabletas, con acceso a ventas flash especiales."
+        },
+        {
+          "title": "Motor del hotel",
+          "desc": "Ahorre en más de 700.000 hoteles en todo el mundo, dondequiera que le lleve su viaje"
+        },
+        {
+          "title": "Visitas turísticas en Collette",
+          "desc": "Haz que tu próxima escapada sea extraordinaria y viaja con Collette. "
+        },
+        {
+          "title": "Avis",
+          "desc": "Ahorre hasta un 35% en las tarifas base con Pay Now, además de inscribirse en Avis Preferred®. "
+        },
+        {
+          "title": "Presupuesto",
+          "desc": "Ahorre hasta un 35% de descuento en las tarifas base con Pague ahora, además de otras excelentes ofertas como actualizaciones de cortesía Código de descuento: B203949"
+        },
+        {
+          "title": "Centro de Ahorro en Viajes",
+          "desc": "Acceda a ahorros de viaje exclusivos en alquiler de automóviles, hoteles y descuentos en boletos para condominios, villas, cruceros, visitas guiadas y paquetes de viajes grupales."
+        }
+      ]
+    }
+  },
+  "home": {
+    "more": "Más"
+  },
+  "notifications": {
+    "archive_notifications": "Ver notificaciones de archivo",
+    "current_notifications": "Ver notificaciones actuales",
+    "notifications": "Notificaciones",
+    "arch_notification": "Notificación archivada",
+    "no_new_notifications": "No hay notificaciones nuevas",
+    "no_new_notifications_to_display": "No hay notificaciones para mostrar en este momento."
+  },
+  "save_profile": "Guardar perfil",
+  "description": "Usted y su familia obtienen acceso **en línea** a pedido utilizando nuestro socio, **{partner_name}** para tratar {enfermedades}, {lesiones} y problemas de salud conductual comunes.",
+
+  "challenges": {
+    "active_challenges": "Desafíos activos",
+    "find_challenges": "Encuentra un desafío",
+    "currently_challenges": "En realidad existen actualmente",
+    "challenges_available": "desafíos activos disponibles para unirse.",
+    "find_challenges_matching": "Encuentra desafíos que coincidan",
+    "select_language": "Por favor seleccione idioma",
+    "select_category": "Por favor seleccione",
+    "language": "Idioma",
+    "search": "Buscar",
+    "no_comments": "Sin comentarios",
+    "program_available": "Programas activos disponibles para unirse.",
+    "active_programs": "Programas activos",
+    "find_programs": "Encuentra un programa",
+    "find_programs_matching": "Buscar programas que coincidan",
+    "archived_challenges": "Desafíos archivados dentro del sistema.",
+    "archive_programs": "Programas archivados dentro del sistema.",
+    "archived": "Archivado",
+    "select_all": "Seleccionar todo",
+    "no_active_challenges": "Sin desafíos activos",
+    "no_active_program": "Sin programas activos",
+    "go_earn_tasks": "Ir a tareas para ganar tus puntos",
+    "task_indirectly_complete": "Esta tarea se completa indirectamente.",
+    "need_to_follow_instruction": "¡Deberá seguir las instrucciones anteriores para completar esta tarea!"
+  },
+  "telehealth": {
+    "pre_enrolled": "Si su cuenta no está bajo el plan grupal de Exectras, configure una nueva cuenta para obtener su descuento de Exectras",
+    "get_started": "Empezar",
+    "by_clicking_started": "Al hacer clic en Comenzar, acepta Walmart Health Virtual Care (WHVC)",
+    "terms": "Términos y condiciones",
+    "and": "y",
+    "privacy_policy": "política de privacidad",
+    "whvc": "Atención virtual de salud de Walmart",
+    "listed_below": "A continuación se incluye un historial de los beneficios del plan Walmart Health Virtual Care (WHVC).",
+    "look_like_already_account": "Parece que ya tienes una cuenta en WHVC.",
+    "plan": "Plan",
+    "benefit_start": "Inicio del beneficio",
+    "benefit_end": "Fin del beneficio",
+    "active": "Activo",
+    "visit_fee": "Tarifa de visita",
+    "cancel_plan": "Cancelar plan",
+    "yes": "Sí",
+    "no": "No",
+    "points": [
+      "Cambie la dirección de correo electrónico que tenemos registrada actualizando su perfil de Exectras.",
+      "Vuelva a enviar su información a WHVC haciendo clic en el botón a continuación."
+    ],
+    "start_telehealth": "Iniciar sesión de TeleSalud",
+    "login_whvc": "Inicie sesión en WHVC utilizando las credenciales existentes",
+    "account_no_under_exectras": "Si su cuenta no está incluida en el plan grupal de Exectras, configure una nueva cuenta para obtener su descuento de Exectras.",
+    "account_under_exectras": "Si esta cuenta está bajo el plan grupal de Exectras, actualice su cuenta WHVC iniciando sesión manualmente con sus credenciales existentes."
+  },
+  "timeoff": {
+    "request_time_off": "Solicitar tiempo libre",
+    "cancel": "Cancelar",
+    "hours": "Horas",
+    "start_date": "Fecha (Inicio)",
+    "end_date": "Fecha (finalización)",
+    "type": "Tipo",
+    "notes": "Notas",
+    "date": "Fecha",
+    "status": "Estado",
+    "request": "Pedido",
+    "summary": "Resumen",
+    "select_dates": "Seleccionar fechas",
+    "request_timeoff": "Solicitar tiempo libre",
+    "submit_request": "Enviar solicitud"
+  },
+  "validation": {
+    "all_required": "Todos los campos son obligatorios",
+    "error": "Error"
+  },
+  "events": {
+    "upcoming_events": "Próximos eventos",
+    "date": "Fecha",
+    "event_detail": "Detalles del evento",
+    "event_type": "Tipo de evento",
+    "event_calendar": "Calendario de eventos",
+    "time_off_calendar": "Calendario de tiempo libre",
+    "title": "Eventos",
+    "calendar_events": "Eventos del calendario",
+    "no_event_found": "No se encontraron eventos"
+  },
+  "documents": {
+    "title": "Documentos",
+    "no_document_found": "No se encontraron documentos",
+    "active": "Activo",
+    "name": "Nombre",
+    "signature": "Firma",
+    "created": "Creado",
+    "view": "Vista",
+    "download": "Descargar",
+    "document": "Documento",
+    "details": "Detalles",
+    "yes": "Sí",
+    "i": "I",
+    "never": "Nunca",
+    "signature_instruction": "He leído, entiendo Estoy de acuerdo con el contenido del",
+    "as_of": "a partir de",
+    "modified": "Modificado",
+    "electronics": "Electrónica",
+    "sign": "Firmar",
+    "clear": "Claro",
+    "submit": "Entregar",
+    "signature_success": "Firma enviada exitosamente",
+    "signature_error": "Error al enviar la firma"
+  }
+}

@@ -1,0 +1,20 @@
+[
+  // Steps Sample Data
+  {
+    "endDate": "2024-10-05T13:17:00.000+0500",
+    "startDate": "2024-10-05T13:17:00.000+0500",
+    "value": 250
+  },
+  //   Heart Rate Sample Data
+  [
+    {
+      "endDate": "2024-10-05T13:20:00.000+0500",
+      "id": "1FA1CA3E-91FB-4377-81E0-797A224DE9E6",
+      "metadata": { "HKWasUserEntered": 1 },
+      "sourceId": "com.apple.Health",
+      "sourceName": "Health",
+      "startDate": "2024-10-05T13:20:00.000+0500",
+      "value": 70
+    }
+  ]
+]

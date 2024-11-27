@@ -1,0 +1,796 @@
+{
+  "welcome": {
+    "title": "Welcome to the 2019-2020 School Year",
+    "message": "We are excited to have you back for another great year at the University of Chicago Laboratory Schools.  We have a lot of great things planned for this year and we can't wait to get started.  Please take a moment to review the information below and let us know if you have any questions."
+  },
+  "profile": {
+    "general": {
+      "general": "General",
+      "first_name": "First Name",
+      "last_name": "Last Name",
+      "dob": "Date of Birth",
+      "gender": "Gender",
+      "male": "Male",
+      "female": "Female",
+      "phone_work": "Phone Work",
+      "phone_mobile": "Phone Mobile",
+      "email_notification": "Email Notifications",
+      "address": "Address",
+      "city": "City",
+      "province": "Province"
+    },
+    "preferences": {
+      "profile_image": "Profile Image",
+      "family_image": "Family Image",
+      "partner": "Partner",
+      "children": "children",
+      "pets": "Pets",
+      "college": "College/Degree",
+      "community": "Community Activities",
+      "beverages": "Beverages",
+      "food": "Food",
+      "dessert": "Dessert and Cookies",
+      "lunch": "Lunch",
+      "dinner": "Dinner",
+      "wine": "Wine",
+      "music": "Music",
+      "movies": "Movies",
+      "tv": "TV Shows",
+      "books": "Books",
+      "sports_to_watch": "Sports to Watch",
+      "sports_to_play": "Sports to Play",
+      "professional_teams": "Professional Teams",
+      "other_hobbies": "Other Hobbies",
+      "vacation_activities": "Vacation Activities",
+      "local_attractions": "Local Attractions",
+      "allergies": "Allergies"
+    },
+    "select_image": "Select Image",
+    "language_preference": "Language Preference",
+    "language": "Language",
+    "bio": "Bio",
+    "label": "Profile",
+    "logout": "Logout",
+    "summary": {
+      "employment_summary": "Employment Summary",
+      "salary": "Salary",
+      "bonus": "Bonus",
+      "time_off": "TimeOff",
+      "date": "Date",
+      "hour_week": "Hours/Week",
+      "period": "Period",
+      "vacation": "Vacation",
+      "wellness_sick": "Wellness/Sick",
+      "bonus_reason": "Bonus Reason",
+      "bonus_amount": "Bonus Amount",
+      "compensation_summary": "Compensation Summary",
+      "annual_salary": "Annual Salary",
+      "earning_to_date": "Earnings to Date",
+      "year": "Year",
+      "earnings": "Earnings",
+      "profile_assets": "Assets Summary"
+    },
+    "assets": {
+      "asset_end": "Asset End",
+      "asset_identifier": "Asset Identifier",
+      "asset_start": "Asset Start",
+      "asset_type": "Asset Type",
+      "asset_value": "Asset Value",
+      "asset_value_annual": "Asset Value Annual",
+      "asset_value_end": "Asset Value End",
+      "asset_value_halflife": "Asset Value Halflife",
+      "asset_value_start": "Asset Value Start",
+      "color": "Color",
+      "condition": "Condition",
+      "created": "Created Date",
+      "description": "Description",
+      "id": "ID",
+      "make": "Make",
+      "model": "Model",
+      "name": "Name",
+      "spec": "Specification",
+      "tags": "Tags"
+    },
+    "qualification": {
+      "label": "Qualifications",
+      "active": "Active",
+      "name": "Name",
+      "completed": "Completed",
+      "expires": "Expires",
+      "cost": "Cost",
+      "expired": "Expired",
+      "no_active_qualification": "No Active Qualifications",
+      "no_expired_qualification": "No Expired Qualifications",
+      "desc": "Outline all qualifications (B. Comm, CPA, Png, etc), training and certifications. Please note that any qualifications with an associated cost will be applied to the Total Rewards statement of this Profile."
+    }
+  },
+  "bottom_navigation": {
+    "home": "Home",
+    "perks": "Benefits",
+    "notifications": "Notifications",
+    "challenges": "Wellness"
+  },
+  "perks": {
+    "employee_perks": "Employee Benefits",
+    "perks_description": "Listed below are the currently offered Employee Benefits available under the Exectras Program",
+    "filter_employee": "Filter Employee Benefits",
+    "virtual_primary_care": {
+      "title": "Virtual Primary Care",
+      "description": "You and your family get , on-demand access using our partner, **Walmart Health Virtual Care (WHVC)** to treat common illnesses, injuries, and behavioral health concerns.",
+      "label": "Learn More",
+      "details": {
+        "title": "You and Your Entire Family have Access to On-Demand, Online Care 24/7/365 for your Health Concerns.",
+        "desc1": "Through our partner Walmart Health Virtual Care (WHVC), you and your  entire family can talk with a highly qualified, licensed health care  provider over the phone (where permitted), on your computer or through a mobile app to discuss your health concerns from home, work or even  while traveling. If a prescription is medically necessary, it will be sent electronically to the local pharmacy of your choice. If you are traveling, WHVC can help locate the nearest pharmacy on the road.",
+        "desc2": "Depending on which program your employer has selected, you pay only $15* per visit with a medical provider, and only $65* per visit to speak with a licensed therapist to get care for many of the most common behavioral health concerns.",
+        "desc3": "*($0 medical provider / $25 licensed therapist if your employer has selected an upgraded membership)",
+        "did_you_know": "DID YOU KNOW?",
+        "connect_doctor": "Connect with a Doctor",
+        "did_you_know_review": {
+          "0": {
+            "percentage": "36%",
+            "desc": "of People ages 18-49 do not have a Primary Care Provider"
+          },
+          "1": {
+            "percentage": "19%",
+            "desc": "of adults have lower odds of premature death if they have a Primary Care Provider"
+          },
+          "2": {
+            "percentage": "300x",
+            "desc": "increase in the user of telehealth since the start of 2019"
+          }
+        },
+        "walmart_desc": "So, what is different about this Virtual Primary Care compared to a traditional Primary Care provider?",
+        "walmart_table_label1": "Walmart Health Virtual Care",
+        "walmart_table_label2": "Standard PCP's",
+        "walmart_table": {
+          "0": "Appointment within 72 hours",
+          "1": "24/7/365 Virtual Urgent Care",
+          "2": "Dedicated Care Navigation Team",
+          "3": "Available Nationwide",
+          "4": "Chat with your Care Team 24/7/365 ",
+          "5": "Intelligent Referrals",
+          "6": "Access to Third-Party Prescription Discount Card"
+        },
+        "walmart_pre_desc0": "80% of primary care concerns can be diagnosed and managed without an  in-person visit according to Walmart Health Virtual Care's (WHVC's) Patient Data.",
+        "walmart_pre_desc1": "The concept may not be new, but how our partner WHVC provides it is. Unlike other offerings on the market  today, your employees can enjoy the advantages of in-person primary  care - but within a virtual environment.",
+        "saving": [
+          {
+            "title": "Cost Savings",
+            "list": [
+              "$0 (or low dollar) visit fee",
+              "Access to third-party prescription discount card",
+              "Intelligent referrals"
+            ]
+          },
+          {
+            "title": "Convenience",
+            "list": [
+              "Care on your schedule",
+              "VPC visits within 72 hours",
+              "24/7 virtual urgent care"
+            ]
+          },
+          {
+            "title": "Connection",
+            "list": [
+              "See the same virtual PCP",
+              "Dedicated care navigation team",
+              "On-demand chat—24/7"
+            ]
+          },
+          {
+            "title": "Access",
+            "list": [
+              "Continuity of care",
+              "Ongoing chronic care management",
+              "Lab work & imaging"
+            ]
+          }
+        ],
+        "what_we_treat": "What We Treat",
+        "urgent_care": {
+          "title": "Urgent Care",
+          "subtitle": "For 80% of everyday health concerns, you can receive the urgent care you need, now, so you will not have to travel to an emergency room or urgent care center and wait for a diagnosis and treatment.",
+          "description": "WHVC's licensed health care professionals can evaluate common  conditions right on the phone (where permitted).",
+          "points": [
+            "Abrasions",
+            "Acne",
+            "Allergies",
+            "Asthma",
+            "Bacterial Vaginosis",
+            "Birth Control",
+            "Bites and Stings",
+            "Body Aches",
+            "Bronchitis",
+            "Bruises",
+            "Cough",
+            "OVID-19 Antibody",
+            "Testing",
+            "COVID-19 Screening",
+            "Dehydration",
+            "Diarrhea",
+            "Fever",
+            "Flu",
+            "Frostbite",
+            "Gout",
+            "Headaches",
+            "Hives",
+            "Itchy Eyes",
+            "Lice",
+            "Medication Refills",
+            "Migraines",
+            "Mild lacerations",
+            "Nasal Congestion",
+            "Nausea",
+            "Pink Eye",
+            "Respiratory Infections",
+            "Sexual Health",
+            "Sinus infections",
+            "Skin infections",
+            "Sore throat",
+            "Sprains and strains",
+            "Travel medications",
+            "Urinary tract infections",
+            "Vomiting",
+            "Yeast infections"
+          ],
+          "note1": "1 - Within WHVC's clinical capabilities.",
+          "note2": "2 - Virtual Care providers can only treat urinary tract infections in female patients."
+        },
+        "mens_health": {
+          "title": "Men's Health",
+          "subtitle": "If you have personal health concerns, you can discuss them without the time commitment, inconvenience, and stigma of visiting a   doctor's office.",
+          "description": "WHVC's licensed health care professionals an evaluate common conditions right on the phone (where permitted).",
+          "points": [
+            "Acne",
+            "Cold sore",
+            "Enlarged prostate",
+            "Erectile dysfunction*",
+            "Hair loss",
+            "Jock itch",
+            "Low sex drive*",
+            "Performance anxiety*",
+            "Premature ejaculation",
+            "Prostatitis",
+            "Pubic lice",
+            "Smoking cessation*",
+            "Sexual Health",
+            "Urinary incontinence",
+            "Warts"
+          ],
+          "note": "*These conditions often have a psychological basis and are often best addressed through a combination of telehealth and telebehavioral health."
+        },
+        "women_health": {
+          "title": "Women's Health",
+          "subtitle": "You can address all your personal health concerns and receive care  privately and quickly, on your schedule, from the convenience of your home, office or even while on vacation.",
+          "description": "WHVC's licensed health care professionals an evaluate common conditions right on the phone (where permitted).",
+          "points": [
+            "Acne",
+            "Birth control",
+            "Cold sores",
+            "Dyspareunia/vulvodynia",
+            "Endometriosis",
+            "Eyelash thinning",
+            "Hair loss",
+            "Hot flashes",
+            "Low sex drive*",
+            "Mastitis",
+            "Pain during intercourse",
+            "Performance anxiety*",
+            "Postpartum depression*",
+            "Premenstrual syndrome",
+            "Pubic lice",
+            "Sexual Health",
+            "Smoking cessation*",
+            "Urinary incontinence",
+            "Urinary tract infections",
+            "Vulvovaginal atrophy",
+            "Warts"
+          ],
+          "note": "*These conditions often have a psychological basis and are often best addressed through a combination of telehealth and telebehavioral health."
+        },
+        "talk_therapy": {
+          "title": "Talk Therapy",
+          "subtitle": "Our partner, Walmart Health Virtual Care, makes it simple and easy to receive talk therapy from the comfort and privacy of your own home, office or even while traveling.",
+          "description": "Speak with one of WHVC's licensed therapists who can provide care for many of the most common mental health concerns right on the  phone (where permitted).",
+          "points": [
+            "Abuse",
+            "ADHD/ADD",
+            "Anger Management",
+            "Anxiety",
+            "Bipolar disorder",
+            "Caregiver stress",
+            "Codependency",
+            "Concentration",
+            "Conduct disorder",
+            "Cognitive behavioral therapy",
+            "Depression",
+            "Divorce",
+            "Domestic violence",
+            "Employment",
+            "LGBTQ+ issues",
+            "Grief/loss",
+            "Insomnia",
+            "Maternal health/post-partum",
+            "Mood swings",
+            "Men issues",
+            "Obsessive-compulsive disorder",
+            "Panic attacks",
+            "Parenting",
+            "Performance coaching",
+            "PTSD",
+            "Relationships",
+            "Sexual abuse",
+            "Sexuality",
+            "Social anxiety",
+            "Spirituality",
+            "Stress management",
+            "Trauma",
+            "Women Issues"
+          ],
+          "note": "  Note: WHVC therapists do not prescribe medication but instead provide talk therapy to pinpoint your needs, establish a treatment plan and measure your progress."
+        },
+        "teen_therapy": {
+          "title": "Teen Therapy",
+          "subtitle": "As a parent you can schedule a 50-minute visit with a licensed therapist in as few as 72 hours for all your kids who are age 10 to 17.",
+          "description": "WHVC's licensed therapists specialize in child & adolescent therapy and can provide care for many of the most common mental health concerns, by computer, mobile phone (where permitted) or by using the mobile app.",
+          "points": [
+            "Abuse",
+            "ADHD/ADD",
+            "Anger management",
+            "Anxiety",
+            "Bipolar disorder",
+            "Bullying",
+            "Codependency",
+            "Cognitive disorders",
+            "Concentration",
+            "Conduct disorder",
+            "Depression",
+            "Domestic violence",
+            "Female issues",
+            "Grief/loss",
+            "LGBTQ+ issues",
+            "Male issues",
+            "Mood swings",
+            "Obsessive-compulsive disorder",
+            "Panic attacks",
+            "Performance coaching",
+            "Relationships",
+            "Sexual abuse",
+            "Sexuality",
+            "Social anxiety",
+            "Trauma/PTSD"
+          ],
+          "note": "Note: WHVC therapists do not prescribe medication but instead provide talk therapy to pinpoint your needs, establish a treatment plan and measure your progress."
+        },
+        "psychiatry": {
+          "title": "Psychiatry",
+          "subtitle": "If needed, you can receive an initial 45-minute visit. Then enjoy ongoing care by scheduling 15-minute follow-up sessions to manage any necessary medications and evaluate your progress.",
+          "description": "WHVC's psychiatrists and psychiatric nurse practitioners can help with many of the most common mental health concerns right on the phone (where permitted).",
+          "points": [
+            "Abuse",
+            "ADHD/ADD 1",
+            "Anger management",
+            "Anxiety",
+            "Bipolar disorder",
+            "Codependency",
+            "Cognitive disorders",
+            "Concentration",
+            "Conduct disorder",
+            "Depression",
+            "Divorce",
+            "Domestic violence",
+            "Employment",
+            "Insomnia",
+            "LGBTQ+ issues",
+            "Grief/loss",
+            "Maternal health/post-partum",
+            "Medication management",
+            "Mood swings",
+            "Men's issues",
+            "Obsessive-compulsive disorder",
+            "Panic attacks",
+            "Parenting",
+            "Performance coaching",
+            "Relationships",
+            "Sexual abuse",
+            "Sexuality",
+            "Social anxiety",
+            "Stress management",
+            "Trauma/PTSD",
+            "Women's issues"
+          ],
+          "note": "1 - WHVC providers do not prescribe controlled substances."
+        },
+        "footer_note1": "*The Walmart Health Virtual Care (WHVC) Service does not meet the minimum essential coverage (MEC) requirements imposed by the Patient Protection and Affordable Care Act (PPACA) or any minimum creditable coverage (MCC) requirements imposed by any state laws. The WHVC Service is not a Qualified Health Plan under the PPACA.",
+        "footer_note2": "The WHVC Service is not insurance and is not intended to replace health insurance; it is a telehealth service available on a per-visit or membership basis. The offering of products and services by WHVC is not to be construed as the sale of insurance product(s) or otherwise engaging in the transaction of insurance. WHVC expressly reserves the right, in order to comply with state insurance laws, to (i) limit the number of visits offered in connection with any bundled services and subscription packages and/or (ii) charge a visit fee, both in an amount determined by WHVC in its sole discretion.",
+        "footer_note3": "*Walmart Health Virtual Care (WHVC) offers medical consultations and talk therapy services via telehealth to patients nationwide. Telehealth services may vary by state. Services are provided in accordance with state law by licensed health care professionals, subject to the licensed professionals' judgment. When medically necessary, WHVC providers may prescribe medication that can be picked up at a pharmacy of the patient's choice; WHVC does not guarantee that a prescription will be written. WHVC is not a pharmacy or prescription fulfillment warehouse. WHVC is not an insurance product. Virtual Urgent Care visits are not a replacement for a primary care physician."
+      }
+    },
+    "employee_wellness": {
+      "title": "Employee Wellness",
+      "description": "Welcome to your own, personalized wellness program. Compete in fun challenges while tracking your health and wellness goals.",
+      "label": "Learn More",
+      "details": {
+        "title": "Online Wellness App",
+        "desc": "It's like a personal assistant for your well-being. Stay accountable, motivated and on track to your health and wellness goals. Join family-friendly challenges and helpful programs.",
+        "join": "Join an Upcoming Challenge",
+        "within": "The Why Within",
+        "date": "March 25, 2024 » March 31, 2024",
+        "wellness_desc": "Embark on a transformative journey with 'The Why Within'. This week long Wellness Challenge is a task-based exploration inspired by the purpose-driven practices observed in blue zones. This challenge is your opportunity to uncover a clear sense of purpose through meaningful work, personal passions, and a dedicated commitment to family and community. Earn points by completing daily tasks crafted to guide you towards a deeper understanding of your unique purpose. Join a vibrant community committed to personal growth and intentional living. Let this week be a stepping stone towards a more purposeful and fulfilling life. Discover the why within, complete tasks, and earn your points on the path to a purpose-driven existence. Embrace the challenge and ignite the flame of purpose in your journey to well-being!",
+        "health_well": "Health and Wellness Programs",
+        "health_well_desc": "Included with your account are a variety of health and wellness programs. Access from the Total Health Interactive portal or app.",
+        "join_fun": "Join fun challenges and track your health progress.",
+        "access_well": "Access Wellness",
+        "well_member": "Your Wellness membership includes your own personal wellness account with access to:",
+        "points": [
+          "Fitness and Wellness Challenges! (featuring great prizes)",
+          "Access to healthy & wellness programs. Engaging online community",
+          "Fitness videos and tracking.",
+          "Nutrition tracking and recipes.",
+          "Weekly wellness newsletter delivered to your inbox.",
+          "Goal setting tools.",
+          "Free mobile app!"
+        ]
+      }
+    },
+    "prescription_savings": {
+      "title": "Prescription Savings Marketplace",
+      "description": "Save up to 88% on your prescription medications. **rxless** let's you quickly search millions of prescription medication prices from our trusted partners, then shows you the best price at each pharmacy in your area.",
+      "label": "Save on Prescriptions",
+      "details": {
+        "desc1": "Enjoy significant savings on medications for you, your employees, and family members.",
+        "desc2": "Save up to 88% on prescription medications for you, your employees, and your families",
+        "desc3": "**rxless** is your one-stop prescription savings marketplace! The prescription savings programs found on **rxless** are easy to save and free to use, with no obligation or registration required. Better yet, even if you have insurance, you get the best price every time.",
+        "desc4": "**rxless** is accepted at more than 70,000 pharmacies across the US, Puerto Rico, Guam, and the US Virgin Islands, including CVS, Walgreens, Rite Aid, Walmart, Target, Kroger, Safeway, and many more! ",
+        "desc5": "Be aware that other pharmacy discount providers inflate fees, charge for monthly subscriptions, require membership for “premium discounts,” or ask you to pay upfront so you don't have the opportunity to compare prices. At **rxless** , everyone gets the best price available without hoops to jump.",
+        "desc6": "With **rxless**, we will never require you to share personal or health information. Everyone talks about protecting your privacy, but not everyone does it - or does it well. At **rxless**, your privacy is  our priority. We are as committed to safeguarding your confidential information as we are to protecting your health. We do not make money  by selling your data or by spamming you with advertising. The  **rxless** Prescription Savings Program is not insurance.",
+        "terms": "terms here",
+        "how_works": "Here's how it works:",
+        "ready_to_start": "Ready to start saving?",
+        "get_started": "Get your FreePrescription Discount Card",
+        "click_here": "click here",
+        "contact": "Questions? Contact",
+        "get_card": "to get your free card.",
+        "full_terms": "See our full terms here",
+        "get_cards": "Click here to get your free card.",
+        "step1_title": "Search for your medication and find the most accurate discounts near you.",
+        "step1_desc": "Type your medication name in the search bar, select your medication, and then confirm the strength, form, and quantity.",
+        "step2_title": "Show the offer to the pharmacist.",
+        "step2_desc": "Review the discount prices, find the best one, save it, and present it to the pharmacy with your script.",
+        "step3_title": "Save instantly and never pay more than the price quoted.",
+        "step3_desc": "The pharmacy will enter the plan codes with your script and give you the RxLess Assurance Plan price. Then you simply pay the discounted price.",
+        "points": [
+          "SEARCH our prescription savings marketplace for your medication in the box below, select the pharmacy you prefer, and choose how to receive your free card.",
+          "SHOW your rxless discount card at the pharmacy.",
+          "SAVE up to 88% on your medications, including future refills."
+        ],
+        "work_points": [
+          "Click below to get your free prescription discount card. Your card will automatically generate.",
+          "Choose to have your card texted to you, emailed, or printed.",
+          "Show the card at the pharmacy when you drop off your prescription.",
+          "Save up to 88% on your medications, including future refills."
+        ]
+      }
+    },
+    "auto_home_insurance": {
+      "title": "Auto and Home Insurance Programs",
+      "description": "Save time and money getting multiple quotes from top-rated carriers on Auto, Home, Renter’s, Pet, Travel and Home Warranty insurance.",
+      "label": "Get a Quote",
+      "details": {
+        "title": "Home & Auto Insurance",
+        "save_time": "Save time and money getting multiple quotes from top-rated carriers on Auto, Home, Renter’s, Pet, Travel, and Home Warranty insurance.",
+        "save_time1": "No more doing all the research yourself. You can get multiple quotes from our top-rated carriers in a matter of minutes. Save hundreds of dollars per year on auto, home and more.",
+        "switch_carries": "Switch Carriers Anytime",
+        "help_switch": "We help make switching your carrier mid-policy simple and fast.",
+        "lets_help": "Let us also help with your insurance needs. We offer:",
+        "make_it_easy": "Here’s how it works:",
+        "policy": "One quick call with a licensed insurance agent to confirm your information, answer your questions and find any additional discounts. That’s all that stands between you and your new insurance policy.",
+        "call": "Call Member Options at",
+        "call_desc": "for your FREE no-obligation quote today!",
+        "go_online": "Enroll Online",
+        "work_points": [
+          "Make a Quick Call: Contact a licensed insurance agent for your FREE no-obligation quote today!",
+          "Confirm Details: Verify your information and get answers to your questions.",
+          "Find Discounts: Discover additional discounts you might be eligible for.",
+          "Get Your Policy: Secure your new insurance policy effortlessly."
+        ],
+        "points": [
+          "Condo & Renters",
+          "Pet Insurance",
+          "Travel Insurance",
+          "Recreational",
+          "Vehicle coverage (Boat, RV, Motorcycle, and more)",
+          "Home Warranty",
+          "Personal Umbrella Liability"
+        ]
+      }
+    },
+    "id_theft_resolution": {
+      "title": "ID Theft Resolution",
+      "description": "This service, provided by **ID Resolution** , provides expert assistance if you have suffered identity theft, be it financial, criminal, or medical. You are pre-enrolled and it's FREE!",
+      "label": "Learn More",
+      "details": {
+        "desc1": "Here at Exectras, we take your identity management very seriously. Our partners at ID Resolution offer assistance to those individuals who have had their personal information fraudulently used by identity thieves.",
+        "desc2": "Experienced fraud resolution specialists can help resolve financial identity theft, criminal identity theft, and medical identity theft.",
+        "desc3": "The Fraud Specialist works with all creditors, agencies, law enforcement, professional associations, credit reporting agencies and collection companies.",
+        "desc4": "The Fraud Specialist also works with the victim when necessary, to place fraud alerts, credit freezes and suppressions with the three credit bureaus.",
+        "desc5": " Where appropriate, and at no extra charge for a period of 12 months, an extensive suite of monitoring products are provided to the victim.",
+        "desc6": "Proactive services also include:",
+        "think": "Think you're a victim? Call us at",
+        "identity": "Integrated Identity Management",
+        "more_info": "More information",
+        "program_detail": "Program Details",
+        "works_points": [
+          "If you believe your identity has been stolen or you are at risk, contact our partner ID Resolution.",
+          "You will be asked to provide your group number and name so your account can be verified.",
+          "Group Number: EXECTRAS"
+        ],
+        "points": [
+          "Infant and Minor Identity Risk Mitigation",
+          "Deceased & Estate Identity Risk Mitigation"
+        ],
+        "identityPoints": [
+          "Catastrophe Personal Document Replacement Assistance",
+          "Relocation of Residence",
+          "Identity Travel Response",
+          "Estate Services",
+          "Infant and Minor Identity Risk Mitigation",
+          "Deployed Military Personnel Identity Risk Mitigation",
+          "Deployed Military Personnel Identity Risk Mitigation",
+          "Medical Identity Theft Assistance"
+        ]
+      }
+    },
+    "interest_free_credit_line": {
+      "title": "Interest Free Credit Line",
+      "description": "Access **Zebit** , an online store that grants up to $2,500 of interest-free credit! Shop millions of  products and pay over-time with 0% interest.",
+      "label": "Learn More",
+      "details": {
+        "title": "Relieve your biggest source of stress!",
+        "subtitle": "Financial help when you need it the most",
+        "desc1": "As part of your Exectras membership you have access to interest-free credit, provided by our partner, Zebit.",
+        "desc2": "The interest free credit lines made available to you aren’t based on your credit scores. When faced with a situation that requires access to emergency funds you don’t have to resort to payday or title loans, which only exacerbates a difficult situation.",
+        "desc3": "You also won’t have to request an advance on your pay that may jeopardize your employee employer relationship. Instead, you find yourself empowered to secure your own interest free credit line.",
+        "how_it_work": "Here’s how it works:",
+        "eligible": "Eligibility requirements",
+        "join_zebit": "JOIN ZEBIT TODAY!",
+        "credit_points": [
+          "Join Zebit by verifying your employment. No credit check is required. You gain access to financial tools.",
+          "Shop the Zebit Market with your credit . Your order will ship within a few days.",
+          "Pay over time using your debit card tied to your bank account, or your credit card."
+        ],
+        "points": [
+          "There are a few requirements to take advantage of the Zebit program. Employees must be:",
+          "Continuously employed with your organization for at least one year",
+          "18 years or older",
+          "Enrolled in direct deposit",
+          "The program is simple and yet provides a great deal of freedom to responsible employees who need it."
+        ]
+      }
+    },
+    "financial_literacy_program": {
+      "title": "Financial Literacy Program",
+      "description": "Use this powerful tool, provided by **Enrich** , to learn about financial principles and improve your financial decision making.",
+      "label": "Learn More",
+      "details": {
+        "title": "Improved financial decision-making",
+        "subtitle": "Helping you understand important financial principles and improve your financial decision-making.",
+        "take_advantage": "Take advantage of an award-winning financial wellness platform.",
+        "desc1": "Exectras has partnered with an organization that has proven to be an invaluable resource for people looking to improve their financial well-being. The financial wellness program is a thoughtful, engaging,  and customizable learning experience that works. ",
+        "desc2": "The program provides a personalized hub of deeply informative financial content, with recommendations on articles and videos and a host of resources.",
+        "desc3": "Your employer cares about your financial health",
+        "free_account": "Sign-up for your FREE account Today!",
+        "process_start": "The process starts with an in-depth personal health assessment to determine your greatest needs or interests, then delivers, rich, interactive and engaging educational modules in the following areas:",
+        "work_points": [
+          "Sign up for your free Enrich account.",
+          "Take a 5-minute financial assessment.",
+          "Receive a free analysis of your money personality.",
+          "Come back often to build financial skills and explore your latest recommendations!"
+        ],
+        "points": [
+          "Smart Spending & Budgeting",
+          "Banking",
+          "Your Paycheck",
+          "Credit Cards",
+          "Credit Reports",
+          "Identity Theft",
+          "Saving & Investing",
+          "Education & Paying for College"
+        ]
+      }
+    },
+    "voluntary_benefits": {
+      "title": "Voluntary Benefits",
+      "description": "Accidents happen in places where you and your family spend the most time - at work, in the home and on the playground - and they're unexpected. How you care for them shouldn't be. Our partnership with **Koru Risk Management** provides affordable options for voluntary benefits like accident, disability, and critical care insurance.",
+      "solution_label": "Learn More",
+      "details": {
+        "desc": "Our voluntary benefits team manages the marketing, enrollment, education, and ongoing program administration of voluntary plans so employers or individuals can access competitive and diverse benefit options.",
+        "solution_title": "Solutions Include",
+        "button": "GET MY CUSTOMIZED QUOTE",
+        "points": [
+          "Sign up by calling the number below or click 'Get My Customized Quote' and fill out the online form.",
+          "A member of the Koru team will assist you with your quote and review your options. It's that simple."
+        ],
+        "solutions": [
+          {
+            "title": "Critical Illness",
+            "desc": "Critical illness insurance protects you in the event of a future major illness diagnosis. This type of plan supplements existing health insurance with extra funds that meet the demands that come with critical health emergencies."
+          },
+          {
+            "title": "Disability Insurance",
+            "desc": "Disability insurance steps in to help you cover expenses; it pays you a percentage of your salary if an illness or injury prevents you from working. With a variety of options to fit your unique needs, the right policy keeps working when you can’t."
+          },
+          {
+            "title": "Accident Insurance",
+            "desc": "Accidents occur unexpectedly and can lead to injuries, but everyone is entitled to a seamless recovery to resume their daily lives. In the event of an accident, this insurance provides financial security through a one-time benefit payment. This payment can support a range of needs, from covering medical bills not included in your insurance, to funding additional assistance at home, covering transportation costs, or whatever else may arise."
+          }
+        ]
+      }
+    },
+    "benefits_discounts": {
+      "title": "Exclusive Exectras Member Discounts",
+      "description": "Exectras members enjoy auto, travel, electronic and shipping discounts for personal and professional use. Provided by **1-800-Members,** Your source for member savings and solutions.",
+      "visit_web": "Visit Website",
+      "learn_more": "Learn More",
+      "call_instructions": "Give us a call or enroll online. Our seasoned representatives provide an exceptional customer experience and help you or your businesses maximize savings.",
+      "details": "1-800-MEMBERS provides comprehensive information about each member benefit program available, enrolls members in desired programs and maintains contact after the sale to ensure ongoing satisfaction. Our seasoned representatives provide an exceptional customer experience and help you or your businesses maximize savings.",
+      "feature_program": "Featured Programs include",
+      "desc1": "Exectras members enjoy auto, travel, electronic, and shipping discounts for personal and professional use.",
+      "benefits": [
+        {
+          "title": "UPS",
+          "desc": "Members now have access to new and improved flat rate pricing with savings of 50% on Domestic Next Day/Deferred, 30% on Ground Commercial / Residential and up to 50% on additional services."
+        },
+        {
+          "title": "ODP Business Solutions™",
+          "desc": "Save up to 75% off regular prices on our Best Value List of preferred products. Plus receive free next-business-day delivery on qualifying orders of $50 or more."
+        },
+        {
+          "title": "Lenovo",
+          "desc": "Save up to 30% off the everyday public web price of computers, laptops and tablets, with access to special flash sales."
+        },
+        {
+          "title": "Hotel Engine",
+          "desc": "Save at over 700,000 hotels around the globe, wherever your travel takes you"
+        },
+        {
+          "title": "Collette Tours",
+          "desc": "Make your next getaway extraordinary and travel with Collette. Collette offers over 160 guided tours spanning all 7 continents – allowing you to find an adventure anywhere in the world."
+        },
+        {
+          "title": "Avis",
+          "desc": "Save up to 35% off base rates with Pay Now, plus enroll in Avis Preferred®. Sign up is free and you’ll earn points for every qualifying dollar you spend. Discount Code: A715046"
+        },
+        {
+          "title": "Budget",
+          "desc": "Save up to 35% off base rates with Pay Now, plus other sweet deals like complimentary upgrades Discount Code: B203949"
+        },
+        {
+          "title": "Travel Savings Center",
+          "desc": "Access exclusive travel savings from car rentals, hotels, and ticketing discounts to condos, villas, cruises, guided tours, and group travel packages."
+        }
+      ]
+    }
+  },
+  "home": {
+    "more": "More"
+  },
+  "notifications": {
+    "archive_notifications": "View Archived Notifications",
+    "current_notifications": "View Current Notifications",
+    "notifications": "Notifications",
+    "arch_notification": "Archived Notifications",
+    "no_new_notifications": "No New Notifications",
+    "no_new_notifications_to_display": "There are no notifications to display at this time."
+  },
+  "save_profile": "Save Profile",
+  "description": "You and your family get **online** , on-demand access using our partner, **{partner_name}** to treat common {illnesses}, {injuries}, and behavioral health concerns.",
+  "challenges": {
+    "active_challenges": "Active Challenges",
+    "find_challenges": "Find a Challenge",
+    "currently_challenges": "There are actually currently",
+    "challenges_available": "active challenges available to join.",
+    "archived_challenges": "archived Challenges within the system.",
+    "program_available": "active programs available to join.",
+    "archive_programs": "archived Programs within the system.",
+    "find_challenges_matching": "Find Challenges Matching",
+    "find_programs_matching": "Find Programs Matching",
+    "select_language": "Please Select Language",
+    "select_category": "Please Select",
+    "language": "Language",
+    "search": "Search",
+    "no_comments": "No Comments",
+    "active_programs": "Active Programs",
+    "find_programs": "Find a Program",
+    "archived": "Archived",
+    "select_all": "Select All",
+    "no_active_challenges": "No Active Challenges",
+    "no_active_program": "No Active Programs",
+    "go_earn_tasks": "Go to tasks to earn your points",
+    "task_indirectly_complete": "This Task is completed indirectly",
+    "need_to_follow_instruction": "you will need to follow the instructions above to complete this Task!"
+  },
+  "telehealth": {
+    "pre_enrolled": "If your account is not under the Exectras group plan setup a new account to get your Exectras discount",
+    "get_started": "Get Started",
+    "by_clicking_started": "By clicking Get Started, you agree to Walmart Health Virtual Care(WHVC)",
+    "terms": "Terms & Conditions",
+    "and": "and",
+    "privacy_policy": "Privacy Policy",
+    "whvc": "Walmart Health Virtual Care",
+    "listed_below": "Listed below is a history of Walmart Health Virtual Care (WHVC) plan benefits.",
+    "look_like_already_account": "It looks like you already have an account with WHVC.",
+    "plan": "Plan",
+    "benefit_start": "Benefit Start",
+    "benefit_end": "Benefit End",
+    "active": "Active",
+    "visit_fee": "Visit Fee",
+    "cancel_plan": "Cancel Plan",
+    "yes": "Yes",
+    "no": "No",
+    "points": [
+      "Change the email address we have on file by updating your Exectras profile.",
+      "Resubmit your information to WHVC by clicking the button below."
+    ],
+    "start_telehealth": "Start TeleHealth Session",
+    "login_whvc": "Login to WHVC Using Existing Credentials",
+    "account_no_under_exectras": "If your account is not under the Exectras group plan setup a new account to get your Exectras discount.",
+    "account_under_exectras": "If this account is under the Exectras group plan, update your WHVC account by logging in manually with your existing credentials."
+  },
+  "timeoff": {
+    "request_time_off": "Request Time Off",
+    "cancel": "Cancel",
+    "hours": "Hours",
+    "start_date": "Date (Start)",
+    "end_date": "Date (End)",
+    "type": "Type",
+    "notes": "Notes",
+    "date": "Date",
+    "status": "Status",
+    "request": "Request",
+    "summary": "Summary",
+    "select_dates": "Select Dates",
+    "request_timeoff": "Request Time Off",
+    "submit_request": "Submit Request"
+  },
+  "validation": {
+    "all_required": "All fields are required",
+    "error": "Error"
+  },
+  "events": {
+    "upcoming_events": "Upcoming Events",
+    "date": "Date",
+    "event_detail": "Event Details",
+    "event_type": "Event Type",
+    "event_calendar": "Event Calendar",
+    "time_off_calendar": "Time Off Calendar",
+    "title": "Events",
+    "calendar_events": "Calendar Events",
+    "no_event_found": "No events found"
+  },
+  "documents": {
+    "title": "Documents",
+    "no_document_found": "No documents found",
+    "active": "Active",
+    "name": "Name",
+    "signature": "Signature",
+    "created": "Created",
+    "view": "View",
+    "download": "Download",
+    "document": "Document",
+    "details": "Details",
+    "yes": "Yes",
+    "i": "I",
+    "never": "Never",
+    "signature_instruction": "have read, understand agree to the content of the",
+    "as_of": "as of",
+    "modified": "Modified",
+    "electronics": "Electronics",
+    "sign": "Sign",
+    "clear": "Clear",
+    "submit": "Submit",
+    "signature_success": "Signature Submitted Successfully",
+    "signature_error": "Error Submitting Signature"
+  }
+}

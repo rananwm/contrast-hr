@@ -1,0 +1,655 @@
+id,council_id,name,description,status,created,created_by,modified,modified_by,treaty_prefix,address,gps_lat,gps_lng,website,chief,logo_url
+1,1,Big River First Nation,"Big River First Nation is a Cree First Nation in Saskatchewan, Canada.",1,2013-06-12 15:50:25,NULL,2022-04-12 22:03:34,"{""id"":""2"",""user_type"":""root"",""display_name"":""Brenden""}",404,"PO BOX 519, DEBDEN, SK, S0J 0S0",53.5791376,-107.1433323,https://www.bigriverfirstnation.ca/,Chief Jack Rayne,
+2,1,Pelican Lake First Nation,"Pelican Lake First Nation (chachakew sakahikan) is a member of the Federation of Saskatchewan First Nations, the body that represents 74 First Nations in Saskatchewan.",1,2013-06-12 15:50:25,NULL,2022-04-12 22:04:34,"{""id"":""2"",""user_type"":""root"",""display_name"":""Brenden""}",405,"PO BOX 399, LEOVILLE, SK, S0J 1N0",53.72575814,-107.7445348,http://www.creenationsheritagecentre.ca/pelican-lake-first-nation.html,Chief Chief Peter Bill,http://www.creenationsheritagecentre.ca/uploads/2/1/5/7/21574742/2654341.png
+3,1,Witchekan Lake First Nation,"Witchekan Lake First Nation is a Cree First Nation in Saskatchewan, Canada",1,2013-06-12 15:50:25,NULL,2022-04-13 18:18:33,"{""id"":""2"",""user_type"":""root"",""display_name"":""Brenden""}",407,"PO BOX 879, SPIRITWOOD, SK, S0J 2M0",53.45824625,-107.6152383,https://witchekanlake.com/,Chief Annie Thomas,
+4,2,Ahtahkakoop First Nation,"Ahtahkakoop First Nation is a Cree First Nation band government in Shell Lake, Saskatchewan, Canada. The Ahtahkakoop First Nation government and community is located on Ahtahkakoop 104, 72 kilometers northwest of Prince Albert and is 17,347 hectares in size.",1,2013-06-12 15:50:25,NULL,2022-04-12 22:20:14,"{""id"":""2"",""user_type"":""root"",""display_name"":""Brenden""}",406,"PO BOX 220, SHELL LAKE, SK, S0J 2G0",53.37961898,-106.9322517,https://www.ahtahkakoop.ca/,Chief Larry Ahenakew,
+5,2,Moosomin First Nation,"The Moosomin First Nation is a Cree First Nation band government in Cochin, Saskatchewan, Canada. Its reserves are approximately thirty-five kilometres and twenty-two kilometres north of North Battleford. It borders the rural municipalities of Meota No. 468 and Round Hill No. 467. Moosomin First Nation has over 1,500 Band members and control of more than 50,000 acres (200 km2) of land.",1,2013-06-12 15:50:25,NULL,2022-04-13 13:30:04,"{""id"":""2"",""user_type"":""root"",""display_name"":""Brenden""}",342,"PO BOX 98, COCHIN, SK, S0M 0L0",52.89413226,-108.0418298,https://moosomin.ca/,Chief Cheryl Kahpeaysewat,
+6,2,Red Pheasant First Nation,"The Red Pheasant Cree Nation (Cree: ᒥᑭᓯᐘᒌᕽ, mikisiwacîhk) is a Plains Cree First Nations band government in the Canadian province of Saskatchewan. The band's sole reserve, Red Pheasant 108, is 33 km (21 mi) south of North Battleford",1,2013-06-12 15:50:25,NULL,2022-04-13 14:26:37,"{""id"":""2"",""user_type"":""root"",""display_name"":""Brenden""}",346,"PO BOX 70, CANDO, SK, S0K 0V0",52.46010881,-108.1796106,https://www.batc.ca/member_first_nations/red_pheasant.html,Chief Clinton Wuttunee,https://www.batc.ca/mrws/photofolio/Red_Pheasant_First_Nation.png
+7,2,Sweetgrass First Nation,"The Sweetgrass First Nation (Cree: ᐑᐦᑲᓱᑭᓭᔨᐣ, wîhkaso-kisêyin[1]) is a Cree First Nation reserve in Cut Knife, Saskatchewan, Canada. Their territory is located 35 kilometers west of Battleford. The reserve was established as part of Treaty 6",1,2013-06-12 15:50:25,NULL,2023-01-26 17:24:53,"{""id"":""1"",""user_type"":""root"",""display_name"":""Centre of Excellence""}",348,"PO BOX 147, GALLIVAN, SK, S0M 0X0",52.75736292,-108.6836726,NULL,Chief Lori Whitecalf,NULL
+8,2,Young Chippewayan First Nation,NULL,1,2013-06-12 15:50:25,NULL,2013-06-12 15:50:25,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+9,3,Little Pine,,1,2013-06-12 15:50:25,NULL,2013-06-12 15:50:25,NULL,340,"PO BOX 70, PAYNTON, SK, S0M 2J0",52.9164861,-109.058291,https://littlepine.ca/,Chief Wayne Semaganis,
+10,3,Lucky Man,"The Lucky Man Reserve is an Indian reserve of the Lucky Man Cree Nation in Saskatchewan. It consists of Sections 25 to 36, Township 46, Range 6, west of the Third Meridian.",1,2013-06-12 15:50:25,NULL,2022-04-13 13:22:13,"{""id"":""2"",""user_type"":""root"",""display_name"":""Brenden""}",341,"103B PACKHAM AVENUE, SASKATOON, SK, S7N 4K4",53.0059446,-107.2492102,https://luckymancree.com/,Chief Crystal Okemow,
+11,2,Mosquito Grizzly Bear's Head Lean Man First Nation,"Grizzly Bear's Head 110 & Lean Man's 111 is an Indian reserve of the Mosquito, Grizzly Bear's Head, Lean Man First Nations in Saskatchewan. It is 24 kilometres south of North Battleford.",1,2013-06-12 15:50:25,NULL,2023-01-26 17:21:54,"{""id"":""1"",""user_type"":""root"",""display_name"":""Centre of Excellence""}",343,NULL,52.49491498,-108.2458478,https://mosquitofn.ca/,Chief Tanya Stone,NULL
+12,3,Poundmaker First Nation,"The Poundmaker Cree Nation (Cree: ᐲᐦᑐᑲᐦᐊᓇᐱᐏᔨᐣ, pîhtikwahânapiwiyin) is a Cree First Nations band government, whose reserve community is located near Cut Knife, Saskatchewan. It is a Treaty 6 nation, started by the famous Cree Chief Pitikwahanapiwiyin.",1,2013-06-12 15:50:25,NULL,2022-04-13 14:24:11,"{""id"":""2"",""user_type"":""root"",""display_name"":""Brenden""}",345,"PO BOX 610, CUTKNIFE, SK, S0M 0N0",52.90425712,-108.9725801,http://www.poundmakercn.ca/,Chief Duane Antoine,
+13,4,Carry The Kettle First Nation,"Carry the Kettle Nakoda Nation (Assiniboine: céǧa kʾína [Chay-gah-keen], Carries the kettle, also known as Assiniboine First Nation or Assiniboine 76) is a Nakota (Assiniboine) First Nation located about 80 km (50 mi) east of Regina, Saskatchewan and 13 km (8.1 mi) south of Sintaluta. The reservation is in Treaty 4 territory.",1,2013-06-12 15:50:25,NULL,2022-04-13 13:19:02,"{""id"":""2"",""user_type"":""root"",""display_name"":""Brenden""}",378,"PO BOX 57, SINTALUTA, SK, S0G 4N0",50.66878369,-103.6991884,https://cegakin.com/,Chief Brady O'Watch,
+14,4,Little Black Bear First Nation,"Little Black Bear First Nation is a Cree and Assiniboine First Nation in southern Saskatchewan, Canada",1,2013-06-12 15:50:25,NULL,2022-04-13 13:20:35,"{""id"":""2"",""user_type"":""root"",""display_name"":""Brenden""}",379,"PO BOX 40, GOODEVE, SK, S0A 1C0",50.9895147,-103.3697753,https://littleblackbear.ca/,Chief Clarence Bellegarde,
+15,4,Muscowpetung First Nation,"The Muscowpetung Saulteaux Nation is a Saulteaux band government in southern Saskatchewan, Canada",1,2013-06-12 15:50:25,NULL,2022-04-13 13:32:43,"{""id"":""2"",""user_type"":""root"",""display_name"":""Brenden""}",381,"PO BOX 1310, FORT QU'APPELLE, SK, S0G 1S0",50.77696375,-104.2846125,http://www.muscowpetung.com/,Chief Melissa Tavita,
+16,4,Nekaneet First Nation,The Nekaneet Reserve is an Indian reserve of the Nekaneet Cree Nation in Saskatchewan. It is 121 kilometres southwest of Swift Current.,1,2013-06-12 15:50:25,NULL,2022-04-13 13:44:11,"{""id"":""2"",""user_type"":""root"",""display_name"":""Brenden""}",380,"PO BOX 548, MAPLE CREEK, SK, S0N 1N0",49.69073196,-109.2864774,http://nekaneet.com/,Chief Alvin Francis,
+17,4,Okanese First Nation,"The Okanese First Nation is a Cree-Saulteaux First Nation band government in Balcarres, Saskatchewan, Canada",1,2013-06-12 15:50:25,NULL,2022-04-13 13:49:38,"{""id"":""2"",""user_type"":""root"",""display_name"":""Brenden""}",382,"PO BOX 759, BALCARRES, SK, S0G 0C0",50.84825509,-103.5083958,https://www.okanese.ca/,Chief Richard Stonechild,https://www.okanese.ca/wp-content/uploads/2021/09/cropped-Okanese-300x300-1-1.png
+18,4,Pasqua First Nation,"Pasqua First Nation is a Saulteaux-Cree First Nation in southern Saskatchewan, Canada",1,2013-06-12 15:50:25,NULL,2022-04-13 13:53:58,"{""id"":""2"",""user_type"":""root"",""display_name"":""Brenden""}",NULL,NULL,50.73674807,-103.9907773,https://www.pasquafn.ca/,Chief Matthew Todd Peigan,https://www.pasquafn.ca/fileadmin/template1/images/logo.png
+19,4,Peepeekisis First Nation,"Peepeekisis Cree Nation (Band number 384) is a Cree First Nation in southern Saskatchewan, Canada. Its reserves include Peepeekisis 81; Treaty Four Reserve Grounds 77, which is shared with 32 other bands; and Peepeekisis First Nation, which is located 19 km (12 mi) east of Balcarres, Saskatchewan, on Highway 10",1,2013-06-12 15:50:25,NULL,2022-04-13 13:55:04,"{""id"":""2"",""user_type"":""root"",""display_name"":""Brenden""}",NULL,NULL,50.8818954,-103.3744985,https://peepeekisis.com/,Chief Francis Dieter,https://secureservercdn.net/198.71.233.129/60u.9e6.myftpupload.com/wp-content/uploads/2019/11/Peepeekisis-Flag-01-scaled.png
+20,4,Piapot First Nation,Piapot is an Indian reserve of the Piapot Cree Nation in Saskatchewan. It is 43 kilometres west of Fort Qu'Appelle,1,2013-06-12 15:50:25,NULL,2022-04-13 14:15:34,"{""id"":""2"",""user_type"":""root"",""display_name"":""Brenden""}",385,"GENERAL DELIVERY, ZEHNER, SK, S0G 5K0",52.9197258,-109.1061495,,Chief Mark Fox,
+21,4,Standing Buffalo First Nation,Standing Buffalo is an Indian reserve of the Standing Buffalo Dakota Nation in Saskatchewan. It is 8 kilometres north-west of Fort Qu'Appelle.,1,2013-06-12 15:50:25,NULL,2022-04-13 14:48:31,"{""id"":""2"",""user_type"":""root"",""display_name"":""Brenden""}",386,"PO BOX 128, FORT QU'APPELLE, SK, S0G 1S0",50.9482211,-103.9159441,,Chief Roberta Soo-Oyewaste,
+22,4,Star Blanket First Nation,Star Blanket is an Indian reserve of the Star Blanket Cree Nation in Saskatchewan. It is 18 kilometres northeast of Fort Qu'Appelle,1,2013-06-12 15:50:25,NULL,2022-04-13 14:53:37,"{""id"":""2"",""user_type"":""root"",""display_name"":""Brenden""}",NULL,NULL,50.76815611,-103.7970348,https://fhqtc.com/star-blanket/,,https://fhqtc.com/wp-content/uploads/2019/04/NEWStarblanketLogo.png
+23,4,Wood Mountain First Nation,"The Wood Mountain First Nation is a Lakota First Nations band government in southern Saskatchewan, Canada. Led across the border by Sitting Bull, they are the only organized Lakota nation in Canada",1,2013-06-12 15:50:25,NULL,2022-04-13 16:55:31,"{""id"":""2"",""user_type"":""root"",""display_name"":""Brenden""}",388,"PO BOX 1792, ASSINIBOIA, SK, S0H 0B0",49.3296151,-106.443999,https://www.woodmountainlakotafn.ca/,Chief Ellen Lecaine,"https://static.wixstatic.com/media/9c34f3_6649161176d845c79e1285d8d0f1cfce~mv2_d_6477_8382_s_4_2.jpg/v1/crop/x_793,y_1821,w_4807,h_4604/fill/w_328,h_298,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/LOGO-pipe%20(1)%20(1).jpg"
+24,5,Birch Narrows First Nation,"Birch Narrows Dene Nation is a Dene First Nation band government in the boreal forest region of northern Saskatchewan, Canada. It is affiliated with the Meadow Lake Tribal Council (MLTC).",1,2013-06-12 15:50:25,NULL,2013-06-12 15:50:25,NULL,403,"GENERAL DELIVERY, TURNOR LAKE, SK, S0M 3E0",56.47228145,-108.6889673,https://www.facebook.com/Birch-Narrows-Dene-Nation-859083397476029/,Chief Jonathon Sylvestre,
+25,5,Buffalo River First Nation,"The Buffalo River Dene Nation is a Dene First Nations band government in Saskatchewan, Canada. The band's main community, Dillon, is located on the western shore of Peter Pond Lake at the mouth of the Dillon River, and is accessed by Highway 925 from Highway 155.",1,2013-06-12 15:50:25,NULL,2013-06-12 15:50:25,NULL,NULL,NULL,55.92217878,-109.0606607,,Chief Elmer Campbell,
+26,5,Canoe Lake First Nation,"Canoe Lake Cree First Nation is a Cree First Nation based in the settlement of Canoe Narrows, Saskatchewan. The Nation is a member of Meadow Lake Tribal Council Tribal Council.",1,2013-06-12 15:50:25,NULL,2022-04-13 13:17:56,"{""id"":""2"",""user_type"":""root"",""display_name"":""Brenden""}",NULL,NULL,55.1635973,-108.1573998,https://www.canoelakefirstnation.com/,Chief Francis Iron,
+27,5,Clearwater River Dene Nation,"The Clearwater River Dene Nation is a Dene First Nations band government in the boreal forest area of northern Saskatchewan, Canada. It maintains offices in the village of Clearwater River situated on the eastern shore of Lac La Loche.",1,2013-06-12 15:50:25,NULL,2022-04-12 22:24:11,"{""id"":""2"",""user_type"":""root"",""display_name"":""Brenden""}",401,"PO BOX 5050, CLEARWATER RIVER, SK, S0M 3H0",56.33164324,-109.5490008,https://www.facebook.com/Clearwater-River-Dene-Nation-1013667241995123/,Chief Teddy Clark,
+28,5,English River First Nation,"The English River Dene Nation is a Dene First Nation band government in Patuanak, Saskatchewan, Canada. Their reserve is in the northern section of this Canadian province. Its territories are in the boreal forest of the Canadian Shield. This First Nation is a member of the Meadow Lake Tribal Council (MLTC)",1,2013-06-12 15:50:25,NULL,2022-04-12 22:30:18,"{""id"":""2"",""user_type"":""root"",""display_name"":""Brenden""}",400,"GENERAL DELIVERY, PATUANAK, SK, S0M 2H0",55.91767319,-107.7176166,https://erfn.net/,Chief Jerry Bernard,
+29,5,Flying Dust First Nation,"The Flying Dust First Nation is a Cree First Nation band government located adjacent to the city of Meadow Lake in Saskatchewan, Canada. Highway 55 goes through the band's reserve community.",1,2013-06-12 15:50:25,NULL,2022-04-12 22:31:11,"{""id"":""2"",""user_type"":""root"",""display_name"":""Brenden""}",NULL,NULL,54.15127759,-108.4233719,https://flyingdust.net/,Chief Jeremy Norman,
+30,5,Island Lake First Nation,NULL,1,2013-06-12 15:50:25,NULL,2022-04-13 17:01:25,"{""id"":""2"",""user_type"":""root"",""display_name"":""Brenden""}",NULL,NULL,NULL,NULL,NULL,NULL,NULL
+31,5,Makwa Sahgaiehcan First Nation,"Makwa Sahgaiehcan is a Cree First Nation band government in Loon Lake, Saskatchewan, Canada. Their reserve is northeast of Lloydminster. The English translation of Makwa Sahgaiehcan is from Plains Cree language mâhkwa-sâkahikan meaning loon lake.",1,2013-06-12 15:50:25,NULL,2022-04-13 13:24:06,"{""id"":""2"",""user_type"":""root"",""display_name"":""Brenden""}",396,"PO BOX 340, LOON LAKE, SK, S0M 1L0",54.02914952,-109.1670424,,,
+32,5,Waterhen Lake First Nation,"Waterhen Lake First Nation (Cree: Sîkîp Sâkahikan) is a Cree First Nation band government located in northwestern Saskatchewan, Canada",1,2013-06-12 15:50:25,NULL,2022-04-13 16:50:29,"{""id"":""2"",""user_type"":""root"",""display_name"":""Brenden""}",402,"PO BOX 9, WATERHEN LAKE, SK, S0M 3B0",54.51765249,-108.4082035,NULL,,
+33,26,Black Lake Denesuline Nation,"Black Lake (Chipewyan: Tazen Tuwé) is a Denesuline First Nations band government in the boreal forest of northern Saskatchewan, Canada. It is located on the northwest shore of Black Lake where the Fond du Lac River leaves the lake to flow to Lake Athabasca.",1,2013-06-12 15:50:25,NULL,2020-12-02 19:32:51,"{""id"":""2"",""user_type"":""root"",""display_name"":""Brenden""}",359,"PO BOX 27, BLACK LAKE, SK, S0J 0H0",59.12897022,-105.6037553,https://blacklakefirstnation.ca/,Chief Archie Robillard,
+34,6,Cumberland House Cree Nation,"Cumberland House Cree Nation is a Swampy Cree First Nations band government in Saskatchewan, Canada.",1,2013-06-12 15:50:25,NULL,2022-04-12 22:25:10,"{""id"":""2"",""user_type"":""root"",""display_name"":""Brenden""}",350,"PO BOX 220, CUMBERLAND HOUSE, SK, S0E 0S0",53.93628905,-102.2381014,http://www.chcn.ca/,Chief Rene Chaboyer,
+35,26,Fond Du Lac Denesuline Nation,"Fond du Lac Dene Nation (Chipewyan: Gánį Kóé) is a Dene First Nation located in the boreal forest area of northern Saskatchewan, Canada. The main settlement is Fond-du-Lac, situated on the east side of Lake Athabasca",1,2013-06-12 15:50:25,NULL,2022-04-12 22:32:25,"{""id"":""2"",""user_type"":""root"",""display_name"":""Brenden""}",351,"PO BOX 211, FOND DU LAC, SK, S0J 0W0",59.32806362,-107.1841622,https://www.fonddulac.ca/,,
+36,26,Hatchet Lake Denesuline Nation,"Hatchet Lake Denesuline Nation (Chipewyan: Tthpø Tuwé) is a Denesuline First Nation in northern Saskatchewan. The main settlement, Wollaston Lake, is an unincorporated community on Wollaston Lake in the boreal forest of north-eastern Saskatchewan, Canada.",1,2013-06-12 15:50:25,NULL,2022-04-12 22:35:09,"{""id"":""2"",""user_type"":""root"",""display_name"":""Brenden""}",352,"GENERAL DELIVERY, WOLLASTON LAKE, SK, S0J 3C0",58.11138355,-103.1574822,https://www.pagc.sk.ca/first-nations/hatchet-lake/,Chief Bartholomew Tsannie,
+37,6,James Smith First Nation,"The James Smith First Nation is a Plains Cree Aboriginal band government whose reserve is north of Melfort, Saskatchewan, Canada. James Smith has one reserve Fort à la Corne #100 located north of Kinistino near Fort de la Corne on the Saskatchewan River.",1,2013-06-12 15:50:25,NULL,2022-04-12 22:37:55,"{""id"":""2"",""user_type"":""root"",""display_name"":""Brenden""}",370,"PO BOX 1059, MELFORT, SK, S0E 1A0",53.12154779,-104.8741409,http://www.jamessmithcreenation.com/index.html,Chief Okimaw Wally Burns,
+38,6,Lac La Ronge Indian Band,"The Lac La Ronge Indian Band is the largest Cree First Nation band government in La Ronge, Saskatchewan, and one of the 10 largest in Canada, with a 2016 population of 10,408. Its location is in north-central Saskatchewan. They are a Woodland Cree First Nation. (Cree: ᒥᐢᑕᐦᐃ ᓵᑲᐦᐃᑲᓂᕽ, mistahi-sâkahikanihk) ",1,2013-06-12 15:50:25,NULL,2022-04-12 22:47:26,"{""id"":""2"",""user_type"":""root"",""display_name"":""Brenden""}",353,"PO BOX 480, LA RONGE, SK, S0J 1L0",55.06590564,-105.3032993,https://llrib.com/,Chief Tammy Miriam Cook-Searson,
+39,6,Montreal Lake Cree Nation,"Montreal Lake Cree Nation (Cree: ᒨᓂᔮᐏ ᓵᑲᐦᐃᑲᓂᕽ, môniyâwi-sâkahikanihk) is a Woodland Cree First Nation in the boreal forest of central Saskatchewan, Canada. Its reserve, Montreal Lake 106, is on the southern shore of Montreal Lake 103 km (64 miles) north of Prince Albert and 167 km (104 miles) south of La Ronge. Highway 969 passes through the village.",1,2013-06-12 15:50:25,NULL,2022-04-13 13:29:19,"{""id"":""2"",""user_type"":""root"",""display_name"":""Brenden""}",354,"PO BOX 106, MONTREAL LAKE, SK, S0J 1Y0",54.05242417,-105.7913934,https://mlcn.ca/,Chief Joyce Naytowhow McLeod,
+40,6,Peter Ballantyne Cree Nation,"Peter Ballantyne Cree Nation is an Asinîskâwitiniwak (Rocky Cree, Cree: ᐊᓯᓃᐢᑳᐏᑎᓂᐘᐠ) First Nation band government in northern Saskatchewan consisting of nine communities: Amisk Lake, Deschambeault Lake, Kinoosao, Pelican Narrows, Prince Albert, Sandy Bay, Southend and Sturgeon Landing and a newer Reserve west of Prince Albert called Kiskaciwan. ",1,2013-06-12 15:50:25,NULL,2022-04-14 20:27:37,"{""id"":""2"",""user_type"":""root"",""display_name"":""Brenden""}",355,"GENERAL DELIVERY, PELICAN NARROWS, SK, S0P 0E0",53.19289092,-105.780409,NULL,Chief Peter A. Beatty,NULL
+41,6,Red Earth First Nation,"Red Earth Cree Nation is a Cree community in Saskatchewan, Canada. It is located 225 kilometres (140 mi) northeast of Prince Albert. The main settlement of Red Earth is located on the Carrot River and accessed by Highway 55.",1,2013-06-12 15:50:25,NULL,2022-04-13 14:25:37,"{""id"":""2"",""user_type"":""root"",""display_name"":""Brenden""}",356,"PO BOX 109, RED EARTH, SK, S0E 1K0",53.45901608,-102.8716138,https://www.redearthcreenation.com/,Chief Fabian Head,https://www.redearthcreenation.com/wp-content/uploads/2021/05/cropped-Red-Earth-Logo-ReMasteredHighRes.png
+42,6,Shoal Lake Cree Nation,,1,2013-06-12 15:50:25,NULL,2013-06-12 15:50:25,NULL,357,"PO BOX 51, PAKWAW, SK, S0E 1G0",53.48366591,-102.6321375,http://www.slcn.ca/,Chief Marcel Head,http://www.slcn.ca/wp-content/uploads/2019/11/band_shoallake2.png
+43,6,Sturgeon Lake First Nation,"The Sturgeon Lake First Nation (Cree: ᓇᒦᐏ ᓵᑲᐦᐃᑲᓂᕽ, namîwi-sâkahikanihk[1]) is a Cree First Nation band government in Saskatchewan, Canada. Its location is on the eastern shore of Sturgeon Lake about 30 km northwest of Prince Albert",1,2013-06-12 15:50:25,NULL,2022-04-14 20:29:36,"{""id"":""2"",""user_type"":""root"",""display_name"":""Brenden""}",360,"RR 1 SITE 12, PO BOX 5, SHELLBROOK, SK, S0J 2E0",53.41041588,-106.1071424,http://www.slfn.ca/,Chief Greg Ermine,NULL
+44,6,Wahpeton Dakota First Nation,"Wahpeton Dakota Nation is a Dakota First Nation in Saskatchewan, Canada",1,2013-06-12 15:50:25,NULL,2022-04-13 16:49:37,"{""id"":""2"",""user_type"":""root"",""display_name"":""Brenden""}",NULL,NULL,53.27743098,-105.8971104,https://labrc.com/first-nation/wahpeton-dakota/,Chief John Waditaka,https://labrc.com/wp-content/uploads/2019/02/Wahpeton_Dakota_Nation-logo.png
+45,7,Kinistin Saulteaux Nation,"The Kinistin Saulteaux Nation is a Saulteaux band government in Saskatchewan. Their reserve is 39 kilometres (24 mi) southeast of Melfort. The Kinistin Saulteaux Nation is a signatory of Treaty No. 4, which was signed by Chief Yellow-quill on August 24, 1876.",1,2013-06-12 15:50:25,NULL,2022-04-12 22:44:21,"{""id"":""2"",""user_type"":""root"",""display_name"":""Brenden""}",347,"PO BOX 159, COCHIN, SK, S0M 0L0",52.61181939,-104.2166094,http://kinistin.sk.ca/,Chief Felix Thomas,
+46,7,Mistawasis First Nation,"Mistawasis Nêhiyawak is a Cree First Nation band government in Leask, Saskatchewan, Canada. Their settlement is roughly sixty-eight kilometres west of Prince Albert. The Nation has one reserve with an area of approximately 125.44 square kilometres.",1,2013-06-12 15:50:25,NULL,2022-04-13 13:28:20,"{""id"":""2"",""user_type"":""root"",""display_name"":""Brenden""}",NULL,NULL,53.17091138,-106.8104802,https://mistawasis.ca/,Chief Daryl Watson,
+47,7,Muskeg Lake Cree Nation,"The Muskeg Lake Cree Nation (Cree: ᒪᐢᑫᑯ ᓵᑲᐦᐃᑲᐣ, maskêko-sâkahikan)is a Cree First Nation band government in Marcelin, Saskatchewan, Canada.  The Muskeg Lake Cree Nation is affiliated with the Saskatoon Tribal Council",1,2013-06-12 15:50:25,NULL,2022-04-13 13:33:56,"{""id"":""2"",""user_type"":""root"",""display_name"":""Brenden""}",NULL,NULL,52.98487726,-106.908936,https://muskeglake.com/,Chief Kelly Wolfe,
+48,7,Muskoday First Nation,"The Muskoday First Nation (Cree: ᒪᐢᑯᑌᐤ, maskotêw, formerly the John Smith First Nation) is a First Nation band government in Saskatchewan, Canada, composed of Cree and Saulteaux peoples.",1,2013-06-12 15:50:25,NULL,2022-04-13 13:36:33,"{""id"":""2"",""user_type"":""root"",""display_name"":""Brenden""}",371,"PO BOX 99, MUSKODAY, SK, S0J 3H0",53.08909357,-105.4883231,https://muskodayfn.ca/,Chief Ava Bear,
+49,7,One Arrow First Nation,"One Arrow First Nation is a Cree First Nations band government in Bellevue, Saskatchewan, Canada. Its main reserve is located just south of Batoche near the South Saskatchewan River about 100 km North-east of Saskatoon. The One Arrow First Nation's reserve is in the aspen parkland biome. It is bordered by the Rural Municipalities of St. Louis No. 431, Fish Creek No. 402, and Duck Lake No. 463.",1,2013-06-12 15:50:25,NULL,2022-04-13 13:52:58,"{""id"":""2"",""user_type"":""root"",""display_name"":""Brenden""}",373,"PO BOX 147, BELLEVUE, SK, S0K 3Y0",52.73884242,-106.0334824,https://labrc.com/first-nation/one-arrow/,Chief Tricia Sutherland,https://labrc.com/wp-content/uploads/2018/11/onearrow.png
+50,7,Yellow Quill First Nation,"Yellow Quill First Nation (formerly Nut Lake Band of Saulteaux) is a Saulteaux First Nation band government in Saskatchewan, Canada. Their reserve is twenty kilometres northwest of Kelvington.",1,2013-06-12 15:50:25,NULL,2022-04-13 16:56:13,"{""id"":""2"",""user_type"":""root"",""display_name"":""Brenden""}",376,"PO BOX 40, YELLOW QUILL, SK, S0A 3A0",52.29655567,-103.710812,https://yqfn.ca/,Chief John Machiskinic,
+51,7,Whitecap Dakota First Nation,"Whitecap Dakota First Nation is a Dakota First Nations band government whose reserve is located 26 km (16 mi) south of Saskatoon, Saskatchewan, Canada. Governing the Whitecap Indian Reserve No. 94, historically referred to as the Moose Woods Sioux Reserve, it is bordered by the Rural Municipality of Dundurn No. 314",1,2013-06-12 15:50:25,NULL,2022-04-13 16:52:55,"{""id"":""2"",""user_type"":""root"",""display_name"":""Brenden""}",372,"182 CHIEF WHITECAP TRAIL, WHITECAP, SK, S7K 2L2",51.87688792,-106.7119641,https://www.whitecapdakota.com/en/index.aspx,Chief Darcy Bear,https://www.whitecapdakota.com/en/images/structure/logo.svg
+52,8,Ochapowace First Nation,Ochapowace is an Indian reserve of the Ochapowace Nation in Saskatchewan. It is 8 kilometres northeast of Broadview.,1,2013-06-12 15:50:25,NULL,2022-04-13 13:48:43,"{""id"":""2"",""user_type"":""root"",""display_name"":""Brenden""}",363,"PO BOX 550, WHITEWOOD, SK, S0G 5C0",50.45251108,-104.4458967,https://ochapowace.com/,Chief Margaret Bear,https://ochapowace.com/res/img/logo.png
+53,8,White Bear First Nation,"The White Bear First Nations are a First Nation band government in southeastern Saskatchewan, Canada",1,2013-06-12 15:50:25,NULL,2022-04-13 16:51:41,"{""id"":""2"",""user_type"":""root"",""display_name"":""Brenden""}",365,"PO BOX 700, CARLYLE, SK, S0C 0R0",49.76472504,-102.2509843,https://www.whitebearfirstnation.ca/,Chief Brian Standingready,
+54,9,Day Star First Nation,"Day Star First Nation is a First Nations band government in Saskatchewan, Canada",1,2013-06-12 15:50:25,NULL,2022-04-12 22:27:08,"{""id"":""2"",""user_type"":""root"",""display_name"":""Brenden""}",389,"PO BOX 277, PUNNICHY, SK, S0A 3C0",51.52279146,-104.2687437,daystarfn.ca,Chief Lloyd Buffalo,
+55,9,George Gordon First Nation,"The George Gordon First Nation is a First Nations band government located near the village of Punnichy, Saskatchewan, in Canada. Their territory is located on the Gordon 86 reserve, as arranged by Treaty 4.",1,2013-06-12 15:50:25,NULL,2022-04-12 22:33:47,"{""id"":""2"",""user_type"":""root"",""display_name"":""Brenden""}",391,"PO BOX 248, PUNNICHY, SK, S0A 3C0",51.28779189,-104.298053,https://ggfn.ca/,Chief Byron Bitternose,
+56,9,Kawacatoose First Nation,The Kawacatoose First Nation is a Plains Cree First Nations band government in Saskatchewan.,1,2013-06-12 15:50:25,NULL,2022-04-12 22:39:45,"{""id"":""2"",""user_type"":""root"",""display_name"":""Brenden""}",393,"PO BOX 640, RAYMORE, SK, S0A 3J0",51.49064901,-104.3507187,https://www.touchwoodagency.ca/kawacatoose.html,Chief Thomas Dustyhornn,
+57,9,Muskowekwan First Nation,"Muskowekwan First Nation is a Saulteaux (Ojibway) First Nation who inhabit approximately 100 km northwest of Melville, Saskatchewan, Canada.",1,2013-06-12 15:50:25,NULL,2022-04-13 13:41:35,"{""id"":""2"",""user_type"":""root"",""display_name"":""Brenden""}",392,"PO BOX 249, LESTOCK, SK, S0A 2G0",51.21604668,-104.0152796,https://www.muskowekwan.ca/,Chief Reginald Bellerose,
+58,10,Cote First Nation,"The Cote First Nation is a Saulteaux First Nations band government in Kamsack, Saskatchewan. This Saulteaux reserve is connected to the Keeseekoose First Nation and only a couple of miles from the Key First Nation",1,2013-06-12 15:50:25,NULL,2022-04-12 22:24:39,"{""id"":""2"",""user_type"":""root"",""display_name"":""Brenden""}",NULL,NULL,51.64421589,-101.9026954,https://cotefirstnation.ca/,Chief George Cote,
+59,10,Kahkewistahaw First Nation,"Kahkewistahaw First Nation is a Saulteaux- and Cree-speaking First Nation in southern Saskatchewan, Canada. The name Kahkewistahaw means Eagle flying in the air",1,2013-06-12 15:50:25,NULL,2022-04-12 22:39:02,"{""id"":""2"",""user_type"":""root"",""display_name"":""Brenden""}",362,"PO BOX 609, BROADVIEW, SK, S0G 0K0",50.49146302,-102.5313053,https://www.kfn72.com/,Chief Evan Taypotat,
+60,10,Keeseekoose First Nation,,1,2013-06-12 15:50:25,NULL,2013-06-12 15:50:25,NULL,367,"PO BOX 1120, KAMSACK, SK, S0A 1S0",51.71881975,-101.9100695,https://www.keeseekoosefn.com/,Chief Lee Anthony Ketchemonia,
+61,10,Key First Nation,"The Key First Nation is a band government in southern Saskatchewan, Canada.",1,2013-06-12 15:50:25,NULL,2022-04-12 22:43:37,"{""id"":""2"",""user_type"":""root"",""display_name"":""Brenden""}",NULL,NULL,51.80071428,-102.0787921,https://keyband.com/,Chief Rodney Papequash,
+62,10,Ocean Man First Nation,"The Ocean Man First Nation is an Assiniboine, Cree, and Saulteaux band government in southeastern Saskatchewan, Canada. In 1997, the band was noted for being the only Canadian First Nation with an all-female chief and council.",1,2013-06-12 15:50:25,NULL,2022-04-13 13:47:09,"{""id"":""2"",""user_type"":""root"",""display_name"":""Brenden""}",408,"PO BOX 157, STOUGHTON, SK, S0G 4T0",49.83189419,-103.3227014,,,
+63,10,Sakimay First Nation,"The Zagime Anishinabek (formerly known as the Sakimay First Nation) are a Saulteaux band government in southern Saskatchewan, Canada",1,2013-06-12 15:50:25,NULL,2022-04-13 14:28:38,"{""id"":""2"",""user_type"":""root"",""display_name"":""Brenden""}",NULL,NULL,50.52908746,-102.7939583,https://www.sakimay.ca/,Chief Bonnie Acoose,https://www.sakimay.ca/wp-content/uploads/2021/01/logo-white-retina.png
+64,11,Beardy's & Okemasis First Nation,NULL,1,2013-06-12 15:50:25,NULL,2013-06-12 15:50:25,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+65,11,Chacachas First Nation,NULL,1,2013-06-12 15:50:25,NULL,2013-06-12 15:50:25,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+66,11,Chakastapaysin First Nation,NULL,1,2013-06-12 15:50:25,NULL,2013-06-12 15:50:25,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+67,11,Cowessess First Nation,NULL,1,2013-06-12 15:50:25,NULL,2013-06-12 15:50:25,NULL,361,"PO BOX 100, COWESSESS, SK, S0G 5L0",NULL,NULL,NULL,NULL,NULL
+68,11,Fishing Lake First Nation,NULL,1,2013-06-12 15:50:25,NULL,2013-06-12 15:50:25,NULL,390,"PO BOX 508, WADENA, SK, S0A 4J0",NULL,NULL,NULL,NULL,NULL
+69,11,Onion Lake First Nation,NULL,1,2013-06-12 15:50:25,NULL,2013-06-12 15:50:25,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+70,11,Peter Chapman First Nation,NULL,1,2013-06-12 15:50:25,NULL,2013-06-12 15:50:25,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+71,11,Pheasant Rump Nakota First Nation,NULL,1,2013-06-12 15:50:25,NULL,2013-06-12 15:50:25,NULL,409,"PO BOX 238, KISBEY, SK, S0C 1L0",NULL,NULL,NULL,NULL,NULL
+72,2,Saulteaux First Nation,"Saulteaux First Nation is an Anishinaabe First Nation band government, whose reserves are located near Cochin, Saskatchewan.",1,2013-06-12 15:50:25,NULL,2022-04-13 14:34:21,"{""id"":""2"",""user_type"":""root"",""display_name"":""Brenden""}",347,"PO BOX 159, COCHIN, SK, S0M 0L0",53.40591477,-108.3469887,http://www.saulteauxfn.ca/,Chief Kenny Moccasin,
+73,11,Thunderchild First Nation,NULL,1,2013-06-12 15:50:25,NULL,2013-06-12 15:50:25,NULL,349,"PO BOX 600, TURTLEFORD, SK, S0M 2Y0",NULL,NULL,NULL,NULL,NULL
+74,12,Other,NULL,1,2013-12-12 21:24:47,NULL,2013-12-12 21:24:47,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+75,12,Don't Know,NULL,1,2013-12-12 21:25:02,NULL,2013-12-12 21:25:02,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+76,13,?Esdilagh First Nation,NULL,1,2015-08-20 15:12:28,NULL,2015-08-20 15:12:28,NULL,709,"4 - 9001 WEST FRASER RD, QUESNEL, BC, V2J 6R4",NULL,NULL,NULL,NULL,NULL
+77,13,Adams Lake,NULL,1,2015-08-20 15:12:28,NULL,2015-08-20 15:12:28,NULL,684,"PO BOX 588, CHASE, BC, V0E 1M0",NULL,NULL,NULL,NULL,NULL
+78,13,Ahousaht,NULL,1,2015-08-20 15:12:28,NULL,2015-08-20 15:12:28,NULL,659,"GENERAL DELIVERY, AHOUSAHT, BC, V0R 1A0",NULL,NULL,NULL,NULL,NULL
+79,13,Aitchelitz,NULL,1,2015-08-20 15:12:28,NULL,2015-08-20 15:12:28,NULL,558,"8161 AITCHELITZ ROAD, CHILLIWACK, BC, V2R 4H4",NULL,NULL,NULL,NULL,NULL
+80,13,Alexis Creek,NULL,1,2015-08-20 15:12:29,NULL,2015-08-20 15:12:29,NULL,710,"PO BOX 69, CHILANKO FORKS, BC, V0L 1H0",NULL,NULL,NULL,NULL,NULL
+81,13,Ashcroft,NULL,1,2015-08-20 15:12:29,NULL,2015-08-20 15:12:29,NULL,685,"PO BOX 440, ASHCROFT, BC, V0K 1A0",NULL,NULL,NULL,NULL,NULL
+82,13,Beecher Bay,NULL,1,2015-08-20 15:12:29,NULL,2015-08-20 15:12:29,NULL,640,"4901B EAST SOOKE ROAD, SOOKE, BC, V9Z 1B6",NULL,NULL,NULL,NULL,NULL
+83,13,Blueberry River First Nations,NULL,1,2015-08-20 15:12:29,NULL,2015-08-20 15:12:29,NULL,547,"PO BOX 3009, BUICK CREEK, BC, V0C 2R0",NULL,NULL,NULL,NULL,NULL
+84,13,Bonaparte,NULL,1,2015-08-20 15:12:29,NULL,2015-08-20 15:12:29,NULL,686,"PO BOX 669, CACHE CREEK, BC, V0K 1H0",NULL,NULL,NULL,NULL,NULL
+85,13,Boothroyd,NULL,1,2015-08-20 15:12:29,NULL,2015-08-20 15:12:29,NULL,700,"PO BOX 70, BOSTON BAR, BC, V0K 1C0",NULL,NULL,NULL,NULL,NULL
+86,13,Boston Bar First Nation,NULL,1,2015-08-20 15:12:29,NULL,2015-08-20 15:12:29,NULL,701,"PO BOX 369, BOSTON BAR, BC, V0K 1C0",NULL,NULL,NULL,NULL,NULL
+87,13,Bridge River,NULL,1,2015-08-20 15:12:29,NULL,2015-08-20 15:12:29,NULL,590,"PO BOX 190, LILLOOET, BC, V0K 1V0",NULL,NULL,NULL,NULL,NULL
+88,13,Burns Lake,NULL,1,2015-08-20 15:12:30,NULL,2015-08-20 15:12:30,NULL,619,"BAG 9000, BURNS LAKE, BC, V0J 1E0",NULL,NULL,NULL,NULL,NULL
+89,13,Campbell River,NULL,1,2015-08-20 15:12:30,NULL,2015-08-20 15:12:30,NULL,622,"1650 OLD SPIT ROAD, CAMPBELL RIVER, BC, V9W 3E8",NULL,NULL,NULL,NULL,NULL
+90,13,Canim Lake,NULL,1,2015-08-20 15:12:30,NULL,2015-08-20 15:12:30,NULL,713,"PO BOX 1030, 100 MILE HOUSE, BC, V0K 2E0",NULL,NULL,NULL,NULL,NULL
+91,13,Cape Mudge,NULL,1,2015-08-20 15:12:30,NULL,2015-08-20 15:12:30,NULL,623,"690 HEADSTART CRES, CAMPBELL RIVER, BC, V9H 1P9",NULL,NULL,NULL,NULL,NULL
+92,13,Cayoose Creek,NULL,1,2015-08-20 15:12:30,NULL,2015-08-20 15:12:30,NULL,591,"PO BOX 484, LILLOOET, BC, V0K 1V0",NULL,NULL,NULL,NULL,NULL
+93,13,Chawathil,NULL,1,2015-08-20 15:12:30,NULL,2015-08-20 15:12:30,NULL,583,"4-60814 LOUGHEED HIGHWAY, HOPE, BC, V0X 1L3",NULL,NULL,NULL,NULL,NULL
+94,13,Cheam,NULL,1,2015-08-20 15:12:30,NULL,2015-08-20 15:12:30,NULL,584,"52130 OLD YALE ROAD, ROSEDALE, BC, V0X 1X0",NULL,NULL,NULL,NULL,NULL
+95,13,Cheslatta Carrier Nation,NULL,1,2015-08-20 15:12:30,NULL,2015-08-20 15:12:30,NULL,620,"PO BOX 909, BURNS LAKE, BC, V0J 1E0",NULL,NULL,NULL,NULL,NULL
+96,13,Coldwater,NULL,1,2015-08-20 15:12:31,NULL,2015-08-20 15:12:31,NULL,693,"PO BOX 4600, MERRITT, BC, V1K 1B8",NULL,NULL,NULL,NULL,NULL
+97,13,Cook's Ferry,NULL,1,2015-08-20 15:12:31,NULL,2015-08-20 15:12:31,NULL,694,"PO BOX 130, SPENCES BRIDGE, BC, V0K 2L0",NULL,NULL,NULL,NULL,NULL
+98,13,Cowichan,NULL,1,2015-08-20 15:12:31,NULL,2015-08-20 15:12:31,NULL,642,"5760 ALLENBY ROAD, DUNCAN, BC, V9L 5J1",NULL,NULL,NULL,NULL,NULL
+99,13,Da'naxda'xw First Nation,NULL,1,2015-08-20 15:12:31,NULL,2015-08-20 15:12:31,NULL,635,"PO BOX 330, ALERT BAY, BC, V0N 1A0",NULL,NULL,NULL,NULL,NULL
+100,13,Ditidaht,NULL,1,2015-08-20 15:12:31,NULL,2015-08-20 15:12:31,NULL,662,"PO BOX 340, PORT ALBERNI, BC, V9Y 7M8",NULL,NULL,NULL,NULL,NULL
+101,13,Doig River First Nation,NULL,1,2015-08-20 15:12:31,NULL,2015-08-20 15:12:31,NULL,548,"PO BOX 56, ROSE PRAIRIE, BC, V0C 2H0",NULL,NULL,NULL,NULL,NULL
+102,13,Douglas,NULL,1,2015-08-20 15:12:31,NULL,2015-08-20 15:12:31,NULL,561,"PO BOX 606, MOUNT CURRIE, BC, V0N 2K0",NULL,NULL,NULL,NULL,NULL
+103,13,Dzawada'enuxw First Nation,NULL,1,2015-08-20 15:12:32,NULL,2015-08-20 15:12:32,NULL,636,"GENERAL DELIVERY, KINGCOME INLET, BC, V0N 2B0",NULL,NULL,NULL,NULL,NULL
+104,13,Ehattesaht,NULL,1,2015-08-20 15:12:32,NULL,2015-08-20 15:12:32,NULL,634,"PO BOX 59, ZEBALLOS, BC, V0P 2A0",NULL,NULL,NULL,NULL,NULL
+105,13,Esk'etemc,NULL,1,2015-08-20 15:12:32,NULL,2015-08-20 15:12:32,NULL,711,"PO BOX 157, ALKALI LAKE, BC, V0L 1B0",NULL,NULL,NULL,NULL,NULL
+106,13,Esquimalt,NULL,1,2015-08-20 15:12:32,NULL,2015-08-20 15:12:32,NULL,644,"1189 KOSAPSUM CRESCENT, VICTORIA, BC, V9A 7K7",NULL,NULL,NULL,NULL,NULL
+107,13,Fort Nelson First Nation,NULL,1,2015-08-20 15:12:32,NULL,2015-08-20 15:12:32,NULL,543,"MILE 295 ALASKA HWY, RR 1, FORT NELSON, BC, V0C 1R0",NULL,NULL,NULL,NULL,NULL
+108,13,Gitanmaax,NULL,1,2015-08-20 15:12:32,NULL,2015-08-20 15:12:32,NULL,531,"PO BOX 440, HAZELTON, BC, V0J 1Y0",NULL,NULL,NULL,NULL,NULL
+109,13,Gitanyow,NULL,1,2015-08-20 15:12:32,NULL,2015-08-20 15:12:32,NULL,537,"PO BOX 340, KITWANGA, BC, V0J 2A0",NULL,NULL,NULL,NULL,NULL
+110,13,Gitga'at First Nation,NULL,1,2015-08-20 15:12:32,NULL,2015-08-20 15:12:32,NULL,675,"GENERAL DELIVERY, 445 HAYIMIISAXAA WAY, HARTLEY BAY, BC, V0V 1A0",NULL,NULL,NULL,NULL,NULL
+111,13,Gitsegukla,NULL,1,2015-08-20 15:12:33,NULL,2015-08-20 15:12:33,NULL,535,"710 RAYCHARLES AVE, RR 1, GITSEGUKLA, BC, V0J 2J3",NULL,NULL,NULL,NULL,NULL
+112,13,Gitwangak,NULL,1,2015-08-20 15:12:33,NULL,2015-08-20 15:12:33,NULL,536,"PO BOX 400, KITWANGA, BC, V0J 2A0",NULL,NULL,NULL,NULL,NULL
+113,13,Gitxaala Nation,NULL,1,2015-08-20 15:12:33,NULL,2015-08-20 15:12:33,NULL,672,"PO BOX 149, KITKATLA, BC, V0V 1C0",NULL,NULL,NULL,NULL,NULL
+114,13,Glen Vowell,NULL,1,2015-08-20 15:12:33,NULL,2015-08-20 15:12:33,NULL,533,"9500 SIK-E-DAKH RD, SIK-E-DAKH, BC, V0J 1Y3",NULL,NULL,NULL,NULL,NULL
+115,13,Gwa'Sala-Nakwaxda'xw,NULL,1,2015-08-20 15:12:33,NULL,2015-08-20 15:12:33,NULL,724,"PO BOX 998, PORT HARDY, BC, V0N 2P0",NULL,NULL,NULL,NULL,NULL
+116,13,Gwawaenuk Tribe,NULL,1,2015-08-20 15:12:33,NULL,2015-08-20 15:12:33,NULL,627,"PO BOX 344, PORT MCNEIL, BC, V0N 2R0",NULL,NULL,NULL,NULL,NULL
+117,13,Hagwilget Village,NULL,1,2015-08-20 15:12:33,NULL,2015-08-20 15:12:33,NULL,534,"PO BOX 460, NEW HAZELTON, BC, V0J 2J0",NULL,NULL,NULL,NULL,NULL
+118,13,Haisla Nation,NULL,1,2015-08-20 15:12:33,NULL,2015-08-20 15:12:33,NULL,676,"PO BOX 1101, HAISLA, BC, V0T 2B0",NULL,NULL,NULL,NULL,NULL
+119,13,Halalt,NULL,1,2015-08-20 15:12:34,NULL,2015-08-20 15:12:34,NULL,645,"7973 CHEMAINUS ROAD, RR 5, CHEMAINUS, BC, V0R 1K5",NULL,NULL,NULL,NULL,NULL
+120,13,Halfway River First Nation,NULL,1,2015-08-20 15:12:34,NULL,2015-08-20 15:12:34,NULL,546,"PO BOX 59, WONOWON, BC, V0C 2N0",NULL,NULL,NULL,NULL,NULL
+121,13,Heiltsuk,NULL,1,2015-08-20 15:12:34,NULL,2015-08-20 15:12:34,NULL,538,"PO BOX 880, BELLA BELLA, BC, V0T 1Z0",NULL,NULL,NULL,NULL,NULL
+122,13,Hesquiaht,NULL,1,2015-08-20 15:12:34,NULL,2015-08-20 15:12:34,NULL,661,"PO BOX 2000, TOFINO, BC, V0R 2Z0",NULL,NULL,NULL,NULL,NULL
+123,13,High Bar,NULL,1,2015-08-20 15:12:34,NULL,2015-08-20 15:12:34,NULL,703,"PO BOX 458, CLINTON, BC, V0K 1K0",NULL,NULL,NULL,NULL,NULL
+124,13,Homalco,NULL,1,2015-08-20 15:12:34,NULL,2015-08-20 15:12:34,NULL,552,"1218 BUTE CRESCENT, CAMPBELL RIVER, BC, V9H 1G5",NULL,NULL,NULL,NULL,NULL
+125,13,Hupacasath First Nation,NULL,1,2015-08-20 15:12:34,NULL,2015-08-20 15:12:34,NULL,664,"PO BOX 211, PORT ALBERNI, BC, V9Y 7M7",NULL,NULL,NULL,NULL,NULL
+126,13,Huu-ay-aht First Nations,NULL,1,2015-08-20 15:12:34,NULL,2015-08-20 15:12:34,NULL,663,"3483 3RD AVE, PORT ALBERNI, BC, V9Y 4E4",NULL,NULL,NULL,NULL,NULL
+127,13,Iskut,NULL,1,2015-08-20 15:12:35,NULL,2015-08-20 15:12:35,NULL,683,"PO BOX 30, ISKUT, BC, V0J 1K0",NULL,NULL,NULL,NULL,NULL
+128,13,K'Ã³moks First Nation,NULL,1,2015-08-20 15:12:35,NULL,2015-08-20 15:12:35,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+129,13,Ka:'yu:'k't'h'/Che:k:tles7et'h' First Nations,NULL,1,2015-08-20 15:12:35,NULL,2015-08-20 15:12:35,NULL,638,"GENERAL DELIVERY, KYUQUOT, BC, V0P 1J0",NULL,NULL,NULL,NULL,NULL
+130,13,Kanaka Bar,NULL,1,2015-08-20 15:12:35,NULL,2015-08-20 15:12:35,NULL,704,"PO BOX 610, 2693 SIWASH ROAD, LYTTON, BC, V0K 1Z0",NULL,NULL,NULL,NULL,NULL
+131,13,Katzie,NULL,1,2015-08-20 15:12:35,NULL,2015-08-20 15:12:35,NULL,563,"10946 KATZIE ROAD, PITT MEADOWS, BC, V3Y 2G6",NULL,NULL,NULL,NULL,NULL
+132,13,Kispiox,NULL,1,2015-08-20 15:12:35,NULL,2015-08-20 15:12:35,NULL,532,"1336 KISPIOX VALLEY ROAD, KISPIOX, BC, V0J 1Y4",NULL,NULL,NULL,NULL,NULL
+133,13,Kitasoo,NULL,1,2015-08-20 15:12:35,NULL,2015-08-20 15:12:35,NULL,540,"GENERAL DELIVERY, KLEMTU, BC, V0T 1L0",NULL,NULL,NULL,NULL,NULL
+134,13,Kitselas,NULL,1,2015-08-20 15:12:36,NULL,2015-08-20 15:12:36,NULL,680,"2225 GITAUS ROAD, TERRACE, BC, V8G 0A9",NULL,NULL,NULL,NULL,NULL
+135,13,Kitsumkalum,NULL,1,2015-08-20 15:12:36,NULL,2015-08-20 15:12:36,NULL,681,"PO BOX 544, TERRACE, BC, V8G 4B5",NULL,NULL,NULL,NULL,NULL
+136,13,Klahoose First Nation,NULL,1,2015-08-20 15:12:36,NULL,2015-08-20 15:12:36,NULL,553,"PO BOX 9, CORTES ISLAND, SQUIRREL COVE, BC, V0P 1T0",NULL,NULL,NULL,NULL,NULL
+137,13,Kwadacha,NULL,1,2015-08-20 15:12:36,NULL,2015-08-20 15:12:36,NULL,610,"497 - 3RD AVENUE, PRINCE GEORGE, BC, V2L 3C1",NULL,NULL,NULL,NULL,NULL
+138,13,Kwakiutl,NULL,1,2015-08-20 15:12:36,NULL,2015-08-20 15:12:36,NULL,626,"PO BOX 1440, PORT HARDY, BC, V0N 2P0",NULL,NULL,NULL,NULL,NULL
+139,13,Kwantlen First Nation,NULL,1,2015-08-20 15:12:36,NULL,2015-08-20 15:12:36,NULL,564,"23690 GABRIEL LANE, PO BOX 108, FORT LANGLEY, BC, V1M 2R4",NULL,NULL,NULL,NULL,NULL
+140,13,Kwaw-kwaw-Apilt,NULL,1,2015-08-20 15:12:36,NULL,2015-08-20 15:12:36,NULL,580,"BLDG#10 3RD FLOOR, 7201 VEDDER RD, CHILLIWACK, BC, V2R 4L9",NULL,NULL,NULL,NULL,NULL
+141,13,Kwiakah,NULL,1,2015-08-20 15:12:37,NULL,2015-08-20 15:12:37,NULL,628,"PO BOX 437, STATION A, CAMPBELL RIVER, BC, V9W 5B6",NULL,NULL,NULL,NULL,NULL
+142,13,Kwikwasut'inuxw Haxwa'mis,NULL,1,2015-08-20 15:12:37,NULL,2015-08-20 15:12:37,NULL,625,"PO BOX 10, ALERT BAY, BC, V0N 1A0",NULL,NULL,NULL,NULL,NULL
+143,13,Kwikwetlem First Nation,NULL,1,2015-08-20 15:12:37,NULL,2015-08-20 15:12:37,NULL,560,"2 - 65 COLONY FARM ROAD, COQUITLAM, BC, V3C 5X9",NULL,NULL,NULL,NULL,NULL
+144,13,Lake Babine Nation,NULL,1,2015-08-20 15:12:37,NULL,2015-08-20 15:12:37,NULL,607,"PO BOX 879, BURNS LAKE, BC, V0J 1E0",NULL,NULL,NULL,NULL,NULL
+145,13,Lake Cowichan First Nation,NULL,1,2015-08-20 15:12:37,NULL,2015-08-20 15:12:37,NULL,643,"313B DEER ROAD, PO BOX 159, LAKE COWICHAN, BC, V0R 2G0",NULL,NULL,NULL,NULL,NULL
+146,13,Lax Kw'alaams,NULL,1,2015-08-20 15:12:37,NULL,2015-08-20 15:12:37,NULL,674,"206 SHASHAAK STREET, LAX KW'ALAAMS, BC, V0V 1H0",NULL,NULL,NULL,NULL,NULL
+147,13,Leq' a: mel First Nation,NULL,1,2015-08-20 15:12:37,NULL,2015-08-20 15:12:37,NULL,579,"43101 LEQ'A: MEL WAY, DEROCHE, BC, V0M 1G0",NULL,NULL,NULL,NULL,NULL
+148,13,Lheidli T'enneh,NULL,1,2015-08-20 15:12:37,NULL,2015-08-20 15:12:37,NULL,611,"1041 WHENUN ROAD, PRINCE GEORGE, BC, V2K 5X8",NULL,NULL,NULL,NULL,NULL
+149,13,Lhoosk'uz Dene Nation,NULL,1,2015-08-20 15:12:38,NULL,2015-08-20 15:12:38,NULL,721,"PO BOX 4339, QUESNEL, BC, V2J 3J8",NULL,NULL,NULL,NULL,NULL
+150,13,Lhtako Dene Nation,NULL,1,2015-08-20 15:12:38,NULL,2015-08-20 15:12:38,NULL,715,"1515 ARBUTUS ROAD, PO BOX 4069, QUESNEL, BC, V2J 3J2",NULL,NULL,NULL,NULL,NULL
+151,13,Lil'wat Nation,NULL,1,2015-08-20 15:12:38,NULL,2015-08-20 15:12:38,NULL,557,"PO BOX 602, MOUNT CURRIE, BC, V0N 2K0",NULL,NULL,NULL,NULL,NULL
+152,13,Little Shuswap Lake,NULL,1,2015-08-20 15:12:38,NULL,2015-08-20 15:12:38,NULL,605,"PO BOX 790, INVERMERE, BC, V0A 1K0",NULL,NULL,NULL,NULL,NULL
+153,13,Lower Kootenay,NULL,1,2015-08-20 15:12:38,NULL,2015-08-20 15:12:38,NULL,606,"830 SIMON ROAD, CRESTON, BC, V0B 1G2",NULL,NULL,NULL,NULL,NULL
+154,13,Lower Nicola,NULL,1,2015-08-20 15:12:38,NULL,2015-08-20 15:12:38,NULL,695,"181 NAWISHASKIN LANE, MERRITT, BC, V1K 0A7",NULL,NULL,NULL,NULL,NULL
+155,13,Lower Similkameen,NULL,1,2015-08-20 15:12:38,NULL,2015-08-20 15:12:38,NULL,598,"517TH AVENUE, PO BOX 100, KEREMEOS, BC, V0X 1N0",NULL,NULL,NULL,NULL,NULL
+156,13,Lyackson,NULL,1,2015-08-20 15:12:39,NULL,2015-08-20 15:12:39,NULL,646,"7973A CHEMAINUS ROAD, CHEMAINUS, BC, V0R 1K5",NULL,NULL,NULL,NULL,NULL
+157,13,Lytton,NULL,1,2015-08-20 15:12:39,NULL,2015-08-20 15:12:39,NULL,705,"PO BOX 20, LYTTON, BC, V0K 1Z0",NULL,NULL,NULL,NULL,NULL
+158,13,Malahat First Nation,NULL,1,2015-08-20 15:12:39,NULL,2015-08-20 15:12:39,NULL,647,"110 THUNDER ROAD, RR 4, MILL BAY, BC, V0R 2P4",NULL,NULL,NULL,NULL,NULL
+159,13,Mamalilikulla-Qwe'Qwa'Sot'Em,NULL,1,2015-08-20 15:12:39,NULL,2015-08-20 15:12:39,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+160,13,Matsqui,NULL,1,2015-08-20 15:12:39,NULL,2015-08-20 15:12:39,NULL,565,"PO BOX 10, MATSQUI, BC, V4X 3R2",NULL,NULL,NULL,NULL,NULL
+161,13,McLeod Lake,NULL,1,2015-08-20 15:12:39,NULL,2015-08-20 15:12:39,NULL,618,"GENERAL DELIVERY, MCLEOD LAKE, BC, V0J 2G0",NULL,NULL,NULL,NULL,NULL
+162,13,Metlakatla,NULL,1,2015-08-20 15:12:39,NULL,2015-08-20 15:12:39,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+163,13,Moricetown,NULL,1,2015-08-20 15:12:39,NULL,2015-08-20 15:12:39,NULL,530,"205 BEAVER ROAD, SMITHERS, BC, V0J 2N1",NULL,NULL,NULL,NULL,NULL
+164,13,Mowachaht/Muchalaht,NULL,1,2015-08-20 15:12:40,NULL,2015-08-20 15:12:40,NULL,630,"PO BOX 459, GOLD RIVER, BC, V0P 1G0",NULL,NULL,NULL,NULL,NULL
+165,13,Musqueam,NULL,1,2015-08-20 15:12:40,NULL,2015-08-20 15:12:40,NULL,550,"6735 SALISH DRIVE, VANCOUVER, BC, V6N 4C4",NULL,NULL,NULL,NULL,NULL
+166,13,N'Quatqua,NULL,1,2015-08-20 15:12:40,NULL,2015-08-20 15:12:40,NULL,556,"PO BOX 88, D'ARCY, BC, V0N 1L0",NULL,NULL,NULL,NULL,NULL
+167,13,Nadleh Whuten,NULL,1,2015-08-20 15:12:40,NULL,2015-08-20 15:12:40,NULL,612,"PO BOX 36, FORT FRASER, BC, V0J 1N0",NULL,NULL,NULL,NULL,NULL
+168,13,Nak'azdli Whut'en,NULL,1,2015-08-20 15:12:40,NULL,2015-08-20 15:12:40,NULL,614,"PO BOX 1329, FORT ST. JAMES, BC, V0J 1P0",NULL,NULL,NULL,NULL,NULL
+169,13,Namgis First Nation,NULL,1,2015-08-20 15:12:40,NULL,2015-08-20 15:12:40,NULL,631,"PO BOX 210, ALERT BAY, BC, V0N 1A0",NULL,NULL,NULL,NULL,NULL
+170,13,Nanoose First Nation,NULL,1,2015-08-20 15:12:40,NULL,2015-08-20 15:12:40,NULL,649,"209 MALLARD WAY, LANTZVILLE, BC, V0R 2H0",NULL,NULL,NULL,NULL,NULL
+171,13,Nazko First Nation,NULL,1,2015-08-20 15:12:40,NULL,2015-08-20 15:12:40,NULL,720,"PO BOX 4129, QUESNEL, BC, V2J 3J2",NULL,NULL,NULL,NULL,NULL
+172,13,Nee-Tahi-Buhn,NULL,1,2015-08-20 15:12:41,NULL,2015-08-20 15:12:41,NULL,726,"47805 OLSON ROAD, BURNS LAKE, BC, V0J 1E4",NULL,NULL,NULL,NULL,NULL
+173,13,Neskonlith,NULL,1,2015-08-20 15:12:41,NULL,2015-08-20 15:12:41,NULL,690,"PO BOX 318, CHASE, BC, V0E 1M0",NULL,NULL,NULL,NULL,NULL
+174,13,New Westminster,NULL,1,2015-08-20 15:12:41,NULL,2015-08-20 15:12:41,NULL,566,"105 - 3680 RAE AVENUE, VANCOUVER, BC, V5R 2P5",NULL,NULL,NULL,NULL,NULL
+175,13,Nicomen,NULL,1,2015-08-20 15:12:41,NULL,2015-08-20 15:12:41,NULL,696,"PO BOX 670, LYTTON, BC, V0K 1Z0",NULL,NULL,NULL,NULL,NULL
+176,13,Nisga'a Village of Gingolx,NULL,1,2015-08-20 15:12:41,NULL,2015-08-20 15:12:41,NULL,671,"607 FRONT ST, GINGOLX, BC, V0V 1B0",NULL,NULL,NULL,NULL,NULL
+177,13,Nisga'a Village of Gitwinksihlkw,NULL,1,2015-08-20 15:12:41,NULL,2015-08-20 15:12:41,NULL,679,"PO BOX 1, 3004 TS'OOHL TS'AP AVE, GITWINKSIHLKW, BC, V0J 3T0",NULL,NULL,NULL,NULL,NULL
+178,13,Nisga'a Village of Laxgalt'sap,NULL,1,2015-08-20 15:12:41,NULL,2015-08-20 15:12:41,NULL,678,"PO BOX 200, 416 NORTH RD, GREENVILLE, BC, V0J 1X0",NULL,NULL,NULL,NULL,NULL
+179,13,Nisga'a Village of New Aiyansh,NULL,1,2015-08-20 15:12:41,NULL,2015-08-20 15:12:41,NULL,677,"PO BOX 233, 5200 SKATEEN DR, NEW AIYANSH, BC, V0J 1A0",NULL,NULL,NULL,NULL,NULL
+180,13,Nooaitch,NULL,1,2015-08-20 15:12:42,NULL,2015-08-20 15:12:42,NULL,699,"2954 SHACKELLY ROAD, MERRITT, BC, V1K 1N9",NULL,NULL,NULL,NULL,NULL
+181,13,Nuchatlaht,NULL,1,2015-08-20 15:12:42,NULL,2015-08-20 15:12:42,NULL,639,"PO BOX 40, ZEBALLOS, BC, V0P 2A0",NULL,NULL,NULL,NULL,NULL
+182,13,Nuxalk Nation,NULL,1,2015-08-20 15:12:42,NULL,2015-08-20 15:12:42,NULL,539,"PO BOX 65, BELLA COOLA, BC, V0T 1C0",NULL,NULL,NULL,NULL,NULL
+183,13,Okanagan,NULL,1,2015-08-20 15:12:42,NULL,2015-08-20 15:12:42,NULL,616,"12420 WESTSIDE RD, VERNON, BC, V1H 2A4",NULL,NULL,NULL,NULL,NULL
+184,13,Old Massett Village Council,NULL,1,2015-08-20 15:12:42,NULL,2015-08-20 15:12:42,NULL,669,"PO BOX 189, OLD MASSET, BC, V0T 1M0",NULL,NULL,NULL,NULL,NULL
+185,13,Oregon Jack Creek,NULL,1,2015-08-20 15:12:42,NULL,2015-08-20 15:12:42,NULL,692,"PO BOX 940, ASHCROFT, BC, V0K 1A0",NULL,NULL,NULL,NULL,NULL
+186,13,Osoyoos,NULL,1,2015-08-20 15:12:42,NULL,2015-08-20 15:12:42,NULL,596,"1155 SEN POK CHIN BLVD, OLIVER, BC, V0H 1T8",NULL,NULL,NULL,NULL,NULL
+187,13,Oweekeno/Wuikinuxv Nation,NULL,1,2015-08-20 15:12:43,NULL,2015-08-20 15:12:43,NULL,541,"WUIKINUXV VILLAGE RIVERS INLET, PO BOX 3500, PORT HARDY, BC, V0N 2P0",NULL,NULL,NULL,NULL,NULL
+188,13,Pacheedaht First Nation,NULL,1,2015-08-20 15:12:43,NULL,2015-08-20 15:12:43,NULL,658,"GENERAL DELIVERY, PORT RENFREW, BC, V0S 1K0",NULL,NULL,NULL,NULL,NULL
+189,13,Pauquachin,NULL,1,2015-08-20 15:12:43,NULL,2015-08-20 15:12:43,NULL,652,"9010 WEST SAANICH ROAD, SIDNEY, BC, V8L 5W4",NULL,NULL,NULL,NULL,NULL
+190,13,Penelakut Tribe,NULL,1,2015-08-20 15:12:43,NULL,2015-08-20 15:12:43,NULL,650,"PO BOX 360, CHEMAINUS, BC, V0R 1K0",NULL,NULL,NULL,NULL,NULL
+191,13,Penticton,NULL,1,2015-08-20 15:12:43,NULL,2015-08-20 15:12:43,NULL,597,"RR 2 SITE 80 COMP 19, PENTICTON, BC, V2A 6J7",NULL,NULL,NULL,NULL,NULL
+192,13,Peters,NULL,1,2015-08-20 15:12:43,NULL,2015-08-20 15:12:43,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+193,13,Popkum,NULL,1,2015-08-20 15:12:44,NULL,2015-08-20 15:12:44,NULL,585,"54951 JULSETH ROAD, POPKUM, BC, V0X 1X1",NULL,NULL,NULL,NULL,NULL
+194,13,Prophet River First Nation,NULL,1,2015-08-20 15:12:44,NULL,2015-08-20 15:12:44,NULL,544,"PO BOX 3250, FORT NELSON, BC, V0C 1R0",NULL,NULL,NULL,NULL,NULL
+195,13,Qualicum First Nation,NULL,1,2015-08-20 15:12:44,NULL,2015-08-20 15:12:44,NULL,651,"5850 RIVER ROAD, QUALICUM BEACH, BC, V9K 1Z5",NULL,NULL,NULL,NULL,NULL
+196,13,Quatsino,NULL,1,2015-08-20 15:12:44,NULL,2015-08-20 15:12:44,NULL,633,"305 Quattishe Road, COAL HARBOUR, BC, V0N 1K0",NULL,NULL,NULL,NULL,NULL
+197,13,Saik'uz First Nation,NULL,1,2015-08-20 15:12:44,NULL,2015-08-20 15:12:44,NULL,615,"135 JOSEPH STREET, VANDERHOOF, BC, V0J 3A1",NULL,NULL,NULL,NULL,NULL
+198,13,Samahquam,NULL,1,2015-08-20 15:12:44,NULL,2015-08-20 15:12:44,NULL,567,"PO BOX 610, MOUNT CURRIE, BC, V0N 2K0",NULL,NULL,NULL,NULL,NULL
+199,13,Saulteau First Nations,NULL,1,2015-08-20 15:12:44,NULL,2015-08-20 15:12:44,NULL,542,"PO BOX 1020, CHETWYND, BC, V0C 1J0",NULL,NULL,NULL,NULL,NULL
+200,13,Scowlitz,NULL,1,2015-08-20 15:12:44,NULL,2015-08-20 15:12:44,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+201,13,Seabird Island,NULL,1,2015-08-20 15:12:45,NULL,2015-08-20 15:12:45,NULL,581,"PO BOX 650, AGASSIZ, BC, V0M 1A0",NULL,NULL,NULL,NULL,NULL
+202,13,Sechelt,NULL,1,2015-08-20 15:12:45,NULL,2015-08-20 15:12:45,NULL,551,"PO BOX 740, SECHELT, BC, V0N 3A0",NULL,NULL,NULL,NULL,NULL
+203,13,Semiahmoo,NULL,1,2015-08-20 15:12:45,NULL,2015-08-20 15:12:45,NULL,569,"16049 BEACH ROAD, SURREY, BC, V3S 9R6",NULL,NULL,NULL,NULL,NULL
+204,13,Seton Lake,NULL,1,2015-08-20 15:12:45,NULL,2015-08-20 15:12:45,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+205,13,Shackan,NULL,1,2015-08-20 15:12:45,NULL,2015-08-20 15:12:45,NULL,698,"2099 GRANITE AVENUE, PO BOX 1360, MERRITT, BC, V1K 1B8",NULL,NULL,NULL,NULL,NULL
+206,13,Shuswap,NULL,1,2015-08-20 15:12:45,NULL,2015-08-20 15:12:45,NULL,605,"PO BOX 790, INVERMERE, BC, V0A 1K0",NULL,NULL,NULL,NULL,NULL
+207,13,Shxw'ow'hamel First Nation,NULL,1,2015-08-20 15:12:45,NULL,2015-08-20 15:12:45,NULL,587,"58700A ST. ELMO ROAD, HOPE, BC, V0X 1L2",NULL,NULL,NULL,NULL,NULL
+208,13,ShxwhÃ¡:y Village,NULL,1,2015-08-20 15:12:45,NULL,2015-08-20 15:12:45,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+209,13,Simpcw First Nation,NULL,1,2015-08-20 15:12:46,NULL,2015-08-20 15:12:46,NULL,691,"PO BOX 220, BARRIERE, BC, V0E 1E0",NULL,NULL,NULL,NULL,NULL
+210,13,Siska,NULL,1,2015-08-20 15:12:46,NULL,2015-08-20 15:12:46,NULL,706,"PO BOX 519, LYTTON, BC, V0K 1Z0",NULL,NULL,NULL,NULL,NULL
+211,13,Skatin Nations,NULL,1,2015-08-20 15:12:46,NULL,2015-08-20 15:12:46,NULL,562,"PO BOX 190, PEMBERTON, BC, V0N 2L0",NULL,NULL,NULL,NULL,NULL
+212,13,Skawahlook First Nation,NULL,1,2015-08-20 15:12:46,NULL,2015-08-20 15:12:46,NULL,582,"58611A LOUGHEED HWY, AGASSIZ, BC, V0M 1A2",NULL,NULL,NULL,NULL,NULL
+213,13,Skeetchestn,NULL,1,2015-08-20 15:12:46,NULL,2015-08-20 15:12:46,NULL,687,"PO BOX 178, SAVONA, BC, V0K 2J0",NULL,NULL,NULL,NULL,NULL
+214,13,Skidegate,NULL,1,2015-08-20 15:12:46,NULL,2015-08-20 15:12:46,NULL,670,"PO BOX 1301, SKIDEGATE, BC, V0T 1S1",NULL,NULL,NULL,NULL,NULL
+215,13,Skin Tyee,NULL,1,2015-08-20 15:12:46,NULL,2015-08-20 15:12:46,NULL,729,"PO BOX 131, SOUTHBANK, BC, V0J 2P0",NULL,NULL,NULL,NULL,NULL
+216,13,Skowkale,NULL,1,2015-08-20 15:12:46,NULL,2015-08-20 15:12:46,NULL,571,"PO BOX 2159, SARDIS, BC, V2R 1A7",NULL,NULL,NULL,NULL,NULL
+217,13,Skuppah,NULL,1,2015-08-20 15:12:47,NULL,2015-08-20 15:12:47,NULL,707,"PO BOX 548, LYTTON, BC, V0K 1Z0",NULL,NULL,NULL,NULL,NULL
+218,13,Skwah,NULL,1,2015-08-20 15:12:47,NULL,2015-08-20 15:12:47,NULL,573,"PO BOX 178, CHILLIWACK, BC, V2P 6H7",NULL,NULL,NULL,NULL,NULL
+219,13,Sliammon,NULL,1,2015-08-20 15:12:47,NULL,2015-08-20 15:12:47,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+220,13,Snuneymuxw First Nation,NULL,1,2015-08-20 15:12:47,NULL,2015-08-20 15:12:47,NULL,648,"668 CENTRE STREET, NANAIMO, BC, V9R 4Z4",NULL,NULL,NULL,NULL,NULL
+221,13,Soda Creek,NULL,1,2015-08-20 15:12:47,NULL,2015-08-20 15:12:47,NULL,716,"3405 MOUNTAIN HOUSE ROAD, WILLIAMS LAKE, BC, V2G 5L5",NULL,NULL,NULL,NULL,NULL
+222,13,Songhees First Nation,NULL,1,2015-08-20 15:12:47,NULL,2015-08-20 15:12:47,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+223,13,Soowahlie,NULL,1,2015-08-20 15:12:47,NULL,2015-08-20 15:12:47,NULL,572,"4172 SOOWAHLIE ROAD, CULTUS LAKE, BC, V2R 4Y2",NULL,NULL,NULL,NULL,NULL
+224,13,Splatsin,NULL,1,2015-08-20 15:12:48,NULL,2015-08-20 15:12:48,NULL,600,"PO BOX 460, ENDERBY, BC, V0E 1V0",NULL,NULL,NULL,NULL,NULL
+225,13,Spuzzum,NULL,1,2015-08-20 15:12:48,NULL,2015-08-20 15:12:48,NULL,708,"SITE 3, C 11, RR 1, YALE, BC, V0K 2S0",NULL,NULL,NULL,NULL,NULL
+226,13,Squamish,NULL,1,2015-08-20 15:12:48,NULL,2015-08-20 15:12:48,NULL,555,"PO BOX 86131, NORTH VANCOUVER, BC, V7L 4J5",NULL,NULL,NULL,NULL,NULL
+227,13,Squiala First Nation,NULL,1,2015-08-20 15:12:48,NULL,2015-08-20 15:12:48,NULL,574,"45005 SQUIALA ROAD, CHILLIWACK, BC, V2P 7Z9",NULL,NULL,NULL,NULL,NULL
+228,13,St. Mary's,NULL,1,2015-08-20 15:12:48,NULL,2015-08-20 15:12:48,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+229,13,Stellat'en First Nation,NULL,1,2015-08-20 15:12:48,NULL,2015-08-20 15:12:48,NULL,613,"PO BOX 760, FRASER LAKE, BC, V0J 1S0",NULL,NULL,NULL,NULL,NULL
+230,13,Sts'ailes,NULL,1,2015-08-20 15:12:48,NULL,2015-08-20 15:12:48,NULL,559,"4690 SALISH WAY, CHEHALIS ROAD, AGASSIZ, BC, V0M 1A1",NULL,NULL,NULL,NULL,NULL
+231,13,Stswecem'c Xgat'tem First Nation,NULL,1,2015-08-20 15:12:49,NULL,2015-08-20 15:12:49,NULL,723,"GENERAL DELIVERY, DOG CREEK, BC, V0L 1J0",NULL,NULL,NULL,NULL,NULL
+232,13,Stz'uminus First Nation,NULL,1,2015-08-20 15:12:49,NULL,2015-08-20 15:12:49,NULL,641,"12611-A TRANS CANADA HIGHWAY, LADYSMITH, BC, V9G 1M5",NULL,NULL,NULL,NULL,NULL
+233,13,Sumas First Nation,NULL,1,2015-08-20 15:12:49,NULL,2015-08-20 15:12:49,NULL,578,"2788 SUMAS MOUNTAIN ROAD, ABBOTSFORD, BC, V3G 2J2",NULL,NULL,NULL,NULL,NULL
+234,13,T'Sou-ke First Nation,NULL,1,2015-08-20 15:12:49,NULL,2015-08-20 15:12:49,NULL,657,"PO BOX 307, 2154 LAZZAR ROAD, SOOKE, BC, V9Z 1G1",NULL,NULL,NULL,NULL,NULL
+235,13,T'it'q'et,NULL,1,2015-08-20 15:12:49,NULL,2015-08-20 15:12:49,NULL,593,"PO BOX 615, LILLOOET, BC, V0K 1V0",NULL,NULL,NULL,NULL,NULL
+236,13,Tahltan,NULL,1,2015-08-20 15:12:49,NULL,2015-08-20 15:12:49,NULL,682,"PO BOX 46, TELEGRAPH CREEK, BC, V0J 2W0",NULL,NULL,NULL,NULL,NULL
+237,13,Takla Lake First Nation,NULL,1,2015-08-20 15:12:49,NULL,2015-08-20 15:12:49,NULL,608,"11 - 1839 1ST AVENUE, PRINCE GEORGE, BC, V2L 2Y8",NULL,NULL,NULL,NULL,NULL
+238,13,Tk'emlÃºps te SecwÃ©pemc,NULL,1,2015-08-20 15:12:50,NULL,2015-08-20 15:12:50,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+239,13,Tl'azt'en Nation,NULL,1,2015-08-20 15:12:50,NULL,2015-08-20 15:12:50,NULL,617,"PO BOX 670, FORT ST. JAMES, BC, V0J 1P0",NULL,NULL,NULL,NULL,NULL
+240,13,Tl'etinqox Government,NULL,1,2015-08-20 15:12:50,NULL,2015-08-20 15:12:50,NULL,712,"PO BOX 168, ALEXIS CREEK, BC, V0L 1A0",NULL,NULL,NULL,NULL,NULL
+241,13,Tla-o-qui-aht First Nations,NULL,1,2015-08-20 15:12:50,NULL,2015-08-20 15:12:50,NULL,660,"PO BOX 18, TOFINO, BC, V0R 2Z0",NULL,NULL,NULL,NULL,NULL
+242,13,Tlatlasikwala,NULL,1,2015-08-20 15:12:50,NULL,2015-08-20 15:12:50,NULL,632,"PO BOX 339, PORT HARDY, BC, V0N 2P0",NULL,NULL,NULL,NULL,NULL
+243,13,Tlowitsis Tribe,NULL,1,2015-08-20 15:12:50,NULL,2015-08-20 15:12:50,NULL,637,"1345 BUTE CRESCENT, CAMPBELL RIVER, BC, V9H 1G6",NULL,NULL,NULL,NULL,NULL
+244,13,Tobacco Plains,NULL,1,2015-08-20 15:12:50,NULL,2015-08-20 15:12:50,NULL,603,"PO BOX 76, GRASMERE, BC, V0B 1R0",NULL,NULL,NULL,NULL,NULL
+245,13,Toosey,NULL,1,2015-08-20 15:12:50,NULL,2015-08-20 15:12:50,NULL,718,"PO BOX 80, RISKE CREEK, BC, V0L 1T0",NULL,NULL,NULL,NULL,NULL
+246,13,Toquaht,NULL,1,2015-08-20 15:12:51,NULL,2015-08-20 15:12:51,NULL,666,"PO BOX 759, 1316 PINE STREET, UCLUELET, BC, V0R 3A0",NULL,NULL,NULL,NULL,NULL
+247,13,Ts'kw'aylaxw First Nation,NULL,1,2015-08-20 15:12:51,NULL,2015-08-20 15:12:51,NULL,594,"PO BOX 2200, LILLOOET, BC, V0K 1V0",NULL,NULL,NULL,NULL,NULL
+248,13,Tsartlip,NULL,1,2015-08-20 15:12:51,NULL,2015-08-20 15:12:51,NULL,653,"PO BOX 70, 800 STELLYS CROSS ROAD, BRENTWOOD BAY, BC, V8M 1R3",NULL,NULL,NULL,NULL,NULL
+249,13,Tsawout First Nation,NULL,1,2015-08-20 15:12:51,NULL,2015-08-20 15:12:51,NULL,654,"7728 TETAYUT ROAD, SAANICHTON, BC, V8M 2E4",NULL,NULL,NULL,NULL,NULL
+250,13,Tsawwassen First Nation,NULL,1,2015-08-20 15:12:51,NULL,2015-08-20 15:12:51,NULL,577,"1926 TSAWWASSEN DRIVE, DELTA, BC, V4M 4G2",NULL,NULL,NULL,NULL,NULL
+251,13,Tsay Keh Dene,NULL,1,2015-08-20 15:12:51,NULL,2015-08-20 15:12:51,NULL,609,"1877 QUEENSWAY STREET, PRINCE GEORGE, BC, V2L 1L9",NULL,NULL,NULL,NULL,NULL
+252,13,Tseshaht,NULL,1,2015-08-20 15:12:51,NULL,2015-08-20 15:12:51,NULL,665,"5091 TSUMA-AS DR, PORT ALBERNI, BC, V9Y 8X9",NULL,NULL,NULL,NULL,NULL
+253,13,Tseycum,NULL,1,2015-08-20 15:12:51,NULL,2015-08-20 15:12:51,NULL,655,"1210 TOTEM LANE, NORTH SAANICH, BC, V8L 5S4",NULL,NULL,NULL,NULL,NULL
+254,13,Tsleil-Waututh Nation,NULL,1,2015-08-20 15:12:52,NULL,2015-08-20 15:12:52,NULL,549,"3075 TAKAYA DRIVE, NORTH VANCOUVER, BC, V7H 3A8",NULL,NULL,NULL,NULL,NULL
+255,13,Tzeachten,NULL,1,2015-08-20 15:12:52,NULL,2015-08-20 15:12:52,NULL,575,"45855 PROMONTORY ROAD, CHILLIWACK, BC, V2R 0H3",NULL,NULL,NULL,NULL,NULL
+256,13,Uchucklesaht,NULL,1,2015-08-20 15:12:52,NULL,2015-08-20 15:12:52,NULL,667,"PO BOX 1118, PORT ALBERNI, BC, V9Y 7L9",NULL,NULL,NULL,NULL,NULL
+257,13,Ucluelet First Nation,NULL,1,2015-08-20 15:12:52,NULL,2015-08-20 15:12:52,NULL,668,"PO BOX 699, UCLUELET, BC, V0R 3A0",NULL,NULL,NULL,NULL,NULL
+258,13,Ulkatcho,NULL,1,2015-08-20 15:12:52,NULL,2015-08-20 15:12:52,NULL,722,"PO BOX 3430, ANAHIM LAKE, BC, V0L 1C0",NULL,NULL,NULL,NULL,NULL
+259,13,Union Bar,NULL,1,2015-08-20 15:12:52,NULL,2015-08-20 15:12:52,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+260,13,Upper Nicola,NULL,1,2015-08-20 15:12:52,NULL,2015-08-20 15:12:52,NULL,697,"PO BOX 3700, MERRITT, BC, V1K 1B8",NULL,NULL,NULL,NULL,NULL
+261,13,Upper Similkameen,NULL,1,2015-08-20 15:12:52,NULL,2015-08-20 15:12:52,NULL,599,"PO BOX 220, HEDLEY, BC, V0X 1K0",NULL,NULL,NULL,NULL,NULL
+262,13,West Moberly First Nations,NULL,1,2015-08-20 15:12:53,NULL,2015-08-20 15:12:53,NULL,545,"PO BOX 90, MOBERLY LAKE, BC, V0C 1X0",NULL,NULL,NULL,NULL,NULL
+263,13,Westbank First Nation,NULL,1,2015-08-20 15:12:53,NULL,2015-08-20 15:12:53,NULL,601,"301-515 HWY 97 SOUTH, KELOWNA, BC, V1Z 3J2",NULL,NULL,NULL,NULL,NULL
+264,13,Wet'suwet'en First Nation,NULL,1,2015-08-20 15:12:53,NULL,2015-08-20 15:12:53,NULL,725,"PO BOX 760, BURNS LAKE, BC, V0J 1E0",NULL,NULL,NULL,NULL,NULL
+265,13,Whispering Pines/Clinton,NULL,1,2015-08-20 15:12:53,NULL,2015-08-20 15:12:53,NULL,702,"615 WHISPERING PINES DRIVE, KAMLOOPS, BC, V2B 8S4",NULL,NULL,NULL,NULL,NULL
+266,13,Williams Lake,NULL,1,2015-08-20 15:12:53,NULL,2015-08-20 15:12:53,NULL,719,"2672 INDIAN DRIVE, WILLIAMS LAKE, BC, V2G 5K9",NULL,NULL,NULL,NULL,NULL
+267,13,Xaxli'p,NULL,1,2015-08-20 15:12:53,NULL,2015-08-20 15:12:53,NULL,592,"PO BOX 1330, LILLOOET, BC, V0K 1V0",NULL,NULL,NULL,NULL,NULL
+268,13,Xeni Gwet'in First Nations Government,NULL,1,2015-08-20 15:12:53,NULL,2015-08-20 15:12:53,NULL,714,"GENERAL DELIVERY, NEMIAH VALLEY, BC, V0L 1X0",NULL,NULL,NULL,NULL,NULL
+269,13,Yakweakwioose,NULL,1,2015-08-20 15:12:54,NULL,2015-08-20 15:12:54,NULL,576,"RR 2, 7176 CHILLIWACK RIVER ROAD, SARDIS, BC, V2R 1B1",NULL,NULL,NULL,NULL,NULL
+270,13,Yale First Nation,NULL,1,2015-08-20 15:12:54,NULL,2015-08-20 15:12:54,NULL,589,"PO BOX 1869, HOPE, BC, V0X 1L0",NULL,NULL,NULL,NULL,NULL
+271,13,Yekooche First Nation,NULL,1,2015-08-20 15:12:54,NULL,2015-08-20 15:12:54,NULL,728,"1890 - 3RD AVENUE, PRINCE GEORGE, BC, V2M 1G4",NULL,NULL,NULL,NULL,NULL
+272,13,Yunesit'in Government,NULL,1,2015-08-20 15:12:54,NULL,2015-08-20 15:12:54,NULL,717,"PO BOX 158, HANCEVILLE, BC, V0L 1K0",NULL,NULL,NULL,NULL,NULL
+273,13,?Akisq'nuk First Nation,NULL,1,2015-08-20 15:13:19,NULL,2015-08-20 15:13:19,NULL,604,"3050 HIGHWAY 93 / 95, WINDERMERE, BC, V0B 2L2",NULL,NULL,NULL,NULL,NULL
+274,14,Alexander,NULL,1,2015-08-20 15:15:12,NULL,2015-08-20 15:15:12,NULL,438,"PO BOX 3419, MORINVILLE, AB, T8R 1S3",NULL,NULL,NULL,NULL,NULL
+275,14,Alexis Nakota Sioux Nation,NULL,1,2015-08-20 15:15:12,NULL,2015-08-20 15:15:12,NULL,437,"PO BOX 7, GLENEVIS, AB, T0E 0X0",NULL,NULL,NULL,NULL,NULL
+276,14,Athabasca Chipewyan First Nation,NULL,1,2015-08-20 15:15:12,NULL,2015-08-20 15:15:12,NULL,463,"PO BOX 366, FORT CHIPEWYAN, AB, T0P 1B0",NULL,NULL,NULL,NULL,NULL
+277,14,Bearspaw,NULL,1,2015-08-20 15:15:12,NULL,2015-08-20 15:15:12,NULL,473, ,NULL,NULL,NULL,NULL,NULL
+278,14,Beaver First Nation,NULL,1,2015-08-20 15:15:12,NULL,2015-08-20 15:15:12,NULL,445,"PO BOX 270, HIGH LEVEL, AB, T0H 1Z0",NULL,NULL,NULL,NULL,NULL
+279,14,Beaver Lake Cree Nation,NULL,1,2015-08-20 15:15:12,NULL,2015-08-20 15:15:12,NULL,460,"PO BOX 960, LAC LA BICHE, AB, T0A 2C0",NULL,NULL,NULL,NULL,NULL
+280,14,Bigstone Cree Nation,NULL,1,2015-08-20 15:15:12,NULL,2015-08-20 15:15:12,NULL,458,"PO BOX 960, WABASCA, AB, T0G 2K0",NULL,NULL,NULL,NULL,NULL
+281,14,Blood,NULL,1,2015-08-20 15:15:12,NULL,2015-08-20 15:15:12,NULL,435,"PO BOX 60, STANDOFF, AB, T0L 1Y0",NULL,NULL,NULL,NULL,NULL
+282,14,Chiniki,NULL,1,2015-08-20 15:15:13,NULL,2015-08-20 15:15:13,NULL,433,"PO BOX 40, MORLEY, AB, T0L 1N0",NULL,NULL,NULL,NULL,NULL
+283,14,Chipewyan Prairie First Nation,NULL,1,2015-08-20 15:15:13,NULL,2015-08-20 15:15:13,NULL,470,"GENERAL DELIVERY, CHARD, AB, T0P 1G0",NULL,NULL,NULL,NULL,NULL
+284,14,Cold Lake First Nations,NULL,1,2015-08-20 15:15:13,NULL,2015-08-20 15:15:13,NULL,464,"PO BOX 1769, COLD LAKE, AB, T9M 1P4",NULL,NULL,NULL,NULL,NULL
+285,14,Dene Tha',NULL,1,2015-08-20 15:15:13,NULL,2015-08-20 15:15:13,NULL,448,"PO BOX 120, CHATEH, AB, T0H 0S0",NULL,NULL,NULL,NULL,NULL
+286,14,Driftpile First Nation,NULL,1,2015-08-20 15:15:13,NULL,2015-08-20 15:15:13,NULL,450,"GENERAL DELIVERY, DRIFTPILE, AB, T0G 0V0",NULL,NULL,NULL,NULL,NULL
+287,14,Duncan's First Nation,NULL,1,2015-08-20 15:15:13,NULL,2015-08-20 15:15:13,NULL,451,"PO BOX 148, BROWNVALE, AB, T0H 0L0",NULL,NULL,NULL,NULL,NULL
+288,14,Enoch Cree Nation #440,NULL,1,2015-08-20 15:15:13,NULL,2015-08-20 15:15:13,NULL,440,"PO BOX 29, ENOCH, AB, T7X 3Y3",NULL,NULL,NULL,NULL,NULL
+289,14,Ermineskin Tribe,NULL,1,2015-08-20 15:15:13,NULL,2015-08-20 15:15:13,NULL,443,"PO BOX 219, HOBBEMA, AB, T0C 1N0",NULL,NULL,NULL,NULL,NULL
+290,14,Fort McKay First Nation,NULL,1,2015-08-20 15:15:14,NULL,2015-08-20 15:15:14,NULL,467,"PO BOX 5360, FORT MCMURRAY, AB, T9H 3G4",NULL,NULL,NULL,NULL,NULL
+291,14,Fort McMurray #468 First Nation,NULL,1,2015-08-20 15:15:14,NULL,2015-08-20 15:15:14,NULL,468,"PO BOX 6130, STN MAIN, FORT MCMURRAY, AB, T9H 4W1",NULL,NULL,NULL,NULL,NULL
+292,14,Frog Lake,NULL,1,2015-08-20 15:15:14,NULL,2015-08-20 15:15:14,NULL,465,"GENERAL DELIVERY, FROG LAKE, AB, T0A 1M0",NULL,NULL,NULL,NULL,NULL
+293,14,Heart Lake,NULL,1,2015-08-20 15:15:14,NULL,2015-08-20 15:15:14,NULL,469,"PO BOX 447, LAC LA BICHE, AB, T0A 2C0",NULL,NULL,NULL,NULL,NULL
+294,14,Horse Lake First Nation,NULL,1,2015-08-20 15:15:14,NULL,2015-08-20 15:15:14,NULL,449,"PO BOX 303, HYTHE, AB, T0H 2C0",NULL,NULL,NULL,NULL,NULL
+295,14,Kapawe'no First Nation,NULL,1,2015-08-20 15:15:14,NULL,2015-08-20 15:15:14,NULL,452,"PO BOX 10, GROUARD, AB, T0G 1C0",NULL,NULL,NULL,NULL,NULL
+296,14,Kehewin Cree Nation,NULL,1,2015-08-20 15:15:14,NULL,2015-08-20 15:15:14,NULL,466,"PO BOX 220, KEHEWIN, AB, T0A 1C0",NULL,NULL,NULL,NULL,NULL
+297,14,Little Red River Cree Nation,NULL,1,2015-08-20 15:15:14,NULL,2015-08-20 15:15:14,NULL,447,"PO BOX 30, JOHN D'OR PRAIRIE, AB, T0H 3X0",NULL,NULL,NULL,NULL,NULL
+298,14,Loon River Cree,NULL,1,2015-08-20 15:15:15,NULL,2015-08-20 15:15:15,NULL,476,"PO BOX 189, RED EARTH CREEK, AB, T0G 1X0",NULL,NULL,NULL,NULL,NULL
+299,14,Louis Bull,NULL,1,2015-08-20 15:15:15,NULL,2015-08-20 15:15:15,NULL,439,"PO BOX 130, HOBBEMA, AB, T0C 1N0",NULL,NULL,NULL,NULL,NULL
+300,14,Lubicon Lake,NULL,1,2015-08-20 15:15:15,NULL,2015-08-20 15:15:15,NULL,453,"PO BOX1351, ISIDORE, AB, T0H 3B0",NULL,NULL,NULL,NULL,NULL
+301,14,Mikisew Cree First Nation,NULL,1,2015-08-20 15:15:15,NULL,2015-08-20 15:15:15,NULL,461,"PO BOX 90, FORT CHIPEWYAN, AB, T0P 1B0",NULL,NULL,NULL,NULL,NULL
+302,14,Montana,NULL,1,2015-08-20 15:15:15,NULL,2015-08-20 15:15:15,NULL,442,"PO BOX 70, HOBBEMA, AB, T0C 1N0",NULL,NULL,NULL,NULL,NULL
+303,14,O'Chiese,NULL,1,2015-08-20 15:15:15,NULL,2015-08-20 15:15:15,NULL,431,"PO BOX 1570, ROCKY MOUNTAIN HOUSE, AB, T4T 1B2",NULL,NULL,NULL,NULL,NULL
+304,14,Paul,NULL,1,2015-08-20 15:15:15,NULL,2015-08-20 15:15:15,NULL,441,"PO BOX 89, DUFFIELD, AB, T0E 0N0",NULL,NULL,NULL,NULL,NULL
+305,14,Peerless Trout First Nation,NULL,1,2015-08-20 15:15:16,NULL,2015-08-20 15:15:16,NULL,478,"PO BOX 128, PEERLESS LAKE, AB, T0G 2W0",NULL,NULL,NULL,NULL,NULL
+306,14,Piikani Nation,NULL,1,2015-08-20 15:15:16,NULL,2015-08-20 15:15:16,NULL,436,"PO BOX 70, BROCKET, AB, T0K 0H0",NULL,NULL,NULL,NULL,NULL
+307,14,Saddle Lake Cree Nation,NULL,1,2015-08-20 15:15:16,NULL,2015-08-20 15:15:16,NULL,462,"PO BOX 100, SADDLE LAKE, AB, T0A 3T0",NULL,NULL,NULL,NULL,NULL
+308,14,Samson,NULL,1,2015-08-20 15:15:16,NULL,2015-08-20 15:15:16,NULL,444,"PO BOX 159, HOBBEMA, AB, T0C 1N0",NULL,NULL,NULL,NULL,NULL
+309,14,Sawridge First Nation,NULL,1,2015-08-20 15:15:16,NULL,2015-08-20 15:15:16,NULL,454,"PO BOX 326, SLAVE LAKE, AB, T0G 2A0",NULL,NULL,NULL,NULL,NULL
+310,14,Siksika Nation,NULL,1,2015-08-20 15:15:16,NULL,2015-08-20 15:15:16,NULL,430,"PO BOX 1100, SIKSIKA, AB, T0J 3W0",NULL,NULL,NULL,NULL,NULL
+311,14,Smith's Landing First Nation,NULL,1,2015-08-20 15:15:16,NULL,2015-08-20 15:15:16,NULL,477,"PO BOX 1470, FORT SMITH, NT, X0E 0P0",NULL,NULL,NULL,NULL,NULL
+312,14,Stoney,NULL,1,2015-08-20 15:15:17,NULL,2015-08-20 15:15:17,NULL,471,"PO BOX 40, MORLEY, AB, T0L 1N0",NULL,NULL,NULL,NULL,NULL
+313,14,Sturgeon Lake First Nation,"The Sturgeon Lake First Nation (Cree: ᓇᒦᐏ ᓵᑲᐦᐃᑲᓂᕽ, namîwi-sâkahikanihk[1]) is a Cree First Nation band government in Saskatchewan, Canada. Its location is on the eastern shore of Sturgeon Lake about 30 km northwest of Prince Albert",1,2015-08-20 15:15:17,NULL,2022-04-14 20:29:17,"{""id"":""2"",""user_type"":""root"",""display_name"":""Brenden""}",455,"PO BOX 757, VALLEYVIEW, AB, T0H 3N0",NULL,NULL,NULL,NULL,NULL
+314,14,Sucker Creek,NULL,1,2015-08-20 15:15:17,NULL,2015-08-20 15:15:17,NULL,456,"PO BOX 65, ENILDA, AB, T0G 0W0",NULL,NULL,NULL,NULL,NULL
+315,14,Sunchild First Nation,NULL,1,2015-08-20 15:15:17,NULL,2015-08-20 15:15:17,NULL,434,"PO BOX 747, ROCKY MOUNTAIN HOUSE, AB, T4T 1A5",NULL,NULL,NULL,NULL,NULL
+316,14,Swan River First Nation,NULL,1,2015-08-20 15:15:17,NULL,2015-08-20 15:15:17,NULL,457,"PO BOX 270, KINUSO, AB, T0G 1K0",NULL,NULL,NULL,NULL,NULL
+317,14,Tallcree,NULL,1,2015-08-20 15:15:17,NULL,2015-08-20 15:15:17,NULL,446,"PO BOX 100, FORT VERMILION, AB, T0H 1N0",NULL,NULL,NULL,NULL,NULL
+318,14,Tsuu T'ina Nation,NULL,1,2015-08-20 15:15:17,NULL,2015-08-20 15:15:17,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+319,14,Wesley,NULL,1,2015-08-20 15:15:17,NULL,2015-08-20 15:15:17,NULL,475, ,NULL,NULL,NULL,NULL,NULL
+320,14,Whitefish Lake,NULL,1,2015-08-20 15:15:18,NULL,2015-08-20 15:15:18,NULL,459,"GENERAL DELIVERY, ATIKAMEG, AB, T0G 0C0",NULL,NULL,NULL,NULL,NULL
+321,14,Woodland Cree First Nation,NULL,1,2015-08-20 15:15:18,NULL,2015-08-20 15:15:18,NULL,474,"GENERAL DELIVERY, CADOTTE LAKE, AB, T0H 0N0",NULL,NULL,NULL,NULL,NULL
+322,15,Barren Lands,NULL,1,2015-08-20 15:16:48,NULL,2015-08-20 15:16:48,NULL,308,"GENERAL DELIVERY, BROCHET, MB, R0B 0B0",NULL,NULL,NULL,NULL,NULL
+323,15,Berens River,NULL,1,2015-08-20 15:16:48,NULL,2015-08-20 15:16:48,NULL,266,"PO BOX 131, BERENS RIVER, MB, R0B 0A0",NULL,NULL,NULL,NULL,NULL
+324,15,Birdtail Sioux,NULL,1,2015-08-20 15:16:48,NULL,2015-08-20 15:16:48,NULL,284,"PO BOX 22, BEULAH, MB, R0M 0B0",NULL,NULL,NULL,NULL,NULL
+325,15,Black River First Nation,NULL,1,2015-08-20 15:16:48,NULL,2015-08-20 15:16:48,NULL,260,"GENERAL DELIVERY, O'HANLEY, MB, R0E 1K0",NULL,NULL,NULL,NULL,NULL
+326,15,Bloodvein,NULL,1,2015-08-20 15:16:49,NULL,2015-08-20 15:16:49,NULL,267,"GENERAL DELIVERY, BLOODVEIN, MB, R0C 0J0",NULL,NULL,NULL,NULL,NULL
+327,15,Brokenhead Ojibway Nation,NULL,1,2015-08-20 15:16:49,NULL,2015-08-20 15:16:49,NULL,261,"GENERAL DELIVERY, SCANTERBURY, MB, R0E 1W0",NULL,NULL,NULL,NULL,NULL
+328,15,Buffalo Point First Nation,NULL,1,2015-08-20 15:16:49,NULL,2015-08-20 15:16:49,NULL,265,"PO BOX 1037, BUFFALO POINT, MB, R0A 2W0",NULL,NULL,NULL,NULL,NULL
+329,15,Bunibonibee Cree Nation,NULL,1,2015-08-20 15:16:49,NULL,2015-08-20 15:16:49,NULL,301,"GENERAL DELIVERY, OXFORD HOUSE, MB, R0B 1C0",NULL,NULL,NULL,NULL,NULL
+330,15,Canupawakpa Dakota First Nation,NULL,1,2015-08-20 15:16:49,NULL,2015-08-20 15:16:49,NULL,289,"PO BOX 146, PIPESTONE, MB, R0M 1T0",NULL,NULL,NULL,NULL,NULL
+331,15,Chemawawin Cree Nation,NULL,1,2015-08-20 15:16:49,NULL,2015-08-20 15:16:49,NULL,309,"PO BOX 9, EASTERVILLE, MB, R0C 0V0",NULL,NULL,NULL,NULL,NULL
+332,15,Cross Lake Band of Indians,NULL,1,2015-08-20 15:16:49,NULL,2015-08-20 15:16:49,NULL,276,"PO BOX 10, CROSS LAKE, MB, R0B 0J0",NULL,NULL,NULL,NULL,NULL
+333,15,Dakota Plains,NULL,1,2015-08-20 15:16:50,NULL,2015-08-20 15:16:50,NULL,288,"PO BOX 1246, PORTAGE LA PRAIRIE, MB, R1N 3J9",NULL,NULL,NULL,NULL,NULL
+334,15,Dakota Tipi,NULL,1,2015-08-20 15:16:50,NULL,2015-08-20 15:16:50,NULL,295,"2020 DAKOTA DRIVE, DAKOTA TIPI, MB, R1N 3X6",NULL,NULL,NULL,NULL,NULL
+335,15,Dauphin River,NULL,1,2015-08-20 15:16:50,NULL,2015-08-20 15:16:50,NULL,316,"PO BOX 58, GYPSUMVILLE, MB, R0C 1J0",NULL,NULL,NULL,NULL,NULL
+336,15,Ebb and Flow,NULL,1,2015-08-20 15:16:50,NULL,2015-08-20 15:16:50,NULL,280,"PO BOX 159, EBB AND FLOW, MB, R0L 0R0",NULL,NULL,NULL,NULL,NULL
+337,15,Fisher River,NULL,1,2015-08-20 15:16:50,NULL,2015-08-20 15:16:50,NULL,264,"PO BOX 367, KOOSTATAK, MB, R0C 1S0",NULL,NULL,NULL,NULL,NULL
+338,15,Fort Alexander,NULL,1,2015-08-20 15:16:50,NULL,2015-08-20 15:16:50,NULL,262,"PO BOX 3, FORT ALEXANDER, MB, R0E 0P0",NULL,NULL,NULL,NULL,NULL
+339,15,Fox Lake,NULL,1,2015-08-20 15:16:50,NULL,2015-08-20 15:16:50,NULL,305,"PO BOX 369, GILLAM, MB, R0B 0L0",NULL,NULL,NULL,NULL,NULL
+340,15,Gamblers,NULL,1,2015-08-20 15:16:50,NULL,2015-08-20 15:16:50,NULL,294,"PO BOX 250, BINSCARTH, MB, R0J 0G0",NULL,NULL,NULL,NULL,NULL
+341,15,Garden Hill First Nations,NULL,1,2015-08-20 15:16:51,NULL,2015-08-20 15:16:51,NULL,297,"GENERAL DELIVERY, ISLAND LAKE, MB, R0B 0T0",NULL,NULL,NULL,NULL,NULL
+342,15,God's Lake First Nation,NULL,1,2015-08-20 15:16:51,NULL,2015-08-20 15:16:51,NULL,296,"PO BOX 258, GOD'S LAKE NARROWS, MB, R0B 0M0",NULL,NULL,NULL,NULL,NULL
+343,15,Hollow Water,NULL,1,2015-08-20 15:16:51,NULL,2015-08-20 15:16:51,NULL,263,"PO BOX 2561, WANIPIGOW, MB, R0E 2E0",NULL,NULL,NULL,NULL,NULL
+344,15,Keeseekoowenin,"The Keeseekoose First Nation is a Saulteaux band government located in Kamsack, Saskatchewan. The band is named for Chief Kiishikouse (kîšîkôns, ""little sky""), who signed an adhesion to Treaty 4 at Swan Lake, Manitoba",1,2015-08-20 15:16:51,NULL,2022-04-12 22:40:47,"{""id"":""2"",""user_type"":""root"",""display_name"":""Brenden""}",286,"PO BOX 100, ELPHINSTONE, MB, R0J 0N0",NULL,NULL,NULL,NULL,NULL
+345,15,Kinonjeoshtegon First Nation,NULL,1,2015-08-20 15:16:51,NULL,2015-08-20 15:16:51,NULL,268,"PO BOX 210, DALLAS, MB, R0C 0S0",NULL,NULL,NULL,NULL,NULL
+346,15,Lake Manitoba,NULL,1,2015-08-20 15:16:51,NULL,2015-08-20 15:16:51,NULL,271,"PO BOX 1250, LAKE MANITOBA FIRST NATION, MB, R0C 3K0",NULL,NULL,NULL,NULL,NULL
+347,15,Lake St. Martin,NULL,1,2015-08-20 15:16:51,NULL,2015-08-20 15:16:51,NULL,275,"550 BERRY ST, WINNIPEG, MB, R3H 0R9",NULL,NULL,NULL,NULL,NULL
+348,15,Little Grand Rapids,NULL,1,2015-08-20 15:16:51,NULL,2015-08-20 15:16:51,NULL,270,"GENERAL DELIVERY, LITTLE GRAND RAPIDS, MB, R0B 0V0",NULL,NULL,NULL,NULL,NULL
+349,15,Little Saskatchewan,NULL,1,2015-08-20 15:16:52,NULL,2015-08-20 15:16:52,NULL,274,"PO BOX 98, GYPSUMVILLE, MB, R0C 1J0",NULL,NULL,NULL,NULL,NULL
+350,15,Long Plain,NULL,1,2015-08-20 15:16:52,NULL,2015-08-20 15:16:52,NULL,287,"PO BOX 430, PORTAGE LA PRAIRIE, MB, R1N 3B7",NULL,NULL,NULL,NULL,NULL
+351,15,Manto Sipi Cree Nation,NULL,1,2015-08-20 15:16:52,NULL,2015-08-20 15:16:52,NULL,302,"PO BOX 97, GOD'S RIVER, MB, R0B 0N0",NULL,NULL,NULL,NULL,NULL
+352,15,Marcel Colomb First Nation,NULL,1,2015-08-20 15:16:52,NULL,2015-08-20 15:16:52,NULL,328,"PO BOX 1150, LYNN LAKE, MB, R0B 0W0",NULL,NULL,NULL,NULL,NULL
+353,15,Mathias Colomb,NULL,1,2015-08-20 15:16:52,NULL,2015-08-20 15:16:52,NULL,311,"GENERAL DELIVERY, PUKATAWAGAN, MB, R0B 1G0",NULL,NULL,NULL,NULL,NULL
+354,15,Misipawistik Cree Nation,NULL,1,2015-08-20 15:16:52,NULL,2015-08-20 15:16:52,NULL,310,"PO BOX 500, GRAND RAPIDS, MB, R0C 1E0",NULL,NULL,NULL,NULL,NULL
+355,15,Mosakahiken Cree Nation,NULL,1,2015-08-20 15:16:52,NULL,2015-08-20 15:16:52,NULL,312,"GENERAL DELIVERY, MOOSE LAKE, MB, R0B 0Y0",NULL,NULL,NULL,NULL,NULL
+356,15,Nisichawayasihk Cree Nation,NULL,1,2015-08-20 15:16:52,NULL,2015-08-20 15:16:52,NULL,313,"GENERAL DELIVERY, NELSON HOUSE, MB, R0B 1A0",NULL,NULL,NULL,NULL,NULL
+357,15,Northlands,NULL,1,2015-08-20 15:16:53,NULL,2015-08-20 15:16:53,NULL,317,"PO BOX 120, LAC BROCHET, MB, R0B 2E0",NULL,NULL,NULL,NULL,NULL
+358,15,Norway House Cree Nation,NULL,1,2015-08-20 15:16:53,NULL,2015-08-20 15:16:53,NULL,278,"PO BOX 250, NORWAY HOUSE, MB, R0B 1B0",NULL,NULL,NULL,NULL,NULL
+359,15,O-Chi-Chak-Ko-Sipi First Nation,NULL,1,2015-08-20 15:16:53,NULL,2015-08-20 15:16:53,NULL,279,"PO BOX 103, CRANE RIVER, MB, R0L 0M0",NULL,NULL,NULL,NULL,NULL
+360,15,O-Pipon-Na-Piwin Cree Nation,NULL,1,2015-08-20 15:16:53,NULL,2015-08-20 15:16:53,NULL,318,"PO BOX 139, SOUTH INDIAN LAKE, MB, R0B 1N0",NULL,NULL,NULL,NULL,NULL
+361,15,Opaskwayak Cree Nation,NULL,1,2015-08-20 15:16:53,NULL,2015-08-20 15:16:53,NULL,315,"PO BOX 10880, OPASKWAYAK, MB, R0B 2J0",NULL,NULL,NULL,NULL,NULL
+362,15,Pauingassi First Nation,NULL,1,2015-08-20 15:16:53,NULL,2015-08-20 15:16:53,NULL,327,"PO BOX 60, PAUINGASSI, MB, R0B 2G0",NULL,NULL,NULL,NULL,NULL
+363,15,Peguis,NULL,1,2015-08-20 15:16:53,NULL,2015-08-20 15:16:53,NULL,269,"PO BOX 10, PEGUIS RESERVE, MB, R0C 3J0",NULL,NULL,NULL,NULL,NULL
+364,15,Pinaymootang First Nation,NULL,1,2015-08-20 15:16:54,NULL,2015-08-20 15:16:54,NULL,272,"General Delivery, FAIRFORD, MB, R0C 0X0",NULL,NULL,NULL,NULL,NULL
+365,15,Pine Creek,NULL,1,2015-08-20 15:16:54,NULL,2015-08-20 15:16:54,NULL,282,"PO BOX 70, CAMPERVILLE, MB, R0L 0J0",NULL,NULL,NULL,NULL,NULL
+366,15,Poplar River First Nation,NULL,1,2015-08-20 15:16:54,NULL,2015-08-20 15:16:54,NULL,277,"PO BOX 90, NEGGINAN, MB, R0B 0Z0",NULL,NULL,NULL,NULL,NULL
+367,15,Red Sucker Lake,NULL,1,2015-08-20 15:16:54,NULL,2015-08-20 15:16:54,NULL,300,"GENERAL DELIVERY, RED SUCKER LAKE, MB, R0B 1H0",NULL,NULL,NULL,NULL,NULL
+368,15,Rolling River,NULL,1,2015-08-20 15:16:54,NULL,2015-08-20 15:16:54,NULL,291,"PO BOX 145, ERICKSON, MB, R0J 0P0",NULL,NULL,NULL,NULL,NULL
+369,15,Roseau River Anishinabe First Nation Government,NULL,1,2015-08-20 15:16:54,NULL,2015-08-20 15:16:54,NULL,273,"PO BOX 30, GINEW, MB, R0A 2R0",NULL,NULL,NULL,NULL,NULL
+370,15,Sandy Bay,"Sandy Bay First Nation (Ojibwe: Gaa-wiikwedaawangaag) is an Ojibway/mixed-blood First Nation in Manitoba, Canada.",1,2015-08-20 15:16:54,NULL,2022-04-13 14:50:34,"{""id"":""2"",""user_type"":""root"",""display_name"":""Brenden""}",283,"PO BOX 109, MARIUS, MB, R0H 0T0",55.49702452,-102.3052633,NULL,NULL,NULL
+371,15,Sapotaweyak Cree Nation,NULL,1,2015-08-20 15:16:55,NULL,2015-08-20 15:16:55,NULL,314,"GENERAL DELIVERY, VIA PELICAN RAPIDS, PELICAN RAPIDS, MB, R0L 1L0",NULL,NULL,NULL,NULL,NULL
+372,15,Sayisi Dene First Nation,NULL,1,2015-08-20 15:16:55,NULL,2015-08-20 15:16:55,NULL,303,"GENERAL DELIVERY, TADOULE LAKE, MB, R0B 2C0",NULL,NULL,NULL,NULL,NULL
+373,15,Shamattawa First Nation,NULL,1,2015-08-20 15:16:55,NULL,2015-08-20 15:16:55,NULL,307,"PO BOX 210, SHAMATTAWA, MB, R0B 1K0",NULL,NULL,NULL,NULL,NULL
+374,15,Sioux Valley Dakota Nation,NULL,1,2015-08-20 15:16:55,NULL,2015-08-20 15:16:55,NULL,290,"PO BOX 38, GRISWOLD, MB, R0M 0S0",NULL,NULL,NULL,NULL,NULL
+375,15,Skownan First Nation,NULL,1,2015-08-20 15:16:55,NULL,2015-08-20 15:16:55,NULL,281,"GENERAL DELIVERY, SKOWNAN, MB, R0L 1Y0",NULL,NULL,NULL,NULL,NULL
+376,15,St. Theresa Point,NULL,1,2015-08-20 15:16:55,NULL,2015-08-20 15:16:55,NULL,298,"GENERAL DELIVERY, ST THERESA POINT, MB, R0B 1J0",NULL,NULL,NULL,NULL,NULL
+377,15,Swan Lake,NULL,1,2015-08-20 15:16:55,NULL,2015-08-20 15:16:55,NULL,293,"PO BOX 368, SWAN LAKE, MB, R0G 2S0",NULL,NULL,NULL,NULL,NULL
+378,15,Tataskweyak Cree Nation,NULL,1,2015-08-20 15:16:55,NULL,2015-08-20 15:16:55,NULL,306,"PO BOX 250, SPLIT LAKE, MB, R0B 1P0",NULL,NULL,NULL,NULL,NULL
+379,15,Tootinaowaziibeeng Treaty Reserve,NULL,1,2015-08-20 15:16:56,NULL,2015-08-20 15:16:56,NULL,292,"GENERAL DELIVERY, SHORTDALE, MB, R0L 1W0",NULL,NULL,NULL,NULL,NULL
+380,15,War Lake First Nation,NULL,1,2015-08-20 15:16:56,NULL,2015-08-20 15:16:56,NULL,323,"GENERAL DELIVERY, ILFORD, MB, R0B 0S0",NULL,NULL,NULL,NULL,NULL
+381,15,Wasagamack First Nation,NULL,1,2015-08-20 15:16:56,NULL,2015-08-20 15:16:56,NULL,299,"PO BOX 1, WASAGAMACK, MB, R0B 1Z0",NULL,NULL,NULL,NULL,NULL
+382,15,Waywayseecappo First Nation Treaty Four - 1874,NULL,1,2015-08-20 15:16:56,NULL,2015-08-20 15:16:56,NULL,285,"PO BOX 9, WAYWAYSEECAPPO, MB, R0J 1S0",NULL,NULL,NULL,NULL,NULL
+383,15,Wuskwi Sipihk First Nation,NULL,1,2015-08-20 15:16:56,NULL,2015-08-20 15:16:56,NULL,324,"PO BOX 220, BIRCH RIVER, MB, R0L 0E0",NULL,NULL,NULL,NULL,NULL
+384,15,York Factory First Nation,NULL,1,2015-08-20 15:16:56,NULL,2015-08-20 15:16:56,NULL,304,"GENERAL DELIVERY, YORK LANDING, MB, R0B 2B0",NULL,NULL,NULL,NULL,NULL
+385,16,Aamjiwnaang,NULL,1,2015-08-20 15:18:43,NULL,2015-08-20 15:18:43,NULL,172,"978 TASHMOO AVENUE, SARNIA, ON, N7T 7H5",NULL,NULL,NULL,NULL,NULL
+386,16,Albany,NULL,1,2015-08-20 15:18:43,NULL,2015-08-20 15:18:43,NULL,142,"PO BOX 1, FORT ALBANY, ON, P0L 1H0",NULL,NULL,NULL,NULL,NULL
+387,16,Alderville First Nation,NULL,1,2015-08-20 15:18:43,NULL,2015-08-20 15:18:43,NULL,160,"PO BOX 46, ROSENEATH, ON, K0K 2X0",NULL,NULL,NULL,NULL,NULL
+388,16,Algonquins of Pikwakanagan First Nation,NULL,1,2015-08-20 15:18:43,NULL,2015-08-20 15:18:43,NULL,163,"PO BOX 100, GOLDEN LAKE, ON, K0J 1X0",NULL,NULL,NULL,NULL,NULL
+389,16,Animbiigoo Zaagi'igan Anishinaabek,NULL,1,2015-08-20 15:18:44,NULL,2015-08-20 15:18:44,NULL,194,"PO BOX 120, BEARDMORE, ON, P0T 1G0",NULL,NULL,NULL,NULL,NULL
+390,16,Anishinabe of Wauzhushk Onigum,NULL,1,2015-08-20 15:18:44,NULL,2015-08-20 15:18:44,NULL,153,"PO BOX 1850, KENORA, ON, P9N 3X8",NULL,NULL,NULL,NULL,NULL
+391,16,Anishnaabeg of Naongashiing,NULL,1,2015-08-20 15:18:44,NULL,2015-08-20 15:18:44,NULL,125,"PO BOX 335, MORSON, ON, P0W 1J0",NULL,NULL,NULL,NULL,NULL
+392,16,Aroland,NULL,1,2015-08-20 15:18:44,NULL,2015-08-20 15:18:44,NULL,242,"PO BOX 10, AROLAND, ON, P0T 1B0",NULL,NULL,NULL,NULL,NULL
+393,16,Atikameksheng Anishnawbek,NULL,1,2015-08-20 15:18:44,NULL,2015-08-20 15:18:44,NULL,224,"25 RESERVE ROAD, NAUGHTON, ON, P0M 2M0",NULL,NULL,NULL,NULL,NULL
+394,16,Attawapiskat,NULL,1,2015-08-20 15:18:44,NULL,2015-08-20 15:18:44,NULL,143,"PO BOX 248, ATTAWAPISKAT, ON, P0L 1A0",NULL,NULL,NULL,NULL,NULL
+395,16,Aundeck-Omni-Kaning,NULL,1,2015-08-20 15:18:44,NULL,2015-08-20 15:18:44,NULL,180,"RR 1, COMP 21, LITTLE CURRENT, ON, P0P 1K0",NULL,NULL,NULL,NULL,NULL
+396,16,Batchewana First Nation,NULL,1,2015-08-20 15:18:45,NULL,2015-08-20 15:18:45,NULL,198,"236 FRONTENAC STREET, SAULT STE MARIE, ON, P6A 5K9",NULL,NULL,NULL,NULL,NULL
+397,16,Bay of Quinte Mohawk,NULL,1,2015-08-20 15:18:45,NULL,2015-08-20 15:18:45,NULL,244, ,NULL,NULL,NULL,NULL,NULL
+398,16,Bearfoot Onondaga,NULL,1,2015-08-20 15:18:45,NULL,2015-08-20 15:18:45,NULL,248, ,NULL,NULL,NULL,NULL,NULL
+399,16,Bearskin Lake,NULL,1,2015-08-20 15:18:45,NULL,2015-08-20 15:18:45,NULL,207,"PO BOX 25, BEARSKIN LAKE, ON, P0V 1E0",NULL,NULL,NULL,NULL,NULL
+400,16,Beausoleil,NULL,1,2015-08-20 15:18:45,NULL,2015-08-20 15:18:45,NULL,141,"GENERAL DELIVERY, CEDAR POINT, ON, L0K 1C0",NULL,NULL,NULL,NULL,NULL
+401,16,Big Grassy,NULL,1,2015-08-20 15:18:45,NULL,2015-08-20 15:18:45,NULL,124,"PO BOX 414, MORSON, ON, P0W 1J0",NULL,NULL,NULL,NULL,NULL
+402,16,Biinjitiwaabik Zaaging Anishinaabek,NULL,1,2015-08-20 15:18:46,NULL,2015-08-20 15:18:46,NULL,197,"GENERAL DELIVERY, MACDIARMID, ON, P0T 2B0",NULL,NULL,NULL,NULL,NULL
+403,16,Bingwi Neyaashi Anishinaabek,NULL,1,2015-08-20 15:18:46,NULL,2015-08-20 15:18:46,NULL,196,"146 COURT STREET SOUTH, THUNDER BAY, ON, P7B 2X6",NULL,NULL,NULL,NULL,NULL
+404,16,Brunswick House,NULL,1,2015-08-20 15:18:46,NULL,2015-08-20 15:18:46,NULL,228,"PO BOX 1178, CHAPLEAU, ON, P0M 1K0",NULL,NULL,NULL,NULL,NULL
+405,16,Caldwell,NULL,1,2015-08-20 15:18:46,NULL,2015-08-20 15:18:46,NULL,165,"14 ORANGE STREET, LEAMINGTON, ON, N8H 1P5",NULL,NULL,NULL,NULL,NULL
+406,16,Cat Lake,NULL,1,2015-08-20 15:18:46,NULL,2015-08-20 15:18:46,NULL,216,"PO BOX 81, CAT LAKE, ON, P0V 1J0",NULL,NULL,NULL,NULL,NULL
+407,16,Chapleau Cree First Nation,NULL,1,2015-08-20 15:18:46,NULL,2015-08-20 15:18:46,NULL,221,"PO BOX 400, CHAPLEAU, ON, P0M 1K0",NULL,NULL,NULL,NULL,NULL
+408,16,Chapleau Ojibway,NULL,1,2015-08-20 15:18:46,NULL,2015-08-20 15:18:46,NULL,229,"522 HIGHWAY 129, PO BOX 279, CHAPLEAU, ON, P0M 1K0",NULL,NULL,NULL,NULL,NULL
+409,16,Chippewas of Georgina Island,NULL,1,2015-08-20 15:18:46,NULL,2015-08-20 15:18:46,NULL,138,"RR 2, PO BOX 13, SUTTON WEST, ON, L0E 1R0",NULL,NULL,NULL,NULL,NULL
+410,16,Chippewas of Kettle and Stony Point,NULL,1,2015-08-20 15:18:47,NULL,2015-08-20 15:18:47,NULL,171,"6247 INDIAN LANE, KETTLE AND STONY POINT FIRST NATION, ON, N0N 1J1",NULL,NULL,NULL,NULL,NULL
+411,16,Chippewas of Nawash First Nation,NULL,1,2015-08-20 15:18:47,NULL,2015-08-20 15:18:47,NULL,122,"RR 5, WIARTON, ON, N0H 2T0",NULL,NULL,NULL,NULL,NULL
+412,16,Chippewas of Rama First Nation,NULL,1,2015-08-20 15:18:47,NULL,2015-08-20 15:18:47,NULL,139,"200 - 5884 RAMA ROAD, RAMA, ON, L3V 6H6",NULL,NULL,NULL,NULL,NULL
+413,16,Chippewas of the Thames First Nation,NULL,1,2015-08-20 15:18:47,NULL,2015-08-20 15:18:47,NULL,166,"RR 1, MUNCEY, ON, N0L 1Y0",NULL,NULL,NULL,NULL,NULL
+414,16,Constance Lake,NULL,1,2015-08-20 15:18:47,NULL,2015-08-20 15:18:47,NULL,182,"GENERAL DELIVERY, CALSTOCK, ON, P0L 1B0",NULL,NULL,NULL,NULL,NULL
+415,16,Couchiching First Nation,NULL,1,2015-08-20 15:18:47,NULL,2015-08-20 15:18:47,NULL,126,"RR 2 RMB 2027, FORT FRANCES, ON, P9A 3M3",NULL,NULL,NULL,NULL,NULL
+416,16,Curve Lake,NULL,1,2015-08-20 15:18:47,NULL,2015-08-20 15:18:47,NULL,161,"GENERAL DELIVERY, CURVE LAKE, ON, K0L 1R0",NULL,NULL,NULL,NULL,NULL
+417,16,Deer Lake,NULL,1,2015-08-20 15:18:47,NULL,2015-08-20 15:18:47,NULL,237,"GENERAL DELIVERY, DEER LAKE, ON, P0V 1N0",NULL,NULL,NULL,NULL,NULL
+418,16,Delaware,NULL,1,2015-08-20 15:18:48,NULL,2015-08-20 15:18:48,NULL,253, ,NULL,NULL,NULL,NULL,NULL
+419,16,Dokis,NULL,1,2015-08-20 15:18:48,NULL,2015-08-20 15:18:48,NULL,218,"940A MAIN STREET, DOKIS FIRST NATION, ON, P0M 2N1",NULL,NULL,NULL,NULL,NULL
+420,16,Eabametoong First Nation,NULL,1,2015-08-20 15:18:48,NULL,2015-08-20 15:18:48,NULL,183,"PO BOX 298, FORT HOPE, ON, P0T 1L0",NULL,NULL,NULL,NULL,NULL
+421,16,Eagle Lake,NULL,1,2015-08-20 15:18:48,NULL,2015-08-20 15:18:48,NULL,148,"PO BOX 1001, MIGISI SAHGAIGAN, ON, P0V 3H0",NULL,NULL,NULL,NULL,NULL
+422,16,Flying Post,NULL,1,2015-08-20 15:18:48,NULL,2015-08-20 15:18:48,NULL,227,"PO BOX 1027, NIPIGON, ON, P0T 2J0",NULL,NULL,NULL,NULL,NULL
+423,16,Fort Severn,NULL,1,2015-08-20 15:18:48,NULL,2015-08-20 15:18:48,NULL,215,"GENERAL DELIVERY, FORT SEVERN, ON, P0V 1W0",NULL,NULL,NULL,NULL,NULL
+424,16,Fort William,NULL,1,2015-08-20 15:18:48,NULL,2015-08-20 15:18:48,NULL,187,"200 - 90 ANEMKI PLACE, FORT WILLIAM FIRST NATION, ON, P7J 1L3",NULL,NULL,NULL,NULL,NULL
+425,16,Garden River First Nation,NULL,1,2015-08-20 15:18:49,NULL,2015-08-20 15:18:49,NULL,199,"7 SHINGWAUK STREET, RR 4, GARDEN RIVER, ON, P6A 6Z8",NULL,NULL,NULL,NULL,NULL
+426,16,Ginoogaming First Nation,NULL,1,2015-08-20 15:18:49,NULL,2015-08-20 15:18:49,NULL,185,"PO BOX 89, LONGLAC, ON, P0T 2A0",NULL,NULL,NULL,NULL,NULL
+427,16,Grassy Narrows First Nation,NULL,1,2015-08-20 15:18:49,NULL,2015-08-20 15:18:49,NULL,149,"GENERAL DELIVERY, GRASSY NARROWS, ON, P0X 1B0",NULL,NULL,NULL,NULL,NULL
+428,16,Gull Bay,NULL,1,2015-08-20 15:18:49,NULL,2015-08-20 15:18:49,NULL,188,"1186 MEMORIAL AVENUE, PO BOX 29100, MCINTYRE CENTRE, THUNDER BAY, ON, P7B 6P9",NULL,NULL,NULL,NULL,NULL
+429,16,Henvey Inlet First Nation,NULL,1,2015-08-20 15:18:49,NULL,2015-08-20 15:18:49,NULL,231,"295 PICKEREL RIVER RD, PICKEREL, ON, P0G 1J0",NULL,NULL,NULL,NULL,NULL
+430,16,Hiawatha First Nation,NULL,1,2015-08-20 15:18:49,NULL,2015-08-20 15:18:49,NULL,162,"RR 2, KEENE, ON, K0L 2G0",NULL,NULL,NULL,NULL,NULL
+431,16,Iskatewizaagegan #39 Independent First Nation,NULL,1,2015-08-20 15:18:49,NULL,2015-08-20 15:18:49,NULL,154,"GENERAL DELIVERY, KEJICK, ON, P0X 1E0",NULL,NULL,NULL,NULL,NULL
+432,16,Kasabonika Lake,NULL,1,2015-08-20 15:18:49,NULL,2015-08-20 15:18:49,NULL,210,"PO BOX 124, KASABONIKA LAKE, ON, P0V 1Y0",NULL,NULL,NULL,NULL,NULL
+433,16,Kee-Way-Win,NULL,1,2015-08-20 15:18:50,NULL,2015-08-20 15:18:50,NULL,325,"GENERAL DELIVERY, KEEWAYWIN, ON, P0V 3G0",NULL,NULL,NULL,NULL,NULL
+434,16,Kingfisher,NULL,1,2015-08-20 15:18:50,NULL,2015-08-20 15:18:50,NULL,212,"PO BOX 57, KINGFISHER LAKE, ON, P0V 1Z0",NULL,NULL,NULL,NULL,NULL
+435,16,Kitchenuhmaykoosib Inninuwug,NULL,1,2015-08-20 15:18:50,NULL,2015-08-20 15:18:50,NULL,209,"PO BOX 329, BIG TROUT LAKE, ON, P0V 1G0",NULL,NULL,NULL,NULL,NULL
+436,16,Konadaha Seneca,NULL,1,2015-08-20 15:18:50,NULL,2015-08-20 15:18:50,NULL,251, ,NULL,NULL,NULL,NULL,NULL
+437,16,Lac Des Mille Lacs,NULL,1,2015-08-20 15:18:50,NULL,2015-08-20 15:18:50,NULL,189,"328 - 1100 MEMORIAL AVENUE, THUNDER BAY, ON, P7B 4A3",NULL,NULL,NULL,NULL,NULL
+438,16,Lac La Croix,NULL,1,2015-08-20 15:18:50,NULL,2015-08-20 15:18:50,NULL,127,"PO BOX 640, FORT FRANCES, ON, P9A 3M9",NULL,NULL,NULL,NULL,NULL
+439,16,Lac Seul,NULL,1,2015-08-20 15:18:50,NULL,2015-08-20 15:18:50,NULL,205,"PO BOX 100, HUDSON, ON, P0V 1X0",NULL,NULL,NULL,NULL,NULL
+440,16,Long Lake No.58 First Nation,NULL,1,2015-08-20 15:18:50,NULL,2015-08-20 15:18:50,NULL,184,"PO BOX 609, LONGLAC, ON, P0T 2A0",NULL,NULL,NULL,NULL,NULL
+441,16,Lower Cayuga,NULL,1,2015-08-20 15:18:51,NULL,2015-08-20 15:18:51,NULL,250, ,NULL,NULL,NULL,NULL,NULL
+442,16,Lower Mohawk,NULL,1,2015-08-20 15:18:51,NULL,2015-08-20 15:18:51,NULL,254, ,NULL,NULL,NULL,NULL,NULL
+443,16,M'Chigeeng First Nation,NULL,1,2015-08-20 15:18:51,NULL,2015-08-20 15:18:51,NULL,181,"PO BOX 333, 53 HWY 551, M'CHIGEENG, ON, P0P 1G0",NULL,NULL,NULL,NULL,NULL
+444,16,Magnetawan,NULL,1,2015-08-20 15:18:51,NULL,2015-08-20 15:18:51,NULL,174,"10 HWY 529, BRITT, ON, P0G 1A0",NULL,NULL,NULL,NULL,NULL
+445,16,Martin Falls,NULL,1,2015-08-20 15:18:51,NULL,2015-08-20 15:18:51,NULL,186,"GENERAL DELIVERY, OGOKI POST, ON, P0T 2L0",NULL,NULL,NULL,NULL,NULL
+446,16,Matachewan,NULL,1,2015-08-20 15:18:51,NULL,2015-08-20 15:18:51,NULL,219,"PO BOX 160, MATACHEWAN, ON, P0K 1M0",NULL,NULL,NULL,NULL,NULL
+447,16,Mattagami,NULL,1,2015-08-20 15:18:51,NULL,2015-08-20 15:18:51,NULL,226,"PO BOX 99, GOGAMA, ON, P0M 1W0",NULL,NULL,NULL,NULL,NULL
+448,16,McDowell Lake,NULL,1,2015-08-20 15:18:51,NULL,2015-08-20 15:18:51,NULL,326,"PO BOX 321, RED LAKE, ON, P0V 2M0",NULL,NULL,NULL,NULL,NULL
+449,16,Michipicoten,NULL,1,2015-08-20 15:18:52,NULL,2015-08-20 15:18:52,NULL,225,"PO BOX 1, SITE 8, RR 1, WAWA, ON, P0S 1K0",NULL,NULL,NULL,NULL,NULL
+450,16,Mishkeegogamang,NULL,1,2015-08-20 15:18:52,NULL,2015-08-20 15:18:52,NULL,203,"GENERAL DELIVERY, OSNABURGH, ON, P0V 2H0",NULL,NULL,NULL,NULL,NULL
+451,16,Missanabie Cree,NULL,1,2015-08-20 15:18:52,NULL,2015-08-20 15:18:52,NULL,223,"174B HWY 17B, GARDEN RIVER, ON, P6A 6Z1",NULL,NULL,NULL,NULL,NULL
+452,16,Mississauga,NULL,1,2015-08-20 15:18:52,NULL,2015-08-20 15:18:52,NULL,200,"PO BOX 1299, BLIND RIVER, ON, P0R 1B0",NULL,NULL,NULL,NULL,NULL
+453,16,Mississauga's of Scugog Island First Nation,NULL,1,2015-08-20 15:18:52,NULL,2015-08-20 15:18:52,NULL,200,"PO BOX 1299, BLIND RIVER, ON, P0R 1B0",NULL,NULL,NULL,NULL,NULL
+454,16,Mississaugas of the Credit,NULL,1,2015-08-20 15:18:52,NULL,2015-08-20 15:18:52,NULL,120,"RR 6, HAGERSVILLE, ON, N0A 1H0",NULL,NULL,NULL,NULL,NULL
+455,16,Mitaanjigamiing First Nation,NULL,1,2015-08-20 15:18:52,NULL,2015-08-20 15:18:52,NULL,133,"PO BOX 609, FORT FRANCES, ON, P9A 3M9",NULL,NULL,NULL,NULL,NULL
+456,16,Mohawks of Akwesasne,NULL,1,2015-08-20 15:18:53,NULL,2015-08-20 15:18:53,NULL,159,"PO BOX 579, CORNWALL, ON, K6H 5T3",NULL,NULL,NULL,NULL,NULL
+457,16,Mohawks of the Bay of Quinte,NULL,1,2015-08-20 15:18:53,NULL,2015-08-20 15:18:53,NULL,164,"24 Meadow Drive, Tyendinaga Mohawk Territory, ON, K0K 1X0",NULL,NULL,NULL,NULL,NULL
+458,16,Moose Cree First Nation,NULL,1,2015-08-20 15:18:53,NULL,2015-08-20 15:18:53,NULL,144,"PO BOX 190, MOOSE FACTORY, ON, P0L 1W0",NULL,NULL,NULL,NULL,NULL
+459,16,Moose Deer Point,NULL,1,2015-08-20 15:18:53,NULL,2015-08-20 15:18:53,NULL,135,"PO BOX 119, MACTIER, ON, P0C 1H0",NULL,NULL,NULL,NULL,NULL
+460,16,Moravian of the Thames,NULL,1,2015-08-20 15:18:53,NULL,2015-08-20 15:18:53,NULL,167,"RR 3, THAMESVILLE, ON, N0P 2K0",NULL,NULL,NULL,NULL,NULL
+461,16,Munsee-Delaware Nation,NULL,1,2015-08-20 15:18:53,NULL,2015-08-20 15:18:53,NULL,168,"RR 1, MUNCEY, ON, N0L 1Y0",NULL,NULL,NULL,NULL,NULL
+462,16,Muskrat Dam Lake,NULL,1,2015-08-20 15:18:53,NULL,2015-08-20 15:18:53,NULL,213,"PO BOX 140, MUSKRAT DAM, ON, P0V 3B0",NULL,NULL,NULL,NULL,NULL
+463,16,Naicatchewenin,NULL,1,2015-08-20 15:18:53,NULL,2015-08-20 15:18:53,NULL,128,"PO BOX 15, RR 1, DEVLIN, ON, P0W 1C0",NULL,NULL,NULL,NULL,NULL
+464,16,Naotkamegwanning,NULL,1,2015-08-20 15:18:54,NULL,2015-08-20 15:18:54,NULL,158,"1800 PAWITIK STREET, PAWITIK, ON, P0X 1L0",NULL,NULL,NULL,NULL,NULL
+465,16,Neskantaga First Nation,NULL,1,2015-08-20 15:18:54,NULL,2015-08-20 15:18:54,NULL,239,"PO BOX 105, LANSDOWNE HOUSE, ON, P0T 1Z0",NULL,NULL,NULL,NULL,NULL
+466,16,Nibinamik First Nation,NULL,1,2015-08-20 15:18:54,NULL,2015-08-20 15:18:54,NULL,241,"GENERAL DELIVERY, SUMMER BEAVER, ON, P0T 3B0",NULL,NULL,NULL,NULL,NULL
+467,16,Nigigoonsiminikaaning First Nation,NULL,1,2015-08-20 15:18:54,NULL,2015-08-20 15:18:54,NULL,129,"PO BOX 68, FORT FRANCES, ON, P9A 3M5",NULL,NULL,NULL,NULL,NULL
+468,16,Niharondasa Seneca,NULL,1,2015-08-20 15:18:54,NULL,2015-08-20 15:18:54,NULL,252, ,NULL,NULL,NULL,NULL,NULL
+469,16,Nipissing First Nation,NULL,1,2015-08-20 15:18:54,NULL,2015-08-20 15:18:54,NULL,220,"36 SEMO ROAD, GARDEN VILLAGE, ON, P2B 3K2",NULL,NULL,NULL,NULL,NULL
+470,16,North Caribou Lake,NULL,1,2015-08-20 15:18:54,NULL,2015-08-20 15:18:54,NULL,204,"GENERAL DELIVERY, WEAGAMOW LAKE, ON, P0V 2Y0",NULL,NULL,NULL,NULL,NULL
+471,16,North Spirit Lake,NULL,1,2015-08-20 15:18:54,NULL,2015-08-20 15:18:54,NULL,238,"GENERAL DELIVERY, NORTH SPIRIT LAKE, ON, P0V 2G0",NULL,NULL,NULL,NULL,NULL
+472,16,Northwest Angle No.33,NULL,1,2015-08-20 15:18:55,NULL,2015-08-20 15:18:55,NULL,151,"BOX 1490, KENORA, ON, P9N 3X7",NULL,NULL,NULL,NULL,NULL
+473,16,Northwest Angle No.37,NULL,1,2015-08-20 15:18:55,NULL,2015-08-20 15:18:55,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+474,16,Obashkaandagaang,NULL,1,2015-08-20 15:18:55,NULL,2015-08-20 15:18:55,NULL,235,"PO BOX 625, KEEWATIN, ON, P0X 1C0",NULL,NULL,NULL,NULL,NULL
+475,16,Ochiichagwe'babigo'ining First Nation,NULL,1,2015-08-20 15:18:55,NULL,2015-08-20 15:18:55,NULL,147,"22 BAND OFFICE RD., DALLES, ON, P9N 0J2",NULL,NULL,NULL,NULL,NULL
+476,16,Ojibway Nation of Saugeen,NULL,1,2015-08-20 15:18:55,NULL,2015-08-20 15:18:55,NULL,123,"RR 1, SOUTHAMPTON, ON, N0H 2L0",NULL,NULL,NULL,NULL,NULL
+477,16,Ojibways of Onigaming First Nation,NULL,1,2015-08-20 15:18:55,NULL,2015-08-20 15:18:55,NULL,131,"PO BOX 160, NESTOR FALLS, ON, P0X 1K0",NULL,NULL,NULL,NULL,NULL
+478,16,Ojibways of the Pic River First Nation,NULL,1,2015-08-20 15:18:55,NULL,2015-08-20 15:18:55,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+479,16,Oneida,NULL,1,2015-08-20 15:18:55,NULL,2015-08-20 15:18:55,NULL,246, ,NULL,NULL,NULL,NULL,NULL
+480,16,Oneida Nation of the Thames,NULL,1,2015-08-20 15:18:56,NULL,2015-08-20 15:18:56,NULL,169,"RR 2, SOUTHWOLD, ON, N0L 2G0",NULL,NULL,NULL,NULL,NULL
+481,16,Onondaga Clear Sky,NULL,1,2015-08-20 15:18:56,NULL,2015-08-20 15:18:56,NULL,247, ,NULL,NULL,NULL,NULL,NULL
+482,16,Pays Plat,NULL,1,2015-08-20 15:18:56,NULL,2015-08-20 15:18:56,NULL,191,"10 CENTRAL PLACE, PAYS PLAT, ON, P0T 3C0",NULL,NULL,NULL,NULL,NULL
+483,16,Pic Mobert,NULL,1,2015-08-20 15:18:56,NULL,2015-08-20 15:18:56,NULL,195,"PO BOX 717, MOBERT, ON, P0M 2J0",NULL,NULL,NULL,NULL,NULL
+484,16,Pikangikum,NULL,1,2015-08-20 15:18:56,NULL,2015-08-20 15:18:56,NULL,208,"PO BOX 323, PIKANGIKUM, ON, P0V 2L0",NULL,NULL,NULL,NULL,NULL
+485,16,Poplar Hill,NULL,1,2015-08-20 15:18:56,NULL,2015-08-20 15:18:56,NULL,236,"PO BOX 1, POPLAR HILL, ON, P0V 3E0",NULL,NULL,NULL,NULL,NULL
+486,16,Rainy River First Nations,NULL,1,2015-08-20 15:18:56,NULL,2015-08-20 15:18:56,NULL,130,"PO BOX 450, EMO, ON, P0W 1E0",NULL,NULL,NULL,NULL,NULL
+487,16,Red Rock,NULL,1,2015-08-20 15:18:56,NULL,2015-08-20 15:18:56,NULL,193,"PO BOX 1030, NIPIGON, ON, P0T 2J0",NULL,NULL,NULL,NULL,NULL
+488,16,Sachigo Lake,NULL,1,2015-08-20 15:18:57,NULL,2015-08-20 15:18:57,NULL,214,"PO BOX 51, SACHIGO LAKE, ON, P0V 2P0",NULL,NULL,NULL,NULL,NULL
+489,16,Sagamok Anishnawbek,NULL,1,2015-08-20 15:18:57,NULL,2015-08-20 15:18:57,NULL,179,"PO BOX 610, MASSEY, ON, P0P 1P0",NULL,NULL,NULL,NULL,NULL
+490,16,Sandy Lake,NULL,1,2015-08-20 15:18:57,NULL,2015-08-20 15:18:57,NULL,211,"PO BOX 12, SANDY LAKE, ON, P0V 1V0",NULL,NULL,NULL,NULL,NULL
+491,16,Saugeen,NULL,1,2015-08-20 15:18:57,NULL,2015-08-20 15:18:57,NULL,123,"RR 1, SOUTHAMPTON, ON, N0H 2L0",NULL,NULL,NULL,NULL,NULL
+492,16,Seine River First Nation,NULL,1,2015-08-20 15:18:57,NULL,2015-08-20 15:18:57,NULL,132,"PO BOX 124, MINE CENTRE, ON, P0W 1H0",NULL,NULL,NULL,NULL,NULL
+493,16,Serpent River,NULL,1,2015-08-20 15:18:57,NULL,2015-08-20 15:18:57,NULL,201,"PO BOX 14, 195 VILLAGE ROAD, CUTLER, ON, P0P 1B0",NULL,NULL,NULL,NULL,NULL
+494,16,Shawanaga First Nation,NULL,1,2015-08-20 15:18:57,NULL,2015-08-20 15:18:57,NULL,137,"RR1, 2 VILLAGE ROAD, NOBEL, ON, P0G 1G0",NULL,NULL,NULL,NULL,NULL
+495,16,Sheguiandah,NULL,1,2015-08-20 15:18:58,NULL,2015-08-20 15:18:58,NULL,176,"PO BOX 101, SHEGUIANDAH, ON, P0P 1W0",NULL,NULL,NULL,NULL,NULL
+496,16,Sheshegwaning,NULL,1,2015-08-20 15:18:58,NULL,2015-08-20 15:18:58,NULL,178,"PO BOX 1, SHESHEGWANING, ON, P0P 1X0",NULL,NULL,NULL,NULL,NULL
+497,16,Shoal Lake No.40,"The Shoal Lake Cree Nation is a Swampy Cree First Nations band government in Saskatchewan, Canada located 98 kilometres (61 mi) east of Nipawin. The Cree First Nation is on the Carrot River and can be accessed by Highway 55",1,2015-08-20 15:18:58,NULL,2022-04-13 14:46:05,"{""id"":""2"",""user_type"":""root"",""display_name"":""Brenden""}",155,"GENERAL DELIVERY, KEJICK, ON, P0X 1E0",53.48366591,-102.6321375,NULL,NULL,NULL
+498,16,Six Nations of the Grand River,NULL,1,2015-08-20 15:18:58,NULL,2015-08-20 15:18:58,NULL,121,"PO BOX 5000, OHSWEKEN, ON, N0A 1M0",NULL,NULL,NULL,NULL,NULL
+499,16,Slate Falls Nation,NULL,1,2015-08-20 15:18:58,NULL,2015-08-20 15:18:58,NULL,259,"48 LAKEVIEW DR, SLATE FALLS, ON, P0V 3C0",NULL,NULL,NULL,NULL,NULL
+500,16,Taykwa Tagamou Nation,NULL,1,2015-08-20 15:18:58,NULL,2015-08-20 15:18:58,NULL,145,"PO BOX 3310, RR 2, COCHRANE, ON, P0L 1C0",NULL,NULL,NULL,NULL,NULL
+501,16,Temagami First Nation,NULL,1,2015-08-20 15:18:58,NULL,2015-08-20 15:18:58,NULL,222,"GENERAL DELIVERY, BEAR ISLAND, ON, P0H 1C0",NULL,NULL,NULL,NULL,NULL
+502,16,Thessalon,NULL,1,2015-08-20 15:18:58,NULL,2015-08-20 15:18:58,NULL,202,"40 SUGARBUSH ROAD, THESSALON, ON, P0R 1L0",NULL,NULL,NULL,NULL,NULL
+503,16,Tuscarora,NULL,1,2015-08-20 15:18:59,NULL,2015-08-20 15:18:59,NULL,245, ,NULL,NULL,NULL,NULL,NULL
+504,16,Upper Cayuga,NULL,1,2015-08-20 15:18:59,NULL,2015-08-20 15:18:59,NULL,249, ,NULL,NULL,NULL,NULL,NULL
+505,16,Upper Mohawk,NULL,1,2015-08-20 15:18:59,NULL,2015-08-20 15:18:59,NULL,257, ,NULL,NULL,NULL,NULL,NULL
+506,16,Wabaseemoong Independent Nations,NULL,1,2015-08-20 15:18:59,NULL,2015-08-20 15:18:59,NULL,150,"GENERAL DELIVERY, WHITEDOG, ON, P0X 1P0",NULL,NULL,NULL,NULL,NULL
+507,16,Wabauskang First Nation,NULL,1,2015-08-20 15:18:59,NULL,2015-08-20 15:18:59,NULL,156,"PO BOX 339, EAR FALLS, ON, P0V 1T0",NULL,NULL,NULL,NULL,NULL
+508,16,Wabigoon Lake Ojibway Nation,NULL,1,2015-08-20 15:18:59,NULL,2015-08-20 15:18:59,NULL,157,"RR 1, SITE 115, PO BOX 300, DRYDEN, ON, P8N 2Y4",NULL,NULL,NULL,NULL,NULL
+509,16,Wahgoshig,NULL,1,2015-08-20 15:18:59,NULL,2015-08-20 15:18:59,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+510,16,Wahnapitae,NULL,1,2015-08-20 15:18:59,NULL,2015-08-20 15:18:59,NULL,232,"259 TAIGHWENINI TRAIL ROAD, CAPREOL, ON, P0M 1H0",NULL,NULL,NULL,NULL,NULL
+511,16,Wahta Mohawk,NULL,1,2015-08-20 15:19:00,NULL,2015-08-20 15:19:00,NULL,134,"PO BOX 260, BALA, ON, P0C 1A0",NULL,NULL,NULL,NULL,NULL
+512,16,Walker Mohawk,NULL,1,2015-08-20 15:19:00,NULL,2015-08-20 15:19:00,NULL,255, ,NULL,NULL,NULL,NULL,NULL
+513,16,Walpole Island,NULL,1,2015-08-20 15:19:00,NULL,2015-08-20 15:19:00,NULL,170,"RR 3, WALLACEBURG, ON, N8A 4K9",NULL,NULL,NULL,NULL,NULL
+514,16,Wapekeka,NULL,1,2015-08-20 15:19:00,NULL,2015-08-20 15:19:00,NULL,206,"PO BOX 2, WAPEKEKA, ON, P0V 1B0",NULL,NULL,NULL,NULL,NULL
+515,16,Wasauksing First Nation,NULL,1,2015-08-20 15:19:00,NULL,2015-08-20 15:19:00,NULL,136,"PO BOX 250, PARRY SOUND, ON, P2A 2X4",NULL,NULL,NULL,NULL,NULL
+516,16,Wawakapewin,NULL,1,2015-08-20 15:19:00,NULL,2015-08-20 15:19:00,NULL,234,"PO BOX 477, SIOUX LOOKOUT, ON, P8T 1A8",NULL,NULL,NULL,NULL,NULL
+517,16,Webequie,NULL,1,2015-08-20 15:19:00,NULL,2015-08-20 15:19:00,NULL,240,"PO BOX 268, WEBEQUIE, ON, P0T 3A0",NULL,NULL,NULL,NULL,NULL
+518,16,Weenusk,NULL,1,2015-08-20 15:19:00,NULL,2015-08-20 15:19:00,NULL,146,"PO BOX 1, PEAWANUCK, ON, P0L 2H0",NULL,NULL,NULL,NULL,NULL
+519,16,Whitefish River,NULL,1,2015-08-20 15:19:01,NULL,2015-08-20 15:19:01,NULL,230,"PO BOX A, BIRCH ISLAND, ON, P0P 1A0",NULL,NULL,NULL,NULL,NULL
+520,16,Whitesand,NULL,1,2015-08-20 15:19:01,NULL,2015-08-20 15:19:01,NULL,190,"PO BOX 68, ARMSTRONG, ON, P0T 1A0",NULL,NULL,NULL,NULL,NULL
+521,16,Wikwemikong,NULL,1,2015-08-20 15:19:01,NULL,2015-08-20 15:19:01,NULL,175,"PO BOX 112, WIKWEMIKONG, ON, P0P 2J0",NULL,NULL,NULL,NULL,NULL
+522,16,Wunnumin,NULL,1,2015-08-20 15:19:01,NULL,2015-08-20 15:19:01,NULL,217,"PO BOX 105, WUNNUMIN LAKE, ON, P0V 2Z0",NULL,NULL,NULL,NULL,NULL
+523,16,Zhiibaahaasing First Nation,NULL,1,2015-08-20 15:19:01,NULL,2015-08-20 15:19:01,NULL,173,"36 SAGON ROAD, ZHIIBAAHAASING, ON, P0P 1X0",NULL,NULL,NULL,NULL,NULL
+524,17,Algonquins of Barriere Lake,NULL,1,2015-08-20 15:19:46,NULL,2015-08-20 15:19:46,NULL,74,"Parc de la Vérendrye, P.O Box 74, General Delivery, Rapid Lake, QC, J0W 2C0",NULL,NULL,NULL,NULL,NULL
+525,17,Atikamekw d'Opitciwan,NULL,1,2015-08-20 15:19:46,NULL,2015-08-20 15:19:46,NULL,79,"22, rue Amisk, CP 135, Obedjiwan, QC, G0W 3B0",NULL,NULL,NULL,NULL,NULL
+526,17,Bande des Innus de Pessamit,NULL,1,2015-08-20 15:19:46,NULL,2015-08-20 15:19:46,NULL,85,"4, rue Metshteu, CP 40, Pessamit, QC, G0H 1B0",NULL,NULL,NULL,NULL,NULL
+527,17,CommunautÃ© anicinape de Kitcisakik,NULL,1,2015-08-20 15:19:47,NULL,2015-08-20 15:19:47,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+528,17,Conseil de la PremiÃ¨re Nation Abitibiwinni,NULL,1,2015-08-20 15:19:47,NULL,2015-08-20 15:19:47,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+529,17,Conseil des Atikamekw de Wemotaci,NULL,1,2015-08-20 15:19:47,NULL,2015-08-20 15:19:47,NULL,77,"36, Rue Kenosi, CP 221, Wetomaci, QC, G0X 3R0",NULL,NULL,NULL,NULL,NULL
+530,17,Cree Nation of Chisasibi,NULL,1,2015-08-20 15:19:47,NULL,2015-08-20 15:19:47,NULL,58,"1, Riverside Drive, P.O. Box 150, Chisasibi, QC, J0M 1E0",NULL,NULL,NULL,NULL,NULL
+531,17,Cree Nation of Mistissini,NULL,1,2015-08-20 15:19:47,NULL,2015-08-20 15:19:47,NULL,75,"187, Main Street, Mistissini, QC, G0W 1C0",NULL,NULL,NULL,NULL,NULL
+532,17,Cree Nation of Nemaska,NULL,1,2015-08-20 15:19:47,NULL,2015-08-20 15:19:47,NULL,59,"32, Machishteewyaau Trail, Nemaska, QC, J0Y 3B0",NULL,NULL,NULL,NULL,NULL
+533,17,Cree Nation of Wemindji,NULL,1,2015-08-20 15:19:47,NULL,2015-08-20 15:19:47,NULL,60,"16 BEAVER ROAD, PO BOX 60, WEMINDJI, QC, J0M 1L0",NULL,NULL,NULL,NULL,NULL
+534,17,Eagle Village First Nation - Kipawa,NULL,1,2015-08-20 15:19:47,NULL,2015-08-20 15:19:47,NULL,65,"P.O. Box 756, Temiscaming, QC, J0Z 3R0",NULL,NULL,NULL,NULL,NULL
+535,17,Eastmain,NULL,1,2015-08-20 15:19:48,NULL,2015-08-20 15:19:48,NULL,57,"76, Nouchimi, P.O. Box 90, Eastmain, QC, J0M 1W0",NULL,NULL,NULL,NULL,NULL
+536,17,Innu Takuaikan Uashat Mak Mani-Utenam,NULL,1,2015-08-20 15:19:48,NULL,2015-08-20 15:19:48,NULL,80,"265, boulevard des Montagnais, CP 8000, Sept-Îles, QC, G4R 4L9",NULL,NULL,NULL,NULL,NULL
+537,17,Innue Essipit,NULL,1,2015-08-20 15:19:48,NULL,2015-08-20 15:19:48,NULL,86,"32, rue de la Réserve, CP 820, Essipit, QC, G0T 1K0",NULL,NULL,NULL,NULL,NULL
+538,17,Kitigan Zibi Anishinabeg,NULL,1,2015-08-20 15:19:48,NULL,2015-08-20 15:19:48,NULL,73,"1, Paganakomin Mikan Street, P.O. Box 309, Maniwaki, QC, J9E 3C9",NULL,NULL,NULL,NULL,NULL
+539,17,La Nation Innu Matimekush-Lac John,NULL,1,2015-08-20 15:19:48,NULL,2015-08-20 15:19:48,NULL,87,"170, rue Pearce Lake, Schefferville, QC, G0G 2T0",NULL,NULL,NULL,NULL,NULL
+540,17,La Nation Micmac de Gespeg,NULL,1,2015-08-20 15:19:48,NULL,2015-08-20 15:19:48,NULL,53,"34, Montée de Corte-Real, C.P. 69, Gaspé, QC, G4X 6V2",NULL,NULL,NULL,NULL,NULL
+541,17,Les Atikamekw de Manawan,NULL,1,2015-08-20 15:19:48,NULL,2015-08-20 15:19:48,NULL,78,"135, Rue Kicik, Manawan, QC, J0K 1M0",NULL,NULL,NULL,NULL,NULL
+542,17,Les Innus de Ekuanitshit,NULL,1,2015-08-20 15:19:48,NULL,2015-08-20 15:19:48,NULL,82,"35, rue Manitou, Ekuanitshit, QC, G0G 1V0",NULL,NULL,NULL,NULL,NULL
+543,17,Listuguj Mi'gmaq Government,NULL,1,2015-08-20 15:19:49,NULL,2015-08-20 15:19:49,NULL,51,"17, Riverside Street West, P.O. Box 298, Listuguj, QC, G0C 2R0",NULL,NULL,NULL,NULL,NULL
+544,17,Long Point First Nation,NULL,1,2015-08-20 15:19:49,NULL,2015-08-20 15:19:49,NULL,67,"112, Kakinwawigak Mikana, P.O. Box 1, Winneway, QC, J0Z 2J0",NULL,NULL,NULL,NULL,NULL
+545,17,Micmacs of Gesgapegiag,NULL,1,2015-08-20 15:19:49,NULL,2015-08-20 15:19:49,NULL,52,"100, Perron blvd, Maria, QC, G0C 1Y0",NULL,NULL,NULL,NULL,NULL
+546,17,Mohawks of KahnawÃ¡:ke,NULL,1,2015-08-20 15:19:49,NULL,2015-08-20 15:19:49,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+547,17,Mohawks of Kanesatake,NULL,1,2015-08-20 15:19:49,NULL,2015-08-20 15:19:49,NULL,69,"681, Ste-Philomene Street, Kanesatake, QC, J0N 1E0",NULL,NULL,NULL,NULL,NULL
+548,17,Montagnais de Natashquan,NULL,1,2015-08-20 15:19:49,NULL,2015-08-20 15:19:49,NULL,83,"78, rue Mashkush, Natashquan, QC, G0G 2E0",NULL,NULL,NULL,NULL,NULL
+549,17,Montagnais de Pakua Shipi,NULL,1,2015-08-20 15:19:49,NULL,2015-08-20 15:19:49,NULL,88,"CP 178, St-Augustin-Saguenay, QC, G0G 2R0",NULL,NULL,NULL,NULL,NULL
+550,17,Montagnais de Unamen Shipu,NULL,1,2015-08-20 15:19:50,NULL,2015-08-20 15:19:50,NULL,84,"90, rue du Large, La Romaine, QC, G0G 1M0",NULL,NULL,NULL,NULL,NULL
+551,17,Montagnais du Lac St-Jean,NULL,1,2015-08-20 15:19:50,NULL,2015-08-20 15:19:50,NULL,76,"1671, rue Ouiatchouan, Mashteuiatsh, QC, G0W 2H0",NULL,NULL,NULL,NULL,NULL
+552,17,Naskapi Nation of Kawawachikamach,NULL,1,2015-08-20 15:19:50,NULL,2015-08-20 15:19:50,NULL,81,"P.O. Box 5111, Kawawachikamach, QC, G0G 2Z0",NULL,NULL,NULL,NULL,NULL
+553,17,Nation Anishnabe du Lac Simon,NULL,1,2015-08-20 15:19:50,NULL,2015-08-20 15:19:50,NULL,63,"1026, Boulevard Cicip, CP 139, Lac Simon, QC, J0Y 3M0",NULL,NULL,NULL,NULL,NULL
+554,17,Nation Huronne Wendat,NULL,1,2015-08-20 15:19:50,NULL,2015-08-20 15:19:50,NULL,50,"255, place Chef-Michel-Laveau, Wendake, QC, G0A 4V0",NULL,NULL,NULL,NULL,NULL
+555,17,Odanak,NULL,1,2015-08-20 15:19:50,NULL,2015-08-20 15:19:50,NULL,72,"104, Rue Sibosis, Odanak, QC, J0G 1H0",NULL,NULL,NULL,NULL,NULL
+556,17,OujÃ©-Bougoumou Cree Nation,NULL,1,2015-08-20 15:19:50,NULL,2015-08-20 15:19:50,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+557,17,PremiÃ¨re Nation Malecite de Viger,NULL,1,2015-08-20 15:19:50,NULL,2015-08-20 15:19:50,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+558,17,PremiÃ¨re Nation des AbÃ©nakis de WÃ´linak,NULL,1,2015-08-20 15:19:51,NULL,2015-08-20 15:19:51,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+559,17,PremiÃ¨re nation de Whapmagoostui,NULL,1,2015-08-20 15:19:51,NULL,2015-08-20 15:19:51,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+560,17,The Crees of the Waskaganish First Nation,NULL,1,2015-08-20 15:19:51,NULL,2015-08-20 15:19:51,NULL,61,"70, Waskaganish Street, Waskaganish, QC, J0M 1R0",NULL,NULL,NULL,NULL,NULL
+561,17,Timiskaming First Nation,NULL,1,2015-08-20 15:19:51,NULL,2015-08-20 15:19:51,NULL,64,"24, Algonquin Avenue, Notre-Dame-du-Nord, QC, J0Z 3B0",NULL,NULL,NULL,NULL,NULL
+562,17,Waswanipi,NULL,1,2015-08-20 15:19:51,NULL,2015-08-20 15:19:51,NULL,56,"1, Chief Louis R. Gull Street, Diom Blacksmith Building, P.O. Box 8, Waswapini, QC, J0Y 3C0",NULL,NULL,NULL,NULL,NULL
+563,17,Wolf Lake,NULL,1,2015-08-20 15:19:51,NULL,2015-08-20 15:19:51,NULL,68,"Hunter's Point, P.O. Box 998, Temiscaming, QC, J0Z 3R0",NULL,NULL,NULL,NULL,NULL
+564,18,Buctouche,NULL,1,2015-08-20 15:20:38,NULL,2015-08-20 15:20:38,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+565,18,Eel Ground,NULL,1,2015-08-20 15:20:38,NULL,2015-08-20 15:20:38,NULL,7,"47 CHURCH RD, EEL GROUND, NB, E1V 4E6",NULL,NULL,NULL,NULL,NULL
+566,18,Eel River Bar First Nation,NULL,1,2015-08-20 15:20:38,NULL,2015-08-20 15:20:38,NULL,8,"11 MAIN STREET, UNIT 201, EEL RIVER BAR, NB, E8C 1A1",NULL,NULL,NULL,NULL,NULL
+567,18,Elsipogtog First Nation,NULL,1,2015-08-20 15:20:38,NULL,2015-08-20 15:20:38,NULL,3,"373 BIG COVE ROAD, ELSIPOGTOG FIRST NATION, NB, E4W 2S3",NULL,NULL,NULL,NULL,NULL
+568,18,Esgenoopetitj First Nation,NULL,1,2015-08-20 15:20:38,NULL,2015-08-20 15:20:38,NULL,5,"621 BAYVIEW DRIVE, BURNT CHURCH, NB, E9G 2A8",NULL,NULL,NULL,NULL,NULL
+569,18,Fort Folly,NULL,1,2015-08-20 15:20:38,NULL,2015-08-20 15:20:38,NULL,9,"PO BOX 1007, DORCHESTER, NB, E4K 3V5",NULL,NULL,NULL,NULL,NULL
+570,18,Indian Island,NULL,1,2015-08-20 15:20:38,NULL,2015-08-20 15:20:38,NULL,10,"61 INDIAN ISLAND DRIVE, INDIAN ISLAND, NB, E4W 1S9",NULL,NULL,NULL,NULL,NULL
+571,18,Kingsclear,NULL,1,2015-08-20 15:20:39,NULL,2015-08-20 15:20:39,NULL,11,"77 FRENCH VILLAGE RD, KINGSCLEAR FIRST NATION, NB, E3E 1K3",NULL,NULL,NULL,NULL,NULL
+572,18,Madawaska Maliseet First Nation,NULL,1,2015-08-20 15:20:39,NULL,2015-08-20 15:20:39,NULL,6,"1771 MAIN STREET, MADAWASKA MALISEET FIRST NAT, NB, E7C 1W9",NULL,NULL,NULL,NULL,NULL
+573,18,Metepenagiag Mi'kmaq Nation,NULL,1,2015-08-20 15:20:39,NULL,2015-08-20 15:20:39,NULL,14,"PO BOX 293, METEPENAGIAG MI'KMAQ NATION, NB, E9E 2P2",NULL,NULL,NULL,NULL,NULL
+574,18,Oromocto,NULL,1,2015-08-20 15:20:39,NULL,2015-08-20 15:20:39,NULL,12,"PO BOX 417, 33 HIAWATHA AVENUE, OROMOCTO, NB, E2V 2J2",NULL,NULL,NULL,NULL,NULL
+575,18,Pabineau,NULL,1,2015-08-20 15:20:39,NULL,2015-08-20 15:20:39,NULL,13,"1290 PABINEAU FALLS ROAD, PABINEAU FIRST NATION, NB, E2A 7M3",NULL,NULL,NULL,NULL,NULL
+576,18,Saint Mary's,NULL,1,2015-08-20 15:20:39,NULL,2015-08-20 15:20:39,NULL,15,"150 CLIFFE STREET, FREDERICTON, NB, E3A 2T1",NULL,NULL,NULL,NULL,NULL
+577,18,Tobique,NULL,1,2015-08-20 15:20:39,NULL,2015-08-20 15:20:39,NULL,16,"13156 ROUTE 105, TOBIQUE FIRST NATION, NB, E7H 5M7",NULL,NULL,NULL,NULL,NULL
+578,18,Woodstock,NULL,1,2015-08-20 15:20:40,NULL,2015-08-20 15:20:40,NULL,17,"3 WULASTOOK COURT, WOODSTOCK FIRST NATION, NB, E7M 4K6",NULL,NULL,NULL,NULL,NULL
+579,19,Acadia,NULL,1,2015-08-20 15:21:24,NULL,2015-08-20 15:21:24,NULL,18,"10526 HIGHWAY 3, YARMOUTH, NS, B5A 4A8",NULL,NULL,NULL,NULL,NULL
+580,19,Annapolis Valley,NULL,1,2015-08-20 15:21:24,NULL,2015-08-20 15:21:24,NULL,20,"29 TONEY BLVD, CAMBRIDGE 32, NS, B0P 1G0",NULL,NULL,NULL,NULL,NULL
+581,19,Bear River,NULL,1,2015-08-20 15:21:24,NULL,2015-08-20 15:21:24,NULL,21,"PO BOX 210, BEAR RIVER, NS, B0S 1B0",NULL,NULL,NULL,NULL,NULL
+582,19,Eskasoni,NULL,1,2015-08-20 15:21:24,NULL,2015-08-20 15:21:24,NULL,23,"PO BOX 7040, 63 MINI MALL DRIVE, ESKASONI, NS, B1W 1A1",NULL,NULL,NULL,NULL,NULL
+583,19,Glooscap First Nation,NULL,1,2015-08-20 15:21:24,NULL,2015-08-20 15:21:24,NULL,30,"159 SMITH ROAD, HANTSPORT, NS, B0P 1P0",NULL,NULL,NULL,NULL,NULL
+584,19,Membertou,NULL,1,2015-08-20 15:21:24,NULL,2015-08-20 15:21:24,NULL,26,"111 MEMBERTOU STREET, SYDNEY, NS, B1S 2M9",NULL,NULL,NULL,NULL,NULL
+585,19,Millbrook,NULL,1,2015-08-20 15:21:25,NULL,2015-08-20 15:21:25,NULL,27,"PO BOX 634, TRURO, NS, B2N 5E5",NULL,NULL,NULL,NULL,NULL
+586,19,Paqtnkek Mi'kmaw Nation,NULL,1,2015-08-20 15:21:25,NULL,2015-08-20 15:21:25,NULL,19,"RR 1, 7 DILLAN STREET, AFTON, NS, B0H 1A0",NULL,NULL,NULL,NULL,NULL
+587,19,Pictou Landing,NULL,1,2015-08-20 15:21:25,NULL,2015-08-20 15:21:25,NULL,24,"43 MAPLE STREET, RR 2 BOX 55 SITE 6, TRENTON, NS, B0K 1X0",NULL,NULL,NULL,NULL,NULL
+588,19,Potlotek First Nation,NULL,1,2015-08-20 15:21:25,NULL,2015-08-20 15:21:25,NULL,22,"PO BOX 538, CHAPEL ISLAND, NS, B0E 3B0",NULL,NULL,NULL,NULL,NULL
+589,19,SIPEKNE'KATIK,NULL,1,2015-08-20 15:21:25,NULL,2015-08-20 15:21:25,NULL,25,"522 CHURCH STREET, INDIAN BROOK, NS, B0N 1W0",NULL,NULL,NULL,NULL,NULL
+590,19,Wagmatcook,NULL,1,2015-08-20 15:21:25,NULL,2015-08-20 15:21:25,NULL,28,"PO BOX 30001, WAGMATCOOK, NS, B0E 3N0",NULL,NULL,NULL,NULL,NULL
+591,19,Waycobah First Nation,NULL,1,2015-08-20 15:21:25,NULL,2015-08-20 15:21:25,NULL,29,"PO BOX 149, WHYCOCOMAGH, NS, B0E 3M0",NULL,NULL,NULL,NULL,NULL
+592,20,Abegweit,NULL,1,2015-08-20 15:22:17,NULL,2015-08-20 15:22:17,NULL,1,"PO BOX 36, 11222 ST. PETERS ROAD, SCOTCHFORT, PE, C0A 1T0",NULL,NULL,NULL,NULL,NULL
+593,20,Lennox Island,NULL,1,2015-08-20 15:22:17,NULL,2015-08-20 15:22:17,NULL,2,"PO BOX 134, LENNOX ISLAND, PE, C0B 1P0",NULL,NULL,NULL,NULL,NULL
+594,21,Miawpukek,NULL,1,2015-08-20 15:23:09,NULL,2015-08-20 15:23:09,NULL,47,"50 MIAWPUKEK DRIVE, PO BOX 10, CONNE RIVER, NF, A0H 1J0",NULL,NULL,NULL,NULL,NULL
+595,21,Mushuau Innu First Nation,NULL,1,2015-08-20 15:23:09,NULL,2015-08-20 15:23:09,NULL,32,"PO BOX 190, NATUASHISH, NF, A0P 1A0",NULL,NULL,NULL,NULL,NULL
+596,21,Qalipu Mi'kmaq First Nation,NULL,1,2015-08-20 15:23:09,NULL,2015-08-20 15:23:09,NULL,34,"3 CHURCH STREET, CORNER BROOK, NF, A2H 2Z4",NULL,NULL,NULL,NULL,NULL
+597,21,Sheshatshiu Innu First Nation,NULL,1,2015-08-20 15:23:09,NULL,2015-08-20 15:23:09,NULL,33,"PO BOX 160, SHESHATSHIU FIRST NATION, NF, A0P 1M0",NULL,NULL,NULL,NULL,NULL
+598,22,Acho Dene Koe First Nation,NULL,1,2015-08-20 15:24:08,NULL,2015-08-20 15:24:08,NULL,758,"GENERAL DELIVERY, FORT LIARD, NT, X0E 0A0",NULL,NULL,NULL,NULL,NULL
+599,22,Aklavik,NULL,1,2015-08-20 15:24:08,NULL,2015-08-20 15:24:08,NULL,755,"PO BOX 118, AKLAVIK, NT, X0E 0A0",NULL,NULL,NULL,NULL,NULL
+600,22,"Behdzi Ahda"" First Nation",NULL,1,2015-08-20 15:24:09,NULL,2015-08-20 15:24:09,NULL,771,"PO BOX 53, COLVILLE LAKE, NT, X0E 0L0",NULL,NULL,NULL,NULL,NULL
+601,22,Dechi Laot'i First Nations,NULL,1,2015-08-20 15:24:09,NULL,2015-08-20 15:24:09,NULL,774,"PO BOX 34, WEKWETI, NT, X0E 1W0",NULL,NULL,NULL,NULL,NULL
+602,22,Deh GÃ¡h Got'ie Dene First Nation,NULL,1,2015-08-20 15:24:09,NULL,2015-08-20 15:24:09,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+603,22,Deline First Nation,NULL,1,2015-08-20 15:24:09,NULL,2015-08-20 15:24:09,NULL,754,"PO BOX 158, DELINE, NT, X0E 0G0",NULL,NULL,NULL,NULL,NULL
+604,22,Deninu K'ue First Nation,NULL,1,2015-08-20 15:24:09,NULL,2015-08-20 15:24:09,NULL,762,"PO BOX 1899, FORT RESOLUTION, NT, X0E 0M0",NULL,NULL,NULL,NULL,NULL
+605,22,Dog Rib Rae,NULL,1,2015-08-20 15:24:09,NULL,2015-08-20 15:24:09,NULL,765,"PO BOX 412, BEHCHOKO, NT, X0E 0Y0",NULL,NULL,NULL,NULL,NULL
+606,22,Fort Good Hope,NULL,1,2015-08-20 15:24:09,NULL,2015-08-20 15:24:09,NULL,752,"PO BOX 80, FORT GOOD HOPE, NT, X0E 0H0",NULL,NULL,NULL,NULL,NULL
+607,22,Gameti First Nation,NULL,1,2015-08-20 15:24:09,NULL,2015-08-20 15:24:09,NULL,773,"PO BOX 104, GAMETI, NT, X0E 1R0",NULL,NULL,NULL,NULL,NULL
+608,22,Gwichya Gwich'in,NULL,1,2015-08-20 15:24:10,NULL,2015-08-20 15:24:10,NULL,753,"PO BOX 4, TSIIGEHTCHIC, NT, X0E 0B0",NULL,NULL,NULL,NULL,NULL
+609,22,Inuvik Native,NULL,1,2015-08-20 15:24:10,NULL,2015-08-20 15:24:10,NULL,780,"PO BOX 2570, INUVIK, NT, X0E 0T0",NULL,NULL,NULL,NULL,NULL
+610,22,Jean Marie River First Nation,NULL,1,2015-08-20 15:24:10,NULL,2015-08-20 15:24:10,NULL,770,"GENERAL DELIVERY, JEAN MARIE RIVER, NT, X0E 0N0",NULL,NULL,NULL,NULL,NULL
+611,22,K'atlodeeche First Nation,NULL,1,2015-08-20 15:24:10,NULL,2015-08-20 15:24:10,NULL,761,"PO BOX 3060, HAY RIVER RESERVE, NT, X0E 1G4",NULL,NULL,NULL,NULL,NULL
+612,22,Ka'a'gee Tu First Nation,NULL,1,2015-08-20 15:24:10,NULL,2015-08-20 15:24:10,NULL,768,"PO BOX 4428, HAY RIVER, NT, X0E 1G3",NULL,NULL,NULL,NULL,NULL
+613,22,Liidlii Kue First Nation,NULL,1,2015-08-20 15:24:10,NULL,2015-08-20 15:24:10,NULL,757,"PO BOX 469, FORT SIMPSON, NT, X0E 0N0",NULL,NULL,NULL,NULL,NULL
+614,22,Lutsel K'e Dene First Nation,NULL,1,2015-08-20 15:24:10,NULL,2015-08-20 15:24:10,NULL,764,"PO BOX 28, LUTSEL K'E, NT, X0E 1A0",NULL,NULL,NULL,NULL,NULL
+615,22,Nahanni Butte,NULL,1,2015-08-20 15:24:10,NULL,2015-08-20 15:24:10,NULL,766,"GENERAL DELIVERY, NAHANNI BUTTE, NT, X0E 0N0",NULL,NULL,NULL,NULL,NULL
+616,22,Pehdzeh Ki First Nation,NULL,1,2015-08-20 15:24:11,NULL,2015-08-20 15:24:11,NULL,756,"GENERAL DELIVERY, WRIGLEY, NT, X0E 1E0",NULL,NULL,NULL,NULL,NULL
+617,22,Salt River First Nation #195,NULL,1,2015-08-20 15:24:11,NULL,2015-08-20 15:24:11,NULL,759,"PO BOX 960, FORT SMITH, NT, X0E 0P0",NULL,NULL,NULL,NULL,NULL
+618,22,Sambaa K'e (Trout Lake) Dene,NULL,1,2015-08-20 15:24:11,NULL,2015-08-20 15:24:11,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+619,22,Tetlit Gwich'in,NULL,1,2015-08-20 15:24:11,NULL,2015-08-20 15:24:11,NULL,751,"PO BOX 30, FORT MCPHERSON, NT, X0E 0J0",NULL,NULL,NULL,NULL,NULL
+620,22,Tulita Dene,NULL,1,2015-08-20 15:24:11,NULL,2015-08-20 15:24:11,NULL,750,"PO BOX 118, TULITA, NT, X0E 0K0",NULL,NULL,NULL,NULL,NULL
+621,22,West Point First Nation,NULL,1,2015-08-20 15:24:11,NULL,2015-08-20 15:24:11,NULL,772,"1 - 47031 MACKENZIE HWY, HAY RIVER, NT, X0E 0R9",NULL,NULL,NULL,NULL,NULL
+622,22,Wha Ti First Nation,NULL,1,2015-08-20 15:24:11,NULL,2015-08-20 15:24:11,NULL,769,"PO BOX 92, WHA TI, NT, X0E 1P0",NULL,NULL,NULL,NULL,NULL
+623,22,Yellowknives Dene First Nation,NULL,1,2015-08-20 15:24:12,NULL,2015-08-20 15:24:12,NULL,763,"PO BOX 2514, YELLOWKNIFE, NT, X1A 2P8",NULL,NULL,NULL,NULL,NULL
+624,23,Aishihik,NULL,1,2015-08-20 15:24:58,NULL,2015-08-20 15:24:58,NULL,490, ,NULL,NULL,NULL,NULL,NULL
+625,23,Carcross/Tagish First Nation,NULL,1,2015-08-20 15:24:58,NULL,2015-08-20 15:24:58,NULL,491,"PO BOX 130, CARCROSS, YT, Y0B 1B0",NULL,NULL,NULL,NULL,NULL
+626,23,Champagne,NULL,1,2015-08-20 15:24:58,NULL,2015-08-20 15:24:58,NULL,493, ,NULL,NULL,NULL,NULL,NULL
+627,23,Champagne and Aishihik First Nations,NULL,1,2015-08-20 15:24:58,NULL,2015-08-20 15:24:58,NULL,507,"PO BOX 5310, HAINES JUNCTION, YT, Y0B 1L0",NULL,NULL,NULL,NULL,NULL
+628,23,Dease River,NULL,1,2015-08-20 15:24:59,NULL,2015-08-20 15:24:59,NULL,504,"PO BOX 79, GOOD HOPE LAKE, BC, V0C 2Z0",NULL,NULL,NULL,NULL,NULL
+629,23,First Nation of Nacho Nyak Dun,NULL,1,2015-08-20 15:24:59,NULL,2015-08-20 15:24:59,NULL,495,"PO BOX 220, MAYO, YT, Y0B 1M0",NULL,NULL,NULL,NULL,NULL
+630,23,Kluane First Nation,NULL,1,2015-08-20 15:24:59,NULL,2015-08-20 15:24:59,NULL,503,"PO BOX 20, BURWASH LANDING, YT, Y0B 1V0",NULL,NULL,NULL,NULL,NULL
+631,23,Kwanlin Dun First Nation,NULL,1,2015-08-20 15:24:59,NULL,2015-08-20 15:24:59,NULL,500,"35 McINTYRE STREET, WHITEHORSE, YT, Y1A 5S5",NULL,NULL,NULL,NULL,NULL
+632,23,Liard First Nation,NULL,1,2015-08-20 15:24:59,NULL,2015-08-20 15:24:59,NULL,502,"PO BOX 328, WATSON LAKE, YT, Y0A 1C0",NULL,NULL,NULL,NULL,NULL
+633,23,Little Salmon/Carmacks First Nation,NULL,1,2015-08-20 15:24:59,NULL,2015-08-20 15:24:59,NULL,492,"PO BOX 135, CARMACKS, YT, Y0B 1C0",NULL,NULL,NULL,NULL,NULL
+634,23,Ross River,NULL,1,2015-08-20 15:24:59,NULL,2015-08-20 15:24:59,NULL,497,"GENERAL DELIVERY, ROSS RIVER, YT, Y0B 1S0",NULL,NULL,NULL,NULL,NULL
+635,23,Selkirk First Nation,NULL,1,2015-08-20 15:24:59,NULL,2015-08-20 15:24:59,NULL,498,"PO BOX 40, PELLY CROSSING, YT, Y0B 1P0",NULL,NULL,NULL,NULL,NULL
+636,23,Ta'an Kwach'an,NULL,1,2015-08-20 15:25:00,NULL,2015-08-20 15:25:00,NULL,508,"117 INDUSTRIAL ROAD, WHITEHORSE, YT, Y1A 2T8",NULL,NULL,NULL,NULL,NULL
+637,23,Taku River Tlingit,NULL,1,2015-08-20 15:25:00,NULL,2015-08-20 15:25:00,NULL,501,"PO BOX 132, ATLIN, BC, V0W 1A0",NULL,NULL,NULL,NULL,NULL
+638,23,Teslin Tlingit Council,NULL,1,2015-08-20 15:25:00,NULL,2015-08-20 15:25:00,NULL,499,"PO BOX 133, TESLIN, YT, Y0A 1B0",NULL,NULL,NULL,NULL,NULL
+639,23,Tr'ondÃ«k HwÃ«ch'in,NULL,1,2015-08-20 15:25:00,NULL,2015-08-20 15:25:00,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+640,23,Vuntut Gwitchin First Nation,NULL,1,2015-08-20 15:25:00,NULL,2015-08-20 15:25:00,NULL,496,"PO BOX 94, OLD CROW, YT, Y0B 1N0",NULL,NULL,NULL,NULL,NULL
+641,23,White River First Nation,NULL,1,2015-08-20 15:25:00,NULL,2015-08-20 15:25:00,NULL,506,"PO BOX 2, BEAVER CREEK, YT, Y0B 1A0",NULL,NULL,NULL,NULL,NULL
+642,24,Big Island Lake Cree Nation,"Big Island Lake Cree Nation is a Cree First Nation in Saskatchewan, Canada. They have reserved for themselves one reserve, also called Big Island Lake Cree Nation, within Rural Municipality of Beaver River No. 622.",1,2015-11-25 14:52:58,NULL,2022-04-12 22:20:59,"{""id"":""2"",""user_type"":""root"",""display_name"":""Brenden""}",399,"PO BOX 309, PIERCELAND, SK, S0M 2K0",54.40825561,-109.6270212,,Chief David Sandfly,
+643,24,EXPORTDATA,NULL,1,2015-11-26 12:27:32,NULL,2015-11-26 12:27:32,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+644,25,Southend,"Southend is a community in north-eastern Saskatchewan, Canada located at the southern end of Reindeer Lake, the ninth largest lake in Canada. The community is the terminus of Highway 102 and is 221 km (137 miles) north-east of La Ronge.",1,2020-01-31 20:09:33,"{""id"":""2"",""user_type"":""root"",""display_name"":""Brenden""}",2022-04-13 14:47:24,"{""id"":""2"",""user_type"":""root"",""display_name"":""Brenden""}",NULL,NULL,56.32898717,-103.2417337,,,
+645,25,Pelican Narrows,,1,2020-01-31 20:09:47,"{""id"":""2"",""user_type"":""root"",""display_name"":""Brenden""}",2020-01-31 20:09:47,"{""id"":""2"",""user_type"":""root"",""display_name"":""Brenden""}",NULL,NULL,55.18205385,-102.8930762,,,
+646,25,Deschambault Lake,"Deschambault Lake /dəˈʃæmboʊ/ is a freshwater lake in northern Saskatchewan, Canada. The identically-named community of Deschambault Lake resides on its shore.",1,2020-01-31 20:09:59,"{""id"":""2"",""user_type"":""root"",""display_name"":""Brenden""}",2022-04-13 16:59:10,"{""id"":""2"",""user_type"":""root"",""display_name"":""Brenden""}",NULL,NULL,54.91024956,-103.3776024,https://www.dlrfishing.com/,,
+647,25,Sandy Bay,,1,2020-01-31 20:10:21,"{""id"":""2"",""user_type"":""root"",""display_name"":""Brenden""}",2020-01-31 20:10:21,"{""id"":""2"",""user_type"":""root"",""display_name"":""Brenden""}",NULL,NULL,55.52832252,-102.3217428,http://www.sandybayfirstnation.com/,Chief Trevor Prince,
+648,25,Sturgeon Landing,NULL,1,2020-01-31 20:10:31,"{""id"":""2"",""user_type"":""root"",""display_name"":""Brenden""}",2022-04-13 17:02:31,"{""id"":""2"",""user_type"":""root"",""display_name"":""Brenden""}",NULL,NULL,NULL, ,NULL,NULL,NULL
+649,25,Denare Beach,"Denare Beach is a northern village on the east shore of Amisk Lake, Saskatchewan. Located on Highway 167, the community is 20 km (12 mi) southwest of Flin Flon and 422 km (262 mi) northeast of Prince Albert",1,2020-01-31 20:10:42,"{""id"":""2"",""user_type"":""root"",""display_name"":""Brenden""}",2022-04-13 17:00:16,"{""id"":""2"",""user_type"":""root"",""display_name"":""Brenden""}",NULL,NULL,54.6619469,-102.0802996,https://www.denarebeach.net/,,
+650,26,Camsell Portage,"Camsell Portage is a northern settlement of 37 people, located on the north-central shore of Lake Athabasca. The northern settlement is an unincorporated community in the Northern Saskatchewan Administration District.",1,2020-11-20 20:42:06,"{""id"":""37"",""user_type"":""root"",""display_name"":""Beagle""}",2022-04-13 13:17:26,"{""id"":""2"",""user_type"":""root"",""display_name"":""Brenden""}",NULL,NULL,59.61011525,-109.2508515,,,
+651,26,Uranium City ,"Uranium City is a northern settlement in Saskatchewan, Canada. Located on the northern shores of Lake Athabasca near the border of the Northwest Territories",1,2020-11-20 20:42:33,"{""id"":""37"",""user_type"":""root"",""display_name"":""Beagle""}",2022-04-13 16:48:31,"{""id"":""2"",""user_type"":""root"",""display_name"":""Brenden""}",NULL,NULL,59.57201643,-108.6157085,NULL,,
+652,26,Wollaston Lake,"Hatchet Lake Denesuline Nation (Chipewyan: Tthpø Tuwé) is a Denesuline First Nation in northern Saskatchewan. The main settlement, Wollaston Lake, is an unincorporated community on Wollaston Lake in the boreal forest of north-eastern Saskatchewan, Canada",1,2020-11-20 20:42:56,"{""id"":""37"",""user_type"":""root"",""display_name"":""Beagle""}",2022-04-13 16:54:49,"{""id"":""2"",""user_type"":""root"",""display_name"":""Brenden""}",NULL,NULL,58.11201703,-103.1572297,NULL,,
+653,26,Stony Rapids,"Stony Rapids (Chipewyan: Deschaghe, lit. 'settlement on the other side of the Rapids') is a northern hamlet in Northern Saskatchewan, Canada. It is located 82 kilometres (51 mi) south of the border to the Northwest Territories, the community is astride the Fond du Lac River.",1,2020-11-20 20:43:09,"{""id"":""37"",""user_type"":""root"",""display_name"":""Beagle""}",2022-04-13 14:54:34,"{""id"":""2"",""user_type"":""root"",""display_name"":""Brenden""}",NULL,NULL,59.2569431,-105.8363012,,,
+654,24,Demo Nation,NULL,1,2022-02-09 18:12:21,NULL,2022-02-09 18:12:21,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL

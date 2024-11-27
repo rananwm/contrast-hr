@@ -1,0 +1,21 @@
+node_modules/
+.expo/
+dist/
+npm-debug.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+web-build/
+
+# macOS
+.DS_Store
+
+test.html
+api-v1.txt
+
+# ignore .aab files that we may or may not keep here for posterity
+*.aab
+pc-api*.json

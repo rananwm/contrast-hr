@@ -1,0 +1,54 @@
+{
+  "expo": {
+    "name": "ContrastHR",
+    "slug": "exectras",
+    "version": "1.0.1",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0,
+      "url": "https://u.expo.dev/e541deed-2c33-4c99-a5ee-458448e36d88"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.mmanifesto.contrasthr"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "package": "com.mmanifesto.contrasthr",
+      "versionCode": 2
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "description": "Exectras HR mobile app",
+    "runtimeVersion": {
+      "policy": "sdkVersion"
+    },
+    "plugins": [
+      "expo-secure-store",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app accesses your photos to upload your profile picture."
+        }
+      ]
+    ],
+    "owner": "mediamanifestoinc",
+    "extra": {
+      "eas": {
+        "projectId": "e541deed-2c33-4c99-a5ee-458448e36d88"
+      }
+    }
+  }
+}
