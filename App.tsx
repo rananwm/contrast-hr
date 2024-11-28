@@ -11,7 +11,6 @@ import {
   readRecords,
   requestPermission,
 } from "react-native-health-connect";
-import { Platform } from "react-native";
 import AppleHealthKit from "react-native-health";
 import { COLORS } from "./constants";
 
