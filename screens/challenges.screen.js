@@ -1,5 +1,5 @@
 import React, { useCallback, useEffect, useMemo, useState } from "react";
-import { Dimensions, Platform, StyleSheet } from "react-native";
+import { Dimensions, Platform, RefreshControl, StyleSheet } from "react-native";
 import {
   MButton,
   MIcon,
@@ -44,6 +44,7 @@ const ChallengesScreen = ({ navigation, route: { params } }) => {
   const [featureChallenge, setFeatureChallenge] = React.useState(null);
   // const [featureChallengeData, setFeatureChallengeData] = React.useState(null);
   const [featureLoading, setFeatureLoading] = React.useState(false);
+  const [refreshing, setRefreshing] = React.useState(false);
   const [categories, setCategories] = React.useState({
     tags: [],
     languages: {},
@@ -108,6 +109,13 @@ const ChallengesScreen = ({ navigation, route: { params } }) => {
     } finally {
       setLoading(false);
     }
+  };
+  const onRefresh = () => {
+    setRefreshing(true);
+    setTimeout(() => {
+      getChallenges();
+      setRefreshing(false);
+    }, 1000);
   };
   const onSearchChallenges = async (type = "challenge") => {
     try {
@@ -175,6 +183,9 @@ const ChallengesScreen = ({ navigation, route: { params } }) => {
       <MScrollView
         contentContainerStyle={loading ? styles.scrollContainer : {}}
         style={styles.scrollContainer}
+        refreshControl={
+          <RefreshControl refreshing={refreshing} onRefresh={onRefresh} />
+        }
       >
         {featureChallengeData && (
           <Card

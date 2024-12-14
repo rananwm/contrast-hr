@@ -217,7 +217,7 @@ export default ({ navigation }) => {
                   <MView style={styles.card}>
                     <MTouchable
                       style={styles.flexRowCenter}
-                      onPress={() => navigation.navigate(ROUTES.PROFILE)}
+                      onPress={() => navigation.navigate(ROUTES.PROFILE_STACK)}
                     >
                       <Image
                         resizeMode="cover"
@@ -274,14 +274,7 @@ export default ({ navigation }) => {
                         </MView>
                         <MButton
                           onPress={() =>
-                            navigation.dispatch(
-                              CommonActions.navigate({
-                                name: ROUTES.PROFILE_STACK,
-                                params: {
-                                  screen: ROUTES.REQUEST_TIME_OFF,
-                                },
-                              })
-                            )
+                            navigation.navigate(ROUTES.REQUEST_TIME_OFF)
                           }
                           style={styles.timeOffBtn}
                           textStyle={{

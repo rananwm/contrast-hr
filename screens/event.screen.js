@@ -1,5 +1,5 @@
 import React from "react";
-import { Linking, ScrollView, StyleSheet } from "react-native";
+import { Linking, Platform, ScrollView, StyleSheet } from "react-native";
 import { MButton, MText, MView } from "../components/MComponents";
 import {
   get_event_calendar,
@@ -54,13 +54,14 @@ export default ({ navigation }) => {
         setLoaded(false);
       });
   }, []);
-
+  console.log("eventSubscription?.events", eventSubscription?.events);
   return (
     <MLayout statusBarColor={COLORS.WHITE} isProfileHeader>
       <ScrollView
         showsVerticalScrollIndicator={false}
         automaticallyAdjustKeyboardInsets
         style={styles.container}
+        contentContainerStyle={{ flexGrow: 1 }}
       >
         <MText style={styles.header}>{t("events.title")}</MText>
         {loaded ? (
@@ -76,7 +77,13 @@ export default ({ navigation }) => {
                 <MButton
                   style={styles.btn}
                   onPress={() => {
-                    Linking.openURL(eventSubscription?.events);
+                    let url = eventSubscription?.events;
+                    if (
+                      url.includes("webcal://" && Platform.OS === "android")
+                    ) {
+                      url = url.replace("webcal://", "https://");
+                    }
+                    Linking.openURL(url);
                   }}
                 >
                   {t("events.event_calendar")}
@@ -87,6 +94,12 @@ export default ({ navigation }) => {
                 <MButton
                   style={styles.btn}
                   onPress={() => {
+                    let url = eventSubscription?.timeoff;
+                    if (
+                      url.includes("webcal://" && Platform.OS === "android")
+                    ) {
+                      url = url.replace("webcal://", "https://");
+                    }
                     Linking.openURL(eventSubscription?.timeoff);
                   }}
                 >
@@ -185,7 +198,6 @@ const styles = StyleSheet.create({
     display: "flex",
     flexDirection: "row",
     justifyContent: "space-between",
-    gap: "4%",
     marginBottom: 12,
   },
   btn: {

@@ -132,7 +132,11 @@ export const HomeNavigator = (props) => {
   }
   return (
     <SafeAreaView style={styles.container}>
-      <Tab.Navigator>
+      <Tab.Navigator
+        screenOptions={{
+          unmountOnBlur: true,
+        }}
+      >
         {timeOffSettings && timeOffSummary
           ? bottomTabs.map((tab, index) => {
               return (

@@ -48,7 +48,7 @@ import {
   TextInput,
   useTheme,
 } from "react-native-paper";
-import { COLORS } from "../constants";
+import { COLORS, ROUTES } from "../constants";
 import HTMLView from "react-native-htmlview";
 import YoutubePlayer from "react-native-youtube-iframe";
 import TaskTableRow from "../components/TaskTableRow";
@@ -98,7 +98,7 @@ const ChallengeScreen = ({ navigation, route: { params } }) => {
     let result = await ImagePicker.launchImageLibraryAsync({
       mediaTypes: ImagePicker.MediaTypeOptions.Images,
       allowsEditing: true,
-      aspect: [4, 3],
+      // aspect: [4, 4],
       quality: 1,
     });
 
@@ -216,7 +216,6 @@ const ChallengeScreen = ({ navigation, route: { params } }) => {
         ),
         challenge_template_auth: params?.challenge?.challenge_template_auth,
       };
-      console.log("payload:", payload);
       const data = Object.entries(payload ?? {})
         .filter((ele) => ele?.[1])
         .map((item) => ({
@@ -229,8 +228,9 @@ const ChallengeScreen = ({ navigation, route: { params } }) => {
         data
       );
       if (response?.data?.challenge_instance_auth) {
-        navigation.setParams({ isActive: true });
         navigation.setParams({
+          isActive: true,
+          challenge: response?.data,
           challengeInstanceAuth: response?.data?.challenge_instance_auth || "",
         });
         setStep(1);
@@ -1346,7 +1346,7 @@ const ChallengeScreen = ({ navigation, route: { params } }) => {
   const scrollRef = useRef(null);
 
   return (
-    <MLayout isProfileHeader ref={layoutRef}>
+    <MLayout isProfileHeader ref={layoutRef} statusBarColor={COLORS.WHITE}>
       <MView style={{ flex: 1, padding: 0 }}>
         {params?.banner && (
           <Image source={{ uri: params?.banner }} style={styles.image} />
@@ -1367,6 +1367,20 @@ const ChallengeScreen = ({ navigation, route: { params } }) => {
             isPhotoGalleryDisabled={params?.challenge?.enable_photos === "0"}
           />
         )}
+        <MTouchable
+          onPress={() => {
+            navigation.navigate(ROUTES.CHALLENGES_STACK, {
+              screen: ROUTES.CHALLENGES,
+            });
+          }}
+          style={{
+            backgroundColor: "transparent",
+            marginLeft: 20,
+            marginTop: 8,
+          }}
+        >
+          <MIcon source="arrow-left" size={30} color={COLORS.BLACK} />
+        </MTouchable>
         <ScrollView
           style={styles.scrollContainer}
           contentContainerStyle={
@@ -1523,7 +1537,8 @@ const styles = StyleSheet.create({
   scrollContainer: {
     flex: 1,
     backgroundColor: "#fff",
-    padding: 24,
+    paddingHorizontal: 24,
+    paddingBottom: 24,
   },
   container: {
     flex: 1,

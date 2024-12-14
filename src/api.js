@@ -798,7 +798,9 @@ const downloadDocument = async (
   action,
   profile_auth,
   session_cookie,
-  additional_form_data = []
+  additional_form_data = [],
+  isDownloadable = true,
+  fileName = "document.pdf"
 ) => {
   try {
     var formdata = new FormData();
@@ -836,27 +838,42 @@ const downloadDocument = async (
       const contentDisposition = response.headers["content-disposition"];
       const filenameMatch =
         contentDisposition && contentDisposition.match(/filename="(.+)"/);
-      const filename = filenameMatch ? filenameMatch[1] : "document.pdf";
+      const filename = filenameMatch ? filenameMatch[1] : fileName;
 
       const path = `${RNFS.DocumentDirectoryPath}/${filename}`;
 
-      const reader = new FileReader();
-      reader.onload = async () => {
-        const base64Data = reader.result.split(",")[1];
-        await RNFS.writeFile(path, base64Data, "base64");
-        await Share.open({
-          title: "Share PDF",
-          url: `file://${path}`,
-          type: `application/pdf`,
-        });
-      };
-      reader.readAsDataURL(response.data);
+      const base64String = await new Promise((resolve, reject) => {
+        const reader = new FileReader();
+        reader.onload = async () => {
+          try {
+            const result = reader?.result?.split(",")?.[1];
+            await RNFS.writeFile(path, result, "base64");
+            if (!isDownloadable) {
+              resolve(result);
+              return;
+            }
+            await Share.open({
+              title: "Share PDF",
+              url: `file://${path}`,
+              type: `application/pdf`,
+            });
+            resolve(result);
+          } catch (error) {
+            reject(error);
+          }
+        };
+        reader.onerror = (error) => reject(error);
+        reader.readAsDataURL(response.data);
+      });
+
+      return base64String;
     } else {
       Alert.alert("Error", "Failed to download the file");
     }
+    return "";
   } catch (error) {
     console.error("Error downloading the PDF:", error);
-    Alert.alert("Error", "An error occurred while downloading the file");
+    // Alert.alert("Error", "An error occurred while downloading the file");
   }
 };
 export const download_document = async (
@@ -876,6 +893,7 @@ export const download_document = async (
     },
   ]);
 };
+
 export const submit_signature = async (
   profile_auth,
   session_cookie,
@@ -892,4 +910,23 @@ export const submit_signature = async (
       value: signature,
     },
   ]);
+};
+export const download_document_signature = async (
+  profile_auth,
+  session_cookie,
+  document_auth
+) => {
+  return await downloadDocument(
+    "document_signature_get",
+    profile_auth,
+    session_cookie,
+    [
+      {
+        name: "document_auth",
+        value: document_auth,
+      },
+    ],
+    false,
+    "signature.png"
+  );
 };

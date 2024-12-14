@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useMemo, useState } from "react";
 import {
   ScrollView,
   StyleSheet,
@@ -363,9 +363,11 @@ export default ({ navigation, route }) => {
       }
     });
   };
-  const profileImage = `https://app.myexectras.com/${
-    profile?.profile_image
-  }?${new Date().getTime()}`;
+  const profileImage = useMemo(() => {
+    return `https://app.myexectras.com/${
+      profile?.profile_image
+    }?${new Date().getTime()}`;
+  }, [profile?.profile_image]);
 
   const { width } = useWindowDimensions();
   return (

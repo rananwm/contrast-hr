@@ -791,6 +791,7 @@
     "sign": "Firmar",
     "clear": "Claro",
     "submit": "Entregar",
+    "required": "Firma requerida",
     "signature_success": "Firma enviada exitosamente",
     "signature_error": "Error al enviar la firma"
   }

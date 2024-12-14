@@ -223,7 +223,7 @@ const RequestTimeOff = ({ navigation }) => {
               {t("timeoff.notes")}
             </MText>
             <MInput
-              multiline
+              // multiline
               mode="outlined"
               placeholder="Type Note"
               value={requestData?.timeoff_note}
@@ -356,6 +356,7 @@ const RequestTimeOff = ({ navigation }) => {
         showsVerticalScrollIndicator={false}
         automaticallyAdjustKeyboardInsets
         style={{ flex: 1, paddingVertical: 12 }}
+        contentContainerStyle={{ flexGrow: 1 }}
       >
         <MText style={styles.headerTitle}>
           {t("timeoff.request_time_off")}

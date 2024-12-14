@@ -1,4 +1,4 @@
-import React, { forwardRef, useImperativeHandle } from "react";
+import React, { forwardRef, useImperativeHandle, useMemo } from "react";
 import {
   View,
   StyleSheet,
@@ -47,9 +47,11 @@ const MLayout = forwardRef(
         }
       });
     }, []);
-    const profileImage = `https://app.myexectras.com/${
-      profile?.profile_image
-    }?${new Date().getTime()}`;
+    const profileImage = useMemo(() => {
+      return `https://app.myexectras.com/${
+        profile?.profile_image
+      }?${new Date().getTime()}`;
+    }, [profile?.profile_image]);
     return (
       <MView
         style={{

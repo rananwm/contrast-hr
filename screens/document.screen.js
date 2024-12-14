@@ -1,4 +1,4 @@
-import { Text, StyleSheet, ScrollView } from "react-native";
+import { Text, StyleSheet, ScrollView, RefreshControl } from "react-native";
 import React from "react";
 import { getAuthData, getItems } from "../src/store";
 import { get_documents } from "../src/api";
@@ -13,6 +13,31 @@ const DocumentScreen = ({ navigation }) => {
   const [auth, setAuth] = React.useState("");
   const [documents, setDocuments] = React.useState([]);
   const [loading, setLoading] = React.useState(false);
+  const [refreshing, setRefreshing] = React.useState(false);
+  const refetchDocuments = async () => {
+    try {
+      setLoading(true);
+      await getItems(auth, [
+        {
+          key: "documents",
+          stateHook: setDocuments,
+          apiFallback: get_documents,
+        },
+      ]);
+    } catch (error) {
+      console.log("🚀 ~ refetchDocuments ~ error:", error);
+    } finally {
+      setLoading(false);
+    }
+  };
+  const onRefresh = async () => {
+    setRefreshing(true);
+    setTimeout(() => {
+      refetchDocuments();
+      setRefreshing(false);
+    }, 1000);
+  };
+
   React.useEffect(() => {
     setLoading(true);
     getAuthData(setAuth)
@@ -43,6 +68,10 @@ const DocumentScreen = ({ navigation }) => {
         showsVerticalScrollIndicator={false}
         automaticallyAdjustKeyboardInsets
         style={{ flex: 1 }}
+        contentContainerStyle={{ flexGrow: 1 }}
+        refreshControl={
+          <RefreshControl refreshing={refreshing} onRefresh={onRefresh} />
+        }
       >
         <Text style={styles.title}>
           {t("documents.title")}{" "}
@@ -85,12 +114,16 @@ const DocumentScreen = ({ navigation }) => {
                         style={styles.badgeTxt(!!(item?.document_sign === "1"))}
                       >
                         {item?.document_sign === "1"
-                          ? auth?.data?.name + " " + auth?.data?.surname
+                          ? item?.person_agreement === "1"
+                            ? auth?.data?.name + " " + auth?.data?.surname
+                            : t("documents.required")
                           : "N/A"}
 
                         {moment(item?.person_agreement_created).isValid() &&
-                          "\n" +
-                            moment(item?.person_agreement_created).format("ll")}
+                        item?.document_sign === "1"
+                          ? "\n" +
+                            moment(item?.person_agreement_created).format("ll")
+                          : null}
                       </MText>
                     </MView>
                   </MView>
@@ -191,7 +224,12 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    minHeight: "100%",
+  },
+  noDocumentFound: {
+    fontSize: 16,
+    color: COLORS.BLACK,
+    textAlign: "center",
+    marginVertical: 20,
   },
 });
 export default DocumentScreen;

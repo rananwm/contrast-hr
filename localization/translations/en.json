@@ -790,6 +790,7 @@
     "sign": "Sign",
     "clear": "Clear",
     "submit": "Submit",
+    "required": "Signature Required",
     "signature_success": "Signature Submitted Successfully",
     "signature_error": "Error Submitting Signature"
   }
