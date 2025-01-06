@@ -29,7 +29,7 @@ const BenefitsDiscount = ({ navigation }) => {
     "http://www.gocollette.com/en/landing-pages/partners/members-ajg",
     "http://www.avis.com/en/association/A715046",
     "http://www.budget.com/en/association/B203949",
-    "https://app.myexectras.com/Travel%20Savings%20Center",
+    "https://v2.myexectras.com/Travel%20Savings%20Center",
   ];
   const renderItem = ({ item, index }) => {
     return (

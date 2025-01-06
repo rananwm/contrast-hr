@@ -1,4 +1,4 @@
-package com.mmanifesto.contrasthr
+package com.contrast.contrasthr
 
 import android.os.Bundle
 import android.webkit.WebResourceRequest

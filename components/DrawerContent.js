@@ -1,15 +1,21 @@
 import { View, Text, SafeAreaView, Image } from "react-native";
-import React from "react";
+import React, { useMemo, useState } from "react";
 import { MIcon, MText, MTouchable, MView } from "./MComponents";
 import { COLORS, ROUTES } from "../constants";
 import { CommonActions } from "@react-navigation/native";
-import { profile_signout } from "../src/api";
-import { clearAll, getAuthData } from "../src/store";
+import {
+  get_timeoff_settings,
+  get_timeoff_summary,
+  profile_signout,
+} from "../src/api";
+import { clearAll, getAuthData, getItems } from "../src/store";
 import { t } from "i18next";
 
 const DrawerContent = ({ navigation }) => {
   const [auth, setAuth] = React.useState("");
-
+  const [timeOffSummary, setTimeOffSummary] = useState(null);
+  const [timeOffSettings, setTimeSettings] = useState(null);
+  const [loading, setLoading] = useState(true);
   const menuList = [
     {
       name: "profile.label",
@@ -61,22 +67,50 @@ const DrawerContent = ({ navigation }) => {
     },
   ];
   const signOut = async () => {
-    profile_signout(auth.data.profile_auth, auth.cookie).then((response) => {
-      if (response && response.status == "success") {
+    profile_signout(auth.data.profile_auth, auth.cookie)
+      .then((response) => {
         clearAll();
         navigation.reset({
           index: 0,
           routes: [{ name: ROUTES.LOGIN }],
         });
-      } else {
-        alert("There was an error signing out.");
-      }
-    });
+      })
+      .catch((error) => {
+        console.log("error while sign out", error);
+      });
   };
+  const fetchTimeOffData = async (authData) => {
+    try {
+      setLoading(true);
+      await getItems(authData, [
+        {
+          key: "time_off",
+          stateHook: setTimeOffSummary,
+          apiFallback: get_timeoff_summary,
+        },
+        {
+          key: "time_settings",
+          stateHook: setTimeSettings,
+          apiFallback: get_timeoff_settings,
+        },
+      ]);
+    } catch (error) {
+      console.log("🚀 ~ fetchTimeOffData ~ error:", error);
+    } finally {
+      setLoading(false);
+    }
+  };
+  const sideBarItems = useMemo(() => {
+    if (timeOffSettings && timeOffSummary) {
+      return menuList;
+    }
+    return menuList?.filter((item) => item?.route !== ROUTES.REQUEST_TIME_OFF);
+  }, [timeOffSettings, loading, timeOffSummary]);
   React.useEffect(() => {
     getAuthData(setAuth).then(async (auth) => {
       setAuth(auth);
-      if (auth && auth.data) {
+      if (auth && auth?.data) {
+        fetchTimeOffData(auth);
       } else {
         console.log("auth failed!!!", auth);
         alert("Your session has expired. Please log in again.");
@@ -98,7 +132,7 @@ const DrawerContent = ({ navigation }) => {
       />
 
       <MView style={{ flex: 1, marginTop: 12 }}>
-        {menuList?.map((item, index) => {
+        {sideBarItems?.map((item, index) => {
           const isActive = false;
           const isProfileStack = item.isProfileStack === false ? false : true;
           return (

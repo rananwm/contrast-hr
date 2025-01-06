@@ -73,7 +73,7 @@ const IdTheft = ({ navigation }) => {
             textStyle={{ ...styles.callBtnTxt, color: COLORS.WHITE }}
             onPress={() =>
               Linking.openURL(
-                "https://app.myexectras.com/docs/id-theft-resolution.pdf"
+                "https://v2.myexectras.com/docs/id-theft-resolution.pdf"
               )
             }
           >

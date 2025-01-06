@@ -7,6 +7,7 @@ import {
   Image,
   useWindowDimensions,
   StatusBar,
+  Alert,
 } from "react-native";
 import { getAuthData, getItems, removeData, clearAll } from "../src/store";
 import {
@@ -35,7 +36,7 @@ import mime from "mime";
 import { DynamicSectionList } from "../components/DynamicSectionList";
 import { profile_config } from "../config/profile";
 import { Appbar } from "react-native-paper";
-import { COLORS, ROUTES } from "../constants";
+import { COLORS, ROUTES, WEB_URL } from "../constants";
 import { MModal } from "../components/MModal";
 import * as ImagePicker from "expo-image-picker";
 import { t } from "i18next";
@@ -48,24 +49,33 @@ import { BarChart } from "react-native-gifted-charts";
 import CompensationSummary from "../components/CompensationSummary";
 import ProfileAssets from "../components/ProfileAssets";
 import QualificationSummary from "../components/QualificationSummary";
+import useHealth from "../hooks/useHealth";
 
 export default ({ navigation, route }) => {
   const [auth, setAuth] = React.useState("");
   const [loaded, setLoaded] = React.useState(true);
   const [profile, setProfile] = React.useState({});
-  const [profileAssets, setProfileAssets] = useState({});
-  const [qualification, setQualification] = React.useState({});
-  const [profileEmployment, setProfileEmployment] = React.useState({});
-  const [compensation, setCompensation] = React.useState({});
   const [updatedProfile, setUpdatedProfile] = React.useState({});
   const [imageLoading, setImageLoading] = React.useState(false);
   const [loading, setLoading] = React.useState(false);
   const [image, setImage] = React.useState(null);
   const [visible, setVisible] = React.useState(false);
   const [languageCode, setLanguageCode] = React.useState("en");
-
+  const [isHealthSyncing, setIsHealthSyncing] = React.useState(false);
+  const { initializeAndSyncHealthData } = useHealth();
   const toggleModal = () => setVisible(!visible);
-
+  const syncHealthData = () => {
+    setIsHealthSyncing(true);
+    const callback = (isSuccess) => {
+      setIsHealthSyncing(false);
+      if (isSuccess) {
+        Alert.alert("Success", t("health.sync_success"));
+      } else {
+        Alert.alert("Error", t("health.sync_error"));
+      }
+    };
+    initializeAndSyncHealthData(callback);
+  };
   React.useEffect(() => {
     getAuthData(setAuth).then(async (auth) => {
       setAuth(auth);
@@ -364,9 +374,7 @@ export default ({ navigation, route }) => {
     });
   };
   const profileImage = useMemo(() => {
-    return `https://app.myexectras.com/${
-      profile?.profile_image
-    }?${new Date().getTime()}`;
+    return `${WEB_URL}/${profile?.profile_image}?${new Date().getTime()}`;
   }, [profile?.profile_image]);
 
   const { width } = useWindowDimensions();
@@ -413,6 +421,13 @@ export default ({ navigation, route }) => {
         automaticallyAdjustKeyboardInsets
         style={{ flex: 1, width: "90%", marginVertical: 10 }}
       >
+        <MButton
+          style={styles.syncBtn}
+          onPress={isHealthSyncing ? null : syncHealthData}
+          loading={isHealthSyncing}
+        >
+          {t("health.sync_health_data")}
+        </MButton>
         <DynamicSectionList
           config={config}
           values={updatedProfile}
@@ -763,5 +778,10 @@ const styles = StyleSheet.create({
     alignItems: "center",
     flexDirection: "row",
     paddingHorizontal: 10,
+  },
+  syncBtn: {
+    width: 180,
+    alignSelf: "flex-end",
+    borderRadius: 5,
   },
 });

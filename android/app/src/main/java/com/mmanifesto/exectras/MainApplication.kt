@@ -1,4 +1,4 @@
-package com.mmanifesto.contrasthr
+package com.contrast.contrasthr
 
 import android.app.Application
 import android.content.res.Configuration

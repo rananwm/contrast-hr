@@ -27,4 +27,15 @@ const TELE_HEALTH_PLAN_NAME = {
   YRD895YT: "WHVC Medical",
   YDN67LR6: "WHVC Therapy",
 };
-export { ROUTES, COLORS, TELE_HEALTH_PLAN_NAME };
+const WEB_URL = "https://app.contrasthr.com";
+const API_KEY =
+  "ZihESGeUZsP0bKf6l32l1GskLVDGzwckYIq5SN59u6DAYLpkH39atcObzeL7bDk";
+const API_BASE_URL = "https://app.contrasthr.com/api-app";
+export {
+  ROUTES,
+  COLORS,
+  TELE_HEALTH_PLAN_NAME,
+  WEB_URL,
+  API_BASE_URL,
+  API_KEY,
+};

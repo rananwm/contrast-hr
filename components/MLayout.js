@@ -10,7 +10,7 @@ import {
 import MHeader from "./MComponents/MHeader";
 import { MIcon, MText, MTouchable, MView } from "./MComponents";
 import { useNavigation } from "@react-navigation/native";
-import { COLORS, ROUTES } from "../constants";
+import { COLORS, ROUTES, WEB_URL } from "../constants";
 import { getAuthData, getItems } from "../src/store";
 import { profile_get } from "../src/api";
 
@@ -48,9 +48,7 @@ const MLayout = forwardRef(
       });
     }, []);
     const profileImage = useMemo(() => {
-      return `https://app.myexectras.com/${
-        profile?.profile_image
-      }?${new Date().getTime()}`;
+      return `${WEB_URL}/${profile?.profile_image}?${new Date().getTime()}`;
     }, [profile?.profile_image]);
     return (
       <MView

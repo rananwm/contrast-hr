@@ -18,14 +18,14 @@
     "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.mmanifesto.contrasthr"
+      "bundleIdentifier": "com.contrast.contrasthr"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
       },
-      "package": "com.mmanifesto.contrasthr",
+      "package": "com.contrast.contrasthr",
       "versionCode": 2
     },
     "web": {

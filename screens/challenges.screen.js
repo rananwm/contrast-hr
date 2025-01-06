@@ -10,7 +10,7 @@ import {
 } from "../components/MComponents";
 import MLayout from "../components/MLayout";
 import { Image } from "react-native";
-import { COLORS, ROUTES } from "../constants";
+import { COLORS, ROUTES, WEB_URL } from "../constants";
 import MScrollView from "../components/MComponents/MScrollView";
 import { getAuthData, getItems } from "../src/store";
 import {
@@ -198,7 +198,7 @@ const ChallengesScreen = ({ navigation, route: { params } }) => {
             <>
               <Image
                 source={{
-                  uri: `https://app.myexectras.com/${featureChallengeData?.banner}`,
+                  uri: `${WEB_URL}/${featureChallengeData?.banner}`,
                 }}
                 style={{
                   height: "auto",
@@ -241,7 +241,7 @@ const ChallengesScreen = ({ navigation, route: { params } }) => {
                       navigation.navigate(ROUTES.CHALLENGE_DETAIL, {
                         challengeInstanceAuth:
                           featureChallengeData?.challenge_instance_auth,
-                        banner: `https://app.myexectras.com/${featureChallengeData?.banner}`,
+                        banner: `${WEB_URL}/${featureChallengeData?.banner}`,
                         challenge: selectedChallenge,
                         isActive: true,
                         isChallenge:
@@ -391,7 +391,7 @@ const ChallengesScreen = ({ navigation, route: { params } }) => {
                             challenge?.challenge_instance_auth,
                           challenge,
                           isChallenge: true,
-                          banner: `https://app.myexectras.com/${challenge?.banner}`,
+                          banner: `${WEB_URL}/${challenge?.banner}`,
                           isActive: true,
                         })
                       }
@@ -476,7 +476,7 @@ const ChallengesScreen = ({ navigation, route: { params } }) => {
                       navigation.navigate(ROUTES.CHALLENGE_DETAIL, {
                         challengeInstanceAuth:
                           challenge?.challenge_instance_auth,
-                        banner: `https://app.myexectras.com/${challenge?.banner}`,
+                        banner: `${WEB_URL}/${challenge?.banner}`,
                         challenge,
                         isActive: false,
                         isChallenge: true,
@@ -504,7 +504,7 @@ const ChallengesScreen = ({ navigation, route: { params } }) => {
                             challenge?.challenge_instance_auth,
                           challenge,
                           isChallenge: false,
-                          banner: `https://app.myexectras.com/${challenge?.banner}`,
+                          banner: `${WEB_URL}/${challenge?.banner}`,
                           isActive: true,
                         })
                       }
@@ -589,7 +589,7 @@ const ChallengesScreen = ({ navigation, route: { params } }) => {
                       navigation.navigate(ROUTES.CHALLENGE_DETAIL, {
                         challengeInstanceAuth:
                           challenge?.challenge_instance_auth,
-                        banner: `https://app.myexectras.com/${challenge?.banner}`,
+                        banner: `${WEB_URL}/${challenge?.banner}`,
                         challenge,
                         isActive: false,
                         isChallenge: false,

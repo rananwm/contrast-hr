@@ -2,7 +2,7 @@ import React from "react";
 import { Image, StyleSheet } from "react-native";
 import { MIcon, MText, MTouchable, MView } from "./MComponents";
 import { Card } from "react-native-paper";
-import { COLORS } from "../constants";
+import { COLORS, WEB_URL } from "../constants";
 import moment from "moment";
 
 const ChallengeCard = ({ challenge, onPress, isActive = false }) => {
@@ -24,7 +24,7 @@ const ChallengeCard = ({ challenge, onPress, isActive = false }) => {
           <Image
             style={styles.image}
             source={{
-              uri: `https://app.myexectras.com/${challenge?.banner}`,
+              uri: `${WEB_URL}/${challenge?.banner}`,
             }}
           />
           <MView

@@ -5,9 +5,9 @@ import { storeData } from "./store";
 import RNFS from "react-native-fs";
 import Share from "react-native-share";
 import { Alert } from "react-native";
+import { API_BASE_URL, API_KEY } from "../constants";
 //function to authenticate via api
-const API_KEY =
-  "ZihESGeUZsP0bKf6l32l1GskLVDGzwckYIq5SN59u6DAYLpkH39atcObzeL7bDk";
+
 export const login = async (username, password) => {
   var formdata = new FormData();
   formdata.append("api_key", API_KEY);
@@ -26,10 +26,7 @@ export const login = async (username, password) => {
   };
 
   // console.log(JSON.stringify(requestOptions))
-  var response = await fetch(
-    "https://app.myexectras.com/api-app",
-    requestOptions
-  );
+  var response = await fetch(API_BASE_URL, requestOptions);
   // console.log("response", response)
   // var derp = await response.text()
   // console.log("derp", derp)
@@ -104,12 +101,12 @@ export const getData = async (
   // // console.log("\n\n", session_cookie, "\n\n", JSON.stringify(requestOptions), "\n\n")
 
   // var response = await fetch(
-  //   "https://app.myexectras.com/api-app",
+  //   "https://v2.myexectras.com/api-app",
   //   requestOptions
   // );
   const requestData = {
     method: "POST",
-    url: "https://app.myexectras.com/api-app",
+    url: API_BASE_URL,
     data: formdata,
     headers: {
       Cookie: session_cookie,
@@ -342,6 +339,10 @@ export const saveData = async (
   formdata.append("data", JSON.stringify(data));
   formdata.append("username", authCreds?.username);
   formdata.append("password", authCreds?.password);
+  const session_auth = await AsyncStorage.getItem("session_auth");
+  if (session_auth) {
+    formdata.append("session_auth", session_auth);
+  }
   // formdata.append("password", "test");
   // file type form data append
   if (image) {
@@ -362,10 +363,7 @@ export const saveData = async (
   };
 
   // console.log("\n\n", session_cookie, "\n\n", JSON.stringify(requestOptions), "\n\n")
-  var response = await fetch(
-    "https://app.myexectras.com/api-app",
-    requestOptions
-  );
+  var response = await fetch(API_BASE_URL, requestOptions);
   // try to convert to json or return false for failed login
   try {
     var responseJson = await response.json();
@@ -434,10 +432,7 @@ export const profile_signout = async (session_cookie) => {
 
   // try to convert to json or return false for failed login
   try {
-    var response = await fetch(
-      "https://app.myexectras.com/api-app",
-      requestOptions
-    );
+    var response = await fetch(API_BASE_URL, requestOptions);
     var responseJson = await response.json();
 
     // on successful request the response will have the status property set to 'success'
@@ -472,10 +467,7 @@ export const register_account = async (data) => {
     credentials: "omit",
   };
 
-  var response = await fetch(
-    "https://app.myexectras.com/api-app",
-    requestOptions
-  );
+  var response = await fetch(API_BASE_URL, requestOptions);
 
   // try to convert to json or return false for failed login
   try {
@@ -822,7 +814,7 @@ const downloadDocument = async (
     const requestData = {
       method: "POST",
       maxBodyLength: Infinity,
-      url: "https://app.myexectras.com/api-app",
+      url: API_BASE_URL,
       data: formdata,
 
       headers: {
@@ -929,4 +921,16 @@ export const download_document_signature = async (
     false,
     "signature.png"
   );
+};
+export const submit_health_data = async (
+  profile_auth,
+  session_cookie,
+  data
+) => {
+  return await getData("challenge_device_data", profile_auth, session_cookie, [
+    {
+      name: "data",
+      value: data,
+    },
+  ]);
 };

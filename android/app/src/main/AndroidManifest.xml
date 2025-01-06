@@ -9,6 +9,10 @@
   <uses-permission android:name="android.permission.health.WRITE_HEART_RATE"/>
   <uses-permission android:name="android.permission.health.READ_STEPS"/>
   <uses-permission android:name="android.permission.health.WRITE_STEPS"/>
+  <uses-permission android:name="android.permission.health.READ_DISTANCE"/>
+  <uses-permission android:name="android.permission.health.READ_SLEEP"/>
+  <uses-permission android:name="android.permission.health.READ_HYDRATION"/>
+  <uses-permission android:name="android.permission.health.READ_EXERCISE"/>
   <queries>
     <intent>
       <action android:name="android.intent.action.VIEW"/>
@@ -31,7 +35,7 @@
         <action android:name="android.intent.action.VIEW"/>
         <category android:name="android.intent.category.DEFAULT"/>
         <category android:name="android.intent.category.BROWSABLE"/>
-        <data android:scheme="com.mmanifesto.contrasthr"/>
+        <data android:scheme="com.contrast.contrasthr"/>
       </intent-filter>
       <!-- For supported versions through Android 13, create an activity to show the rationale
       of Health Connect permissions once users click the privacy policy link. -->

@@ -1,7 +1,7 @@
 import React from "react";
 import { MButton, MIcon, MText, MTouchable, MView } from "./MComponents";
 import { Image, Platform, Pressable, TouchableOpacity } from "react-native";
-import { COLORS } from "../constants";
+import { COLORS, WEB_URL } from "../constants";
 import { ActivityIndicator, TextInput } from "react-native-paper";
 import moment from "moment";
 
@@ -273,7 +273,7 @@ export default function CommentCard({
                   : Object.values(message?.comments || {})
                 : [];
               const profileImage = message?.person_image
-                ? `https://app.myexectras.com/${message?.person_image}`
+                ? `${WEB_URL}/${message?.person_image}`
                 : null;
               return (
                 <MView key={index}>

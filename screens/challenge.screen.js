@@ -1,4 +1,4 @@
-import React, { memo, useEffect, useRef, useState } from "react";
+import React, { memo, useEffect, useMemo, useRef, useState } from "react";
 import {
   MButton,
   MCard,
@@ -48,7 +48,7 @@ import {
   TextInput,
   useTheme,
 } from "react-native-paper";
-import { COLORS, ROUTES } from "../constants";
+import { COLORS, ROUTES, WEB_URL } from "../constants";
 import HTMLView from "react-native-htmlview";
 import YoutubePlayer from "react-native-youtube-iframe";
 import TaskTableRow from "../components/TaskTableRow";
@@ -58,6 +58,8 @@ import Slider from "@react-native-community/slider";
 import CommentCard from "../components/CommentCard";
 import { t } from "i18next";
 import { resizeImage } from "../utils";
+import useHealth from "../hooks/useHealth";
+import HealthDataSyncingModal from "../components/HealthDataSyncingModal";
 
 const ChallengeScreen = ({ navigation, route: { params } }) => {
   const [step, setStep] = React.useState(0);
@@ -67,7 +69,6 @@ const ChallengeScreen = ({ navigation, route: { params } }) => {
   const [loading, setLoading] = useState(false);
   const [comments, setComments] = useState([]);
   const [photoGallery, setPhotoGallery] = useState([]);
-
   const [isSwitch, setIsSwitch] = useState(false);
   const [selectAll, setSelectAll] = useState("");
   const [selectedChapter, setSelectedChapter] = useState({
@@ -92,7 +93,10 @@ const ChallengeScreen = ({ navigation, route: { params } }) => {
     challenge_end: "",
     challenge_stakes: "",
   });
+  const [healthModal, setHealthModal] = useState(false);
+  const toggleHealthModal = () => setHealthModal(!healthModal);
   const theme = useTheme();
+  const { initializeAndSyncHealthData } = useHealth();
   const pickImage = async () => {
     // No permissions request is necessary for launching the image library
     let result = await ImagePicker.launchImageLibraryAsync({
@@ -222,6 +226,9 @@ const ChallengeScreen = ({ navigation, route: { params } }) => {
           name: item?.[0],
           value: item?.[1],
         }));
+      if (params?.challenge?.enable_device_sync === "1") {
+        await initializeAndSyncHealthData();
+      }
       const response = await start_challenge(
         auth.data.profile_auth,
         auth.cookie,
@@ -595,6 +602,10 @@ const ChallengeScreen = ({ navigation, route: { params } }) => {
                   setIsStarted(true);
                   return;
                 }
+                if (params?.challenge?.enable_device_sync === "1") {
+                  toggleHealthModal();
+                  return;
+                }
                 onStartChallenge();
               }}
             >
@@ -671,7 +682,7 @@ const ChallengeScreen = ({ navigation, route: { params } }) => {
               >
                 <Image
                   source={{
-                    uri: `https://app.myexectras.com/${item.poster}`,
+                    uri: `${WEB_URL}/${item.poster}`,
                   }}
                   style={{
                     height: "100%",
@@ -953,7 +964,7 @@ const ChallengeScreen = ({ navigation, route: { params } }) => {
                     : Object.values(message?.comments || {})
                   : [];
                 const profileImage = message?.person_image
-                  ? `https://app.myexectras.com/${message?.person_image}`
+                  ? `${WEB_URL}/${message?.person_image}`
                   : null;
                 return (
                   <CommentCard
@@ -1237,6 +1248,7 @@ const ChallengeScreen = ({ navigation, route: { params } }) => {
       if (params?.isChallenge) {
         getChallengeLeaderBoard();
       }
+      initializeAndSyncHealthData();
       setRefreshing(false);
     }, 1500);
   };
@@ -1344,7 +1356,11 @@ const ChallengeScreen = ({ navigation, route: { params } }) => {
     }
   }, [params, auth]);
   const scrollRef = useRef(null);
-
+  const selectedTaskValue = useMemo(() => {
+    return modalData?.data?.reduce((current, item) => {
+      return current + +item?.task_amount;
+    }, 0);
+  }, [modalData]);
   return (
     <MLayout isProfileHeader ref={layoutRef} statusBarColor={COLORS.WHITE}>
       <MView style={{ flex: 1, padding: 0 }}>
@@ -1464,19 +1480,27 @@ const ChallengeScreen = ({ navigation, route: { params } }) => {
                 justifyContent: "space-between",
               }}
             >
-              <Slider
-                style={{ width: "90%", height: 40 }}
-                minimumValue={0}
-                maximumValue={200}
-                minimumTrackTintColor={COLORS.PRIMARY}
-                maximumTrackTintColor={COLORS.GREY}
-                onSlidingComplete={(value) => {
-                  setTrackValue(value.toFixed(0));
-                }}
-                thumbTintColor={COLORS.LIGHTER_GREY}
-                value={+trackValue}
-              />
-              <MText>{trackValue}</MText>
+              {modalData?.task_direct_entry !== "0" && (
+                <Slider
+                  style={{ width: "90%", height: 40 }}
+                  minimumValue={0}
+                  maximumValue={
+                    isNaN(+selectedTaskValue)
+                      ? 200
+                      : modalData?.task_threshold - +selectedTaskValue
+                  }
+                  minimumTrackTintColor={COLORS.PRIMARY}
+                  maximumTrackTintColor={COLORS.GREY}
+                  onSlidingComplete={(value) => {
+                    setTrackValue(value.toFixed(0));
+                  }}
+                  thumbTintColor={COLORS.LIGHTER_GREY}
+                  value={+trackValue}
+                />
+              )}
+              {modalData?.task_direct_entry !== "0" && (
+                <MText>{trackValue}</MText>
+              )}
             </MView>
           ) : modalData?.task_type === "photo" ? (
             <>
@@ -1518,18 +1542,25 @@ const ChallengeScreen = ({ navigation, route: { params } }) => {
             </MText>
           </MView>
         )}
-        <MButton
-          style={{
-            marginTop: 12,
-            backgroundColor: COLORS.PRIMARY,
-          }}
-          onPress={submitTaskLoading ? undefined : onSubmitTaskData}
-          loading={submitTaskLoading}
-          // disabled={!isSwitch}
-        >
-          Log {modalData?.name}
-        </MButton>
+        {modalData?.task_direct_entry !== "0" && (
+          <MButton
+            style={{
+              marginTop: 12,
+              backgroundColor: COLORS.PRIMARY,
+            }}
+            onPress={submitTaskLoading ? undefined : onSubmitTaskData}
+            loading={submitTaskLoading}
+            disabled={modalData?.task_direct_entry === "0"}
+          >
+            Log {modalData?.name}
+          </MButton>
+        )}
       </MModal>
+      <HealthDataSyncingModal
+        visible={healthModal}
+        onContinue={onStartChallenge}
+        onDismiss={toggleHealthModal}
+      />
     </MLayout>
   );
 };

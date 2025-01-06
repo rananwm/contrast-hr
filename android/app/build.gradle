@@ -83,9 +83,9 @@ android {
     buildToolsVersion rootProject.ext.buildToolsVersion
     compileSdk rootProject.ext.compileSdkVersion
 
-    namespace 'com.mmanifesto.contrasthr'
+    namespace 'com.contrast.contrasthr'
     defaultConfig {
-        applicationId 'com.mmanifesto.contrasthr'
+        applicationId 'com.contrast.contrasthr'
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 5

@@ -19,7 +19,7 @@ import {
   MTouchable,
 } from "../components/MComponents";
 import { ActivityIndicator, Card, useTheme } from "react-native-paper";
-import { COLORS, ROUTES } from "../constants";
+import { COLORS, ROUTES, WEB_URL } from "../constants";
 import { LogoBar } from "../components/LogoBar";
 import MScrollView from "../components/MComponents/MScrollView";
 import { PERKS_ROUTES } from "../constants/perks";
@@ -114,9 +114,9 @@ export default ({ navigation }) => {
     // setLanguageCode(newValue);
     i18n.changeLanguage(newValue);
   };
-  const profileImage = `https://app.myexectras.com/${
-    profile?.profile_image
-  }?${new Date().getTime()}`;
+  const profileImage = useMemo(() => {
+    return `${WEB_URL}/${profile?.profile_image}?${new Date().getTime()}`;
+  }, [profile?.profile_image]);
   const _renderItem = ({ item, index }) => {
     let id = index.toString() + generateRandomString(7);
     return (
@@ -437,7 +437,7 @@ export default ({ navigation }) => {
                                   challenge?.challenge_instance_auth,
                                 challenge,
                                 isChallenge: true,
-                                banner: `https://app.myexectras.com/${challenge?.banner}`,
+                                banner: `${WEB_URL}/${challenge?.banner}`,
                                 isActive: true,
                               },
                             })
@@ -466,7 +466,7 @@ export default ({ navigation }) => {
                                   challenge?.challenge_instance_auth,
                                 challenge,
                                 isChallenge: true,
-                                banner: `https://app.myexectras.com/${challenge?.banner}`,
+                                banner: `${WEB_URL}/${challenge?.banner}`,
                                 isActive: true,
                               },
                             })
@@ -721,7 +721,7 @@ const styles = StyleSheet.create({
   profileCard: {
     flex: 1,
     backgroundColor: COLORS.WHITE,
-    marginHorizontal: 20,
+    marginHorizontal: 10,
     marginVertical: 10,
   },
   separator: {

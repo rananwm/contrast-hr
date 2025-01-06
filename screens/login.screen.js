@@ -20,9 +20,11 @@ import {
   MTouchable,
 } from "../components/MComponents";
 import { TextInput, useTheme } from "react-native-paper";
-import { COLORS, ROUTES } from "../constants";
+import { COLORS, ROUTES, WEB_URL } from "../constants";
 import * as linking from "expo-linking";
 import MScrollView from "../components/MComponents/MScrollView";
+import { StatusBar } from "expo-status-bar";
+import useHealth from "../hooks/useHealth";
 
 export default ({ navigation }) => {
   const [auth, setAuth] = React.useState("");
@@ -31,6 +33,7 @@ export default ({ navigation }) => {
   const [loading, setLoading] = React.useState(false);
   const [secureTextEntry, setSecureTextEntry] = React.useState(true);
   const theme = useTheme();
+  const { initializeAndSyncHealthData } = useHealth();
 
   const navigateAccount = async () => {
     setLoading(true);
@@ -43,6 +46,7 @@ export default ({ navigation }) => {
             index: 0,
             routes: [{ name: ROUTES.HOME }],
           });
+          initializeAndSyncHealthData();
         } else {
           alert("Invalid username or password");
         }
@@ -71,6 +75,7 @@ export default ({ navigation }) => {
 
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.WHITE }}>
+      <StatusBar style="auto" />
       <KeyboardAvoidingView
         style={{ flex: 1 }}
         behavior={Platform.OS === "ios" ? "padding" : "height"}
@@ -119,6 +124,8 @@ export default ({ navigation }) => {
               onChangeText={(nextValue) => setUsername(nextValue)}
               style={{ width: 280, maxWidth: 280 }}
               autoCapitalize="none"
+              autoComplete="username"
+              autoCorrect={false}
               keyboardType="email-address"
             />
             <MView style={styles.secureEyeContainer}>
@@ -140,7 +147,7 @@ export default ({ navigation }) => {
             </MView>
             <MText
               onPress={() => {
-                openLink("https://app.myexectras.com/signin?p=forgot");
+                openLink(`${WEB_URL}/signin?p=forgot`);
               }}
               style={{ marginTop: 10, marginBottom: 20, textAlign: "right" }}
             >
@@ -161,7 +168,7 @@ export default ({ navigation }) => {
               LOGIN
             </MButton>
             <MText
-              onPress={() => openLink("https://exectras.com/contact/")}
+              onPress={() => openLink("https://contrasthr.com/contact/")}
               style={{ marginTop: 30 }}
             >
               Don't have an account?{" "}
