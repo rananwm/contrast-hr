@@ -10,12 +10,15 @@ import {
 } from "../src/api";
 import { clearAll, getAuthData, getItems } from "../src/store";
 import { t } from "i18next";
+import { useAuth } from "../context/AuthContext";
 
 const DrawerContent = ({ navigation }) => {
   const [auth, setAuth] = React.useState("");
+
   const [timeOffSummary, setTimeOffSummary] = useState(null);
   const [timeOffSettings, setTimeSettings] = useState(null);
   const [loading, setLoading] = useState(true);
+  const { darkLogo } = useAuth();
   const menuList = [
     {
       name: "profile.label",
@@ -128,7 +131,7 @@ const DrawerContent = ({ navigation }) => {
           width: "90%",
           alignSelf: "center",
         }}
-        source={require("../assets/logo.png")}
+        source={darkLogo}
       />
 
       <MView style={{ flex: 1, marginTop: 12 }}>

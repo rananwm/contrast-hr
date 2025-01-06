@@ -14,6 +14,7 @@ import {
 import AppleHealthKit from "react-native-health";
 import { COLORS } from "./constants";
 import useHealth from "./hooks/useHealth";
+import { AuthProvider } from "./context/AuthContext";
 
 const theme = {
   colors: {
@@ -66,10 +67,12 @@ export default () => {
     initializeAndSyncHealthData();
   }, []);
   return (
-    <PaperProvider theme={theme}>
-      <I18nextProvider i18n={i18n}>
-        <AppNavigator />
-      </I18nextProvider>
-    </PaperProvider>
+    <AuthProvider>
+      <PaperProvider theme={theme}>
+        <I18nextProvider i18n={i18n}>
+          <AppNavigator />
+        </I18nextProvider>
+      </PaperProvider>
+    </AuthProvider>
   );
 };

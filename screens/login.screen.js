@@ -20,7 +20,7 @@ import {
   MTouchable,
 } from "../components/MComponents";
 import { TextInput, useTheme } from "react-native-paper";
-import { COLORS, ROUTES, WEB_URL } from "../constants";
+import { APP_LOGO, COLORS, ROUTES, WEB_URL } from "../constants";
 import * as linking from "expo-linking";
 import MScrollView from "../components/MComponents/MScrollView";
 import { StatusBar } from "expo-status-bar";
@@ -99,9 +99,9 @@ export default ({ navigation }) => {
             <Image
               resizeMode={"contain"}
               style={{
-                width: "70%",
+                width: "50%",
               }}
-              source={require("./../assets/exectras_logo.png")}
+              source={APP_LOGO.WORKPLAY_STACKED}
             />
           </View>
           <View style={[styles.body, { flexBasis: 250 }]}>

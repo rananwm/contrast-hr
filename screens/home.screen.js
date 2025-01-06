@@ -29,6 +29,7 @@ import { formattedText, generateRandomString } from "../utils";
 import RenderHTML from "react-native-render-html";
 import moment from "moment";
 import ChallengeCard from "../components/ChallengeCard";
+import { useAuth } from "../context/AuthContext";
 
 export default ({ navigation }) => {
   const carouselRef = useRef(null);
@@ -44,7 +45,6 @@ export default ({ navigation }) => {
   const latestNotification = notifications?.sort(
     (a, b) => new Date(b?.created) - new Date(a?.created)
   )?.[0];
-
   React.useEffect(() => {
     setNotificationsLoading(true);
     getAuthData(setAuth)

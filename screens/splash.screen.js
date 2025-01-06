@@ -2,7 +2,8 @@
 import React from "react";
 import { storeData, getData } from "../src/store";
 import { SafeAreaView, View, Image, StyleSheet, Platform } from "react-native";
-import { COLORS, ROUTES } from "../constants";
+import { APP_LOGO, COLORS, ROUTES } from "../constants";
+import { ActivityIndicator } from "react-native-paper";
 
 export default ({ navigation }) => {
   const [auth, setAuth] = React.useState("");
@@ -40,18 +41,7 @@ export default ({ navigation }) => {
           alignItems: "center",
         }}
       >
-        <Image
-          resizeMode={"contain"}
-          style={{
-            width: Platform.OS === "android" ? "38%" : "90%",
-            marginTop: -24,
-            borderRadius: 10,
-            ...(Platform.OS === "android" && {
-              height: 150,
-            }),
-          }}
-          source={require("./../assets/icon.jpg")}
-        />
+        <ActivityIndicator />
       </View>
     </SafeAreaView>
   );

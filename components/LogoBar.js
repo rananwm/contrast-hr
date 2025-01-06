@@ -4,16 +4,17 @@ import { Image, StyleSheet, TouchableOpacity } from "react-native";
 import { useTheme } from "react-native-paper";
 import { MView, MText, MIcon } from "./MComponents";
 import { COLORS } from "../constants";
+import { useAuth } from "../context/AuthContext";
 
 export const LogoBar = ({ isProfile = false, onProfilePress = () => {} }) => {
-  const theme = useTheme();
+  const { appLogo } = useAuth();
 
   return (
     <MView style={styles.headerLogos}>
       <Image
         resizeMode={"contain"}
         style={{ width: "40%", marginRight: 10, height: 50 }}
-        source={require("../assets/exectras_logo.png")}
+        source={appLogo}
       />
       {isProfile && (
         <TouchableOpacity onPress={onProfilePress}>

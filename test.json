@@ -1,0 +1,22 @@
+[
+  {
+    "action": "profile_signin",
+    "cookie": "PHPSESSID=lq4uk82bm329rr897oqvb5n7ia",
+    "data": {
+      "company": "myExectras Demo",
+      "company_auth": "152-f4a3fcd9333f09cd06441527fdf9424d",
+      "name": "Sofia",
+      "password": "$2y$10$tlfp0dhssmdVnTCL7LufaO7R5dRuU8ojIuW1ov12hJ29DrvufJUrG",
+      "profile_auth": "5479-561e158702f7c3431bc3f99f19e66a1c",
+      "session_auth": "lq4uk82bm329rr897oqvb5n7ia-31e006d5e9865059a8db1d7649581200",
+      "surname": "Floress",
+      "username": "my@exectras.com"
+    },
+    "status": "success",
+    "status_user": "authenticated_user"
+  },
+  {
+    "username": "angiedemo",
+    "password": "rapunzel"
+  }
+]

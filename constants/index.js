@@ -31,6 +31,15 @@ const WEB_URL = "https://app.contrasthr.com";
 const API_KEY =
   "ZihESGeUZsP0bKf6l32l1GskLVDGzwckYIq5SN59u6DAYLpkH39atcObzeL7bDk";
 const API_BASE_URL = "https://app.contrasthr.com/api-app";
+const APP_LOGO = {
+  CONTRAST: require("../assets/logo/contrast_logo.png"),
+  SPARKJOY: require("../assets/logo/sparkjoy_logo.png"),
+  WORKPLAY: require("../assets/logo/workplay_logo.png"),
+  CONTRAST_DARK: require("../assets/logo/contrast_dark_logo.png"),
+  SPARKJOY_DARK: require("../assets/logo/sparkjoy_dark_logo.png"),
+  WORKPLAY_DARK: require("../assets/logo/workplay_dark_logo.png"),
+  WORKPLAY_STACKED: require("../assets/logo/workplay_stacked_logo.png"),
+};
 export {
   ROUTES,
   COLORS,
@@ -38,4 +47,5 @@ export {
   WEB_URL,
   API_BASE_URL,
   API_KEY,
+  APP_LOGO,
 };
