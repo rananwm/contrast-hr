@@ -64,7 +64,7 @@ const useHealth = () => {
         JSON.stringify(data)
       );
 
-      console.log("Data synced successfully: ", response);
+      // console.log("Data synced successfully: ", response);
     } catch (apiError) {
       console.log("Error syncing data to backend: ", apiError);
     }

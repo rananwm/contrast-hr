@@ -934,3 +934,6 @@ export const submit_health_data = async (
     },
   ]);
 };
+export const get_features = async (profile_auth, session_cookie, data) => {
+  return await getData("features", profile_auth, session_cookie);
+};

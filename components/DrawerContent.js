@@ -4,6 +4,7 @@ import { MIcon, MText, MTouchable, MView } from "./MComponents";
 import { COLORS, ROUTES } from "../constants";
 import { CommonActions } from "@react-navigation/native";
 import {
+  get_features,
   get_timeoff_settings,
   get_timeoff_summary,
   profile_signout,
@@ -18,12 +19,14 @@ const DrawerContent = ({ navigation }) => {
   const [timeOffSummary, setTimeOffSummary] = useState(null);
   const [timeOffSettings, setTimeSettings] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [features, setFeatures] = React.useState(null);
   const { darkLogo } = useAuth();
   const menuList = [
     {
       name: "profile.label",
       icon: "account",
       route: ROUTES.PROFILE,
+      key: "profile",
     },
     {
       name: "timeoff.request_time_off",
@@ -36,37 +39,44 @@ const DrawerContent = ({ navigation }) => {
       icon: "calendar",
       route: ROUTES.EVENT_STACK,
       isProfileStack: false,
+      key: "events",
     },
     {
       name: "bottom_navigation.notifications",
       icon: "bell",
       route: ROUTES.NOTIFICATIONS_STACK,
       isProfileStack: false,
+      key: "notification",
     },
     {
       name: "profile.summary.employment_summary",
       icon: "briefcase",
       route: ROUTES.EMPLOYMENT_SUMMARY,
+      key: "people_summary",
     },
     {
       name: "profile.summary.compensation_summary",
       icon: "credit-card-outline",
       route: ROUTES.COMPENSATION_SUMMARY,
+      key: "people_total_rewards",
     },
     {
       name: "profile.summary.profile_assets",
       icon: "card-text-outline",
       route: ROUTES.ASSETS_SUMMARY,
+      key: "people_assets",
     },
     {
       name: "profile.qualification.label",
       icon: "school",
       route: ROUTES.QUALIFICATIONS_SUMMARY,
+      key: "people_qualifications",
     },
     {
       name: "Documents",
       icon: "file-document-multiple",
       route: ROUTES.DOCUMENTS,
+      key: "documents",
     },
   ];
   const signOut = async () => {
@@ -82,45 +92,53 @@ const DrawerContent = ({ navigation }) => {
         console.log("error while sign out", error);
       });
   };
-  const fetchTimeOffData = async (authData) => {
+  const fetchData = async () => {
     try {
       setLoading(true);
-      await getItems(authData, [
-        {
-          key: "time_off",
-          stateHook: setTimeOffSummary,
-          apiFallback: get_timeoff_summary,
-        },
-        {
-          key: "time_settings",
-          stateHook: setTimeSettings,
-          apiFallback: get_timeoff_settings,
-        },
-      ]);
+      const authData = await getAuthData();
+      setAuth(authData);
+
+      if (!authData || !authData?.data) {
+        alert("Your session has expired. Please log in again.");
+        navigation.navigate(ROUTES.LOGIN);
+        return;
+      }
+
+      const [featuresData, timeOffSummaryData, timeOffSettingsData] =
+        await Promise.all([
+          get_features(authData.data.profile_auth, authData.cookie),
+          get_timeoff_summary(authData.data.profile_auth, authData.cookie),
+          get_timeoff_settings(authData.data.profile_auth, authData.cookie),
+        ]);
+
+      setFeatures(featuresData);
+      setTimeOffSummary(timeOffSummaryData);
+      setTimeSettings(timeOffSettingsData);
     } catch (error) {
       console.log("🚀 ~ fetchTimeOffData ~ error:", error);
     } finally {
       setLoading(false);
     }
   };
+
   const sideBarItems = useMemo(() => {
-    if (timeOffSettings && timeOffSummary) {
-      return menuList;
+    const alwaysVisibleItems = menuList.filter(
+      (item) => item?.key === "profile" || item?.key === "notification"
+    );
+    const featureBasedItems = menuList.filter(
+      (item) => item?.key && features?.data?.[item?.key]
+    );
+    const combinedItems = [...alwaysVisibleItems, ...featureBasedItems];
+    if (!timeOffSettings || !timeOffSummary) {
+      return combinedItems.filter(
+        (item) => item?.route !== ROUTES.REQUEST_TIME_OFF
+      );
     }
-    return menuList?.filter((item) => item?.route !== ROUTES.REQUEST_TIME_OFF);
-  }, [timeOffSettings, loading, timeOffSummary]);
+    return combinedItems;
+  }, [features, timeOffSettings, timeOffSummary]);
+
   React.useEffect(() => {
-    getAuthData(setAuth).then(async (auth) => {
-      setAuth(auth);
-      if (auth && auth?.data) {
-        fetchTimeOffData(auth);
-      } else {
-        console.log("auth failed!!!", auth);
-        alert("Your session has expired. Please log in again.");
-        removeData("auth");
-        navigation.navigate(ROUTES.LOGIN);
-      }
-    });
+    fetchData();
   }, []);
   return (
     <SafeAreaView style={{ flex: 1 }}>

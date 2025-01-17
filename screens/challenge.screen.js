@@ -739,6 +739,24 @@ const ChallengeScreen = ({ navigation, route: { params } }) => {
                 }}
               >
                 <MText style={styles.title}>{chapterDetails?.name}</MText>
+                <MText style={styles.challengeDate}>
+                  {chapterDetails?.announce === "00:00:00"
+                    ? moment(challenge?.challenge_start).format("LL")
+                    : moment(challenge?.challenge_start)
+                        .add(
+                          parseInt(chapterDetails?.announce?.split(" ")[0]),
+                          "days"
+                        )
+                        .format("LL")}
+                  {chapterDetails?.name?.includes("Week") &&
+                    ` - ${moment(challenge?.challenge_start)
+                      .add(
+                        parseInt(chapterDetails?.announce?.split(" ")[0]),
+                        "days"
+                      )
+                      .add(6, "days")
+                      .format("LL")}`}
+                </MText>
                 <MText>
                   {chapterDetails?.description || ""} {"\n"}
                 </MText>
@@ -769,6 +787,17 @@ const ChallengeScreen = ({ navigation, route: { params } }) => {
               <MText style={styles.title}>
                 {chapterDetails?.name} Challenge Task
               </MText>
+              <MText style={styles.challengeDate}>
+                {chapterDetails?.announce === "00:00:00"
+                  ? moment(challenge?.challenge_start).format("LL")
+                  : moment(challenge?.challenge_start)
+                      .add(
+                        parseInt(chapterDetails?.announce?.split(" ")[0]),
+                        "days"
+                      )
+                      .format("LL")}
+              </MText>
+
               {Object.values(chapterDetails?.tasks ?? {})
                 .filter((ele) => ele.name)
                 .map((item, index) => {
@@ -881,7 +910,13 @@ const ChallengeScreen = ({ navigation, route: { params } }) => {
         stepperChallenge?.length > 0 ? (
           <MView>
             <Stepper />
-            <MText>
+            <MText
+              style={{
+                marginBottom: 2,
+                marginTop: 12,
+                fontSize: 15,
+              }}
+            >
               {chapterDetails?.comment_prompt || challenge?.comment_prompt}
             </MText>
             {moment(params?.challenge?.challenge_end)?.isAfter() ? (
@@ -1243,11 +1278,18 @@ const ChallengeScreen = ({ navigation, route: { params } }) => {
   const onRefresh = () => {
     setRefreshing(true);
     setTimeout(() => {
-      getChallengeDetails();
-      getPhotoGallery();
-      if (params?.isChallenge) {
-        getChallengeLeaderBoard();
+      if (selectedChapter?.instance) {
+        getChapterDetails(selectedChapter?.instance);
+        if (params?.isChallenge) {
+          getChapterComments(selectedChapter?.instance);
+        }
+      } else {
+        getChallengeDetails();
+        if (params?.isChallenge) {
+          getChallengeLeaderBoard();
+        }
       }
+      getPhotoGallery();
       initializeAndSyncHealthData();
       setRefreshing(false);
     }, 1500);
@@ -1818,6 +1860,12 @@ const styles = StyleSheet.create({
     padding: 12,
     borderRadius: 12,
     marginTop: 12,
+  },
+  challengeDate: {
+    fontSize: 14,
+    fontWeight: "semibold",
+    marginTop: 4,
+    marginBottom: 6,
   },
 });
 export default ChallengeScreen;

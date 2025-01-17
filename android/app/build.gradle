@@ -83,13 +83,13 @@ android {
     buildToolsVersion rootProject.ext.buildToolsVersion
     compileSdk rootProject.ext.compileSdkVersion
 
-    namespace 'com.contrast.contrasthr'
+    namespace 'com.contrasthr.workplay'
     defaultConfig {
-        applicationId 'com.contrast.contrasthr'
+        applicationId 'com.contrasthr.workplay'
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 5
-        versionName "1.4"
+        versionCode 3
+        versionName "1.2"
     }
     signingConfigs {
         debug {

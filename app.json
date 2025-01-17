@@ -18,14 +18,14 @@
     "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.contrast.contrasthr"
+      "bundleIdentifier": "com.contrasthr.workplay"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
       },
-      "package": "com.contrast.contrasthr",
+      "package": "com.contrasthr.workplay",
       "versionCode": 2
     },
     "web": {

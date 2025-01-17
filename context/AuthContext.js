@@ -7,6 +7,7 @@ import React, {
 } from "react";
 import { getAuthData } from "../src/store";
 import { APP_LOGO } from "../constants";
+import { get_features } from "../src/api";
 
 const AuthContext = createContext();
 
@@ -23,7 +24,8 @@ export const AuthProvider = ({ children }) => {
       ? APP_LOGO[String(user?.data?.partner || "").toUpperCase() + "_DARK"]
       : APP_LOGO.WORKPLAY_DARK;
   }, [user]);
-  const getAuth = async () => {
+
+  const getAuth = async (auth) => {
     setLoading(true);
     try {
       const user = await getAuthData();
@@ -37,9 +39,13 @@ export const AuthProvider = ({ children }) => {
   useEffect(() => {
     getAuth();
   }, []);
-
+  const refreshUser = async () => {
+    await getAuth();
+  };
   return (
-    <AuthContext.Provider value={{ user, loading, appLogo, darkLogo }}>
+    <AuthContext.Provider
+      value={{ user, loading, appLogo, darkLogo, refreshUser }}
+    >
       {children}
     </AuthContext.Provider>
   );

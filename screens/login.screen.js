@@ -25,6 +25,7 @@ import * as linking from "expo-linking";
 import MScrollView from "../components/MComponents/MScrollView";
 import { StatusBar } from "expo-status-bar";
 import useHealth from "../hooks/useHealth";
+import { useAuth } from "../context/AuthContext";
 
 export default ({ navigation }) => {
   const [auth, setAuth] = React.useState("");
@@ -34,7 +35,7 @@ export default ({ navigation }) => {
   const [secureTextEntry, setSecureTextEntry] = React.useState(true);
   const theme = useTheme();
   const { initializeAndSyncHealthData } = useHealth();
-
+  const { refreshUser } = useAuth();
   const navigateAccount = async () => {
     setLoading(true);
     const auth = login(username, password)
@@ -42,6 +43,7 @@ export default ({ navigation }) => {
         if (authResult) {
           storeData("auth", JSON.stringify(authResult));
           storeData("authCreds", JSON.stringify({ username, password }));
+          refreshUser();
           navigation.reset({
             index: 0,
             routes: [{ name: ROUTES.HOME }],
