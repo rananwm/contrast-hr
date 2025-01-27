@@ -796,22 +796,45 @@
     "signature_error": "Error al enviar la firma"
   },
   "health": {
-    "sync_health_data": "Sincronizar datos de salud",
-    "sync_success": "Datos de salud sincronizados correctamente",
-    "sync_error": "Se produjo un error al sincronizar los datos de salud. ",
-    "allow_health_data": "Permitir la sincronización de datos de salud",
-    "we_need_access": "Para participar en el desafío, necesitamos acceso a sus datos de Apple Health. ",
-    "steps_to_follow": "Esto incluye datos como pasos, minutos mentales y sueño. ",
-    "how_to_enable_permissions": "Cómo habilitar permisos:",
-    "continue": "Continuar",
-    "cancel": "Cancelar",
-    "steps": {
-      "1": "1. Abra la aplicación 'Apple Health'.",
-      "2": "2. Toca el ícono de tu perfil (arriba a la derecha).",
-      "3": "3. Desplácese hasta 'Aplicaciones' en Privacidad.",
-      "4": "4. Seleccione nuestra aplicación.",
-      "5": "5. Habilite los permisos de datos necesarios (por ejemplo, Pasos, Minutos conscientes, Sueño).",
-      "6": "6. Regresa a la aplicación para continuar con el desafío."
+    "open_settings": "Abrir configuración",
+    "ios": {
+      "sync_health_data": "Sincronizar datos de salud",
+      "sync_success": "Datos de salud sincronizados correctamente",
+      "sync_error": "Se produjo un error al sincronizar los datos de salud. ",
+      "allow_health_data": "Permitir la sincronización de datos de salud",
+      "we_need_access": "Para participar en el desafío, necesitamos acceso a sus datos de Apple Health. ",
+      "steps_to_follow": "Esto incluye datos como pasos, minutos mentales y sueño. ",
+      "how_to_enable_permissions": "Cómo habilitar permisos:",
+      "continue": "Continuar",
+      "cancel": "Cancelar",
+      "steps": [
+        "1. Abra la aplicación 'Apple Health'.",
+        "2. Toca el ícono de tu perfil (arriba a la derecha).",
+        "3. Desplácese hasta 'Aplicaciones' en Privacidad.",
+        "4. Seleccione nuestra aplicación.",
+        "5. Habilita todos los permisos (Energía Activa, Minutos de Atención Plena, Sueño, Pasos, Distancia de Caminar + Correr, Agua).",
+        "6. Regresa a la aplicación para continuar con el desafío."
+      ]
+    },
+    "android": {
+      "sync_health_data": "Sincronizar datos de salud",
+      "sync_success": "Datos de salud sincronizados correctamente",
+      "sync_error": "Se produjo un error al sincronizar los datos de salud. ",
+      "allow_health_data": "Permitir la sincronización de datos de salud",
+      "we_need_access": "Para participar en el desafío, necesitamos acceso a sus datos de Google Health. ",
+      "steps_to_follow": "Esto incluye datos como pasos, minutos mentales y sueño. ",
+      "how_to_enable_permissions": "Cómo habilitar permisos:",
+      "continue": "Continuar",
+      "cancel": "Cancelar",
+      "steps": [
+        "1. Ve a la aplicación de 'Configuración' de tu dispositivo.",
+        "2. Desplázate hacia abajo y selecciona 'Aplicaciones' o 'Gestión de aplicaciones' (varía según el dispositivo).",
+        "3. Busca y selecciona nuestra aplicación en la lista de aplicaciones instaladas.",
+        "4. Toca 'Permisos' o 'Permisos de la aplicación'.",
+        "5. Selecciona 'Health Connect'.",
+        "6. Habilita los permisos de datos necesarios (por ejemplo, Distancia, Ejercicio, Frecuencia cardíaca, Hidratación, Pasos, Sueño).",
+        "7. Regresa a la aplicación para continuar con el desafío."
+      ]
     }
   }
 }

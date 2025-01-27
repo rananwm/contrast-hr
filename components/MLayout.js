@@ -13,6 +13,7 @@ import { useNavigation } from "@react-navigation/native";
 import { COLORS, ROUTES, WEB_URL } from "../constants";
 import { getAuthData, getItems } from "../src/store";
 import { profile_get } from "../src/api";
+import { useAuth } from "../context/AuthContext";
 
 const MLayout = forwardRef(
   (
@@ -31,24 +32,37 @@ const MLayout = forwardRef(
       profile,
     }));
     const navigation = useNavigation();
+    const { user, profile: profile_image } = useAuth();
     const [profile, setProfile] = React.useState({});
     React.useEffect(() => {
-      getAuthData().then(async (auth) => {
-        // setAuth(auth);
-        if (auth && auth.data) {
-          await getItems(auth, [
-            { key: "profile", stateHook: setProfile, apiFallback: profile_get },
-          ]);
-        } else {
-          console.log("auth failed!!!", auth);
-          alert("Your session has expired. Please log in again.");
-          removeData("auth");
-          navigation.navigate(ROUTES.LOGIN);
-        }
-      });
+      // console.log("user", user);
+      // getAuthData().then(async (user) => {
+      //   console.log("user", user);
+      // setAuth(auth);
+      //   if (user && user.data) {
+      //     const resp = await getItems(user, [
+      //       { key: "profile", stateHook: setProfile, apiFallback: profile_get },
+      //     ]);
+      //     console.log("resp", profile);
+      //   } else {
+      //     console.log("auth failed!!!", user);
+      //     alert("Your session has expired. Please log in again.");
+      //     removeData("auth");
+      //     navigation.navigate(ROUTES.LOGIN);
+      //   }
+      // });
+      if (user) {
+        setProfile(user?.data);
+      }
+      if (profile_image) {
+        setProfile({
+          ...user?.data,
+          profile_image: profile_image?.profile_image,
+        });
+      }
     }, []);
     const profileImage = useMemo(() => {
-      return `${WEB_URL}/${profile?.profile_image}?${new Date().getTime()}`;
+      return `${WEB_URL}/${profile?.profile_image}`;
     }, [profile?.profile_image]);
     return (
       <MView

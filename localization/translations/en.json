@@ -795,22 +795,45 @@
     "signature_error": "Error Submitting Signature"
   },
   "health": {
-    "sync_health_data": "Sync Health Data",
-    "sync_success": "Health Data Synced Successfully",
-    "sync_error": "There was an error syncing health data. Please try again.",
-    "allow_health_data": "Allow Health Data Syncing",
-    "we_need_access": "To participate in the challenge, we need access to your Apple Health data. Please ensure you enable the necessary permissions in the Health app.",
-    "steps_to_follow": "This includes data such as steps, mental minutes, and sleep. If you’ve already granted permission, you’re good to go. If not, follow these steps:",
-    "how_to_enable_permissions": "How to Enable Permissions:",
-    "continue": "Continue",
-    "cancel": "Cancel",
-    "steps": {
-      "1": "1. Open the 'Apple Health' app.",
-      "2": "2. Tap your profile icon (top right).",
-      "3": "3. Scroll to 'Apps' under Privacy.",
-      "4": "4. Select our app.",
-      "5": "5. Enable required data permissions (e.g., Steps, Mindful Minutes, Sleep).",
-      "6": "6. Return to the app to continue the challenge."
+    "open_settings": "Open Settings",
+    "ios": {
+      "sync_health_data": "Sync Health Data",
+      "sync_success": "Health Data Synced Successfully",
+      "sync_error": "There was an error syncing health data. Please try again.",
+      "allow_health_data": "Allow Health Data Syncing",
+      "we_need_access": "To participate in the challenge, we need access to your Apple Health data. Please ensure you enable the necessary permissions in the Health app.",
+      "steps_to_follow": "This includes data such as steps, mental minutes, and sleep. If you’ve already granted permission, you’re good to g o. If not, follow these steps:",
+      "how_to_enable_permissions": "How to Enable Permissions:",
+      "continue": "Continue",
+      "cancel": "Cancel",
+      "steps": [
+        "1. Open the 'Apple Health' app.",
+        "2. Tap your profile icon (top right).",
+        "3. Scroll to 'Apps' under Privacy.",
+        "4. Select our app.",
+        "5. Enable all permissions (Active Energy, Mindful Minutes, Sleep, Steps, Walking + Running Distance, Water).",
+        "6. Return to the app to continue the challenge."
+      ]
+    },
+    "android": {
+      "sync_health_data": "Sync Health Data",
+      "sync_success": "Health Data Synced Successfully",
+      "sync_error": "There was an error syncing health data. Please try again.",
+      "allow_health_data": "Allow Health Data Syncing",
+      "we_need_access": "To participate in the challenge, we need access to your Google Health data. Please ensure you enable the necessary permissions in the Health app.",
+      "steps_to_follow": "This includes data such as steps, mental minutes, and sleep. If you’ve already granted permission, you’re good to go. If not, follow these steps:",
+      "how_to_enable_permissions": "How to Enable Permissions:",
+      "continue": "Continue",
+      "cancel": "Cancel",
+      "steps": [
+        "1. Go to your device's 'Settings' app.",
+        "2. Scroll down and select 'Apps' or 'App Management' (varies by device).",
+        "3. Locate and tap on our app from the list of installed apps.",
+        "4. Tap 'Permissions' or 'App Permissions'.",
+        "5. Select 'Health Connect'.",
+        "6. Enable all permissions (Distance, Excercise, Heart Rate, Hydration, Steps, Sleep).",
+        "7. Return to the app to continue the challenge."
+      ]
     }
   }
 }

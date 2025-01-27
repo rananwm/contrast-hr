@@ -296,13 +296,13 @@ const ChallengesScreen = ({ navigation, route: { params } }) => {
                   style={{
                     width: "100%",
                     aspectRatio: 16 / 9,
-                    ...(Platform.OS === "android"
-                      ? {
-                          height: 200,
-                        }
-                      : {}),
+                    // ...(Platform.OS === "android"
+                    //   ? {
+                    //       height: 200,
+                    //     }
+                    //   : {}),
                     paddingTop: 12,
-                    marginBottom: Platform.OS === "ios" ? 10 : 0,
+                    marginBottom: 10,
                   }}
                 >
                   {videoId && (

@@ -7,7 +7,7 @@ import {
 import { Platform } from "react-native";
 import AppleHealthKit from "react-native-health";
 import { submit_health_data } from "../src/api";
-import { getAuthData } from "../src/store";
+import { getAuthData, getData, storeData } from "../src/store";
 import { useState } from "react";
 const useHealth = () => {
   const [auth, setAuth] = useState(null);
@@ -58,13 +58,41 @@ const useHealth = () => {
   };
   const syncData = async (auth, data) => {
     try {
+      console.log("data for sync before", data);
+      const today = moment().format("YYYY-MM-DD");
+      const async_data = await getData("last_synced");
+      const stored_data = async_data ? JSON.parse(async_data) : null;
+      console.log("stored_data", stored_data);
+      let transform_data = [];
+      if (stored_data && stored_data?.reference_date === today) {
+        transform_data = data?.map((item, index) => {
+          const previousItem = stored_data?.data?.find(
+            (storedItem) => storedItem?.datatype === item?.datatype
+          );
+          console.log("previousItem", previousItem);
+          const valueDifference =
+            parseFloat(item?.value) - parseFloat(previousItem?.value);
+          if (previousItem) {
+            return {
+              ...item,
+              value: valueDifference >= 0 ? valueDifference : 0,
+            };
+          } else {
+            return { ...item };
+          }
+        });
+      }
+      console.log("transform_data", transform_data);
       const response = await submit_health_data(
         auth.data.profile_auth,
         auth.cookie,
-        JSON.stringify(data)
+        JSON.stringify(transform_data)
       );
-
-      // console.log("Data synced successfully: ", response);
+      await storeData(
+        "last_synced",
+        JSON.stringify({ reference_date: today, data: data })
+      );
+      console.log("Data synced successfully:", response);
     } catch (apiError) {
       console.log("Error syncing data to backend: ", apiError);
     }
