@@ -18,7 +18,7 @@ const useHealth = () => {
     timestamp: moment(timestamp).format("MM/DD/YYYY hh:mm:ss"), // Timestamp of the data
     note,
     datatype,
-    value: Math.min(Math.max(value, 1), 1000000).toString(), // Clamp value between 1 and 1000000
+    value: Math.min(Math.max(value, 0), 1000000).toString(), // Clamp value between 1 and 1000000
   });
   const getAuth = async () => {
     try {
@@ -67,111 +67,6 @@ const useHealth = () => {
       console.log("Error syncing data to backend: ", apiError);
     }
   };
-  // const AppleHealthInitializeAndSync = async (userAuth, date = null) => {
-  //   try {
-  //     const finalHealthData = [];
-
-  //     let options = {
-  //       permissions: {
-  //         read: [
-  //           "StepCount",
-  //           "ActiveEnergyBurned",
-  //           "DistanceWalkingRunning",
-  //           "MindfulSession",
-  //           "SleepAnalysis",
-  //           "Water",
-  //         ],
-  //         write: [],
-  //       },
-  //     };
-
-  //     AppleHealthKit.initHealthKit(options, async (err) => {
-  //       if (err) {
-  //         console.log("Error initializing HealthKit: ", err);
-  //         return;
-  //       }
-
-  //       let startDate, endDate;
-  //       if (date) {
-  //         startDate = moment(date).startOf("day").toISOString();
-  //         endDate = moment(date).endOf("day").toISOString();
-  //       } else {
-  //         startDate = new Date(
-  //           new Date().setDate(new Date().getDate() - 1)
-  //         ).toISOString();
-  //         endDate = new Date().toISOString();
-  //       }
-
-  //       // Fetch all data in parallel
-  //       const stepsData = await fetchData(
-  //         AppleHealthKit.getStepCount,
-  //         { startDate, endDate },
-  //         "steps"
-  //       );
-
-  //       const workoutMinutesData = await fetchData(
-  //         AppleHealthKit.getActiveEnergyBurned,
-  //         { startDate, endDate },
-  //         "workout_minutes"
-  //       );
-
-  //       const workoutDistanceData = await fetchData(
-  //         AppleHealthKit.getDistanceWalkingRunning,
-  //         { startDate, endDate },
-  //         "workout_distance"
-  //       );
-  //       const mentalMinutesData = await fetchData(
-  //         AppleHealthKit.getMindfulSession,
-  //         { startDate, endDate },
-  //         "mental_minutes",
-  //         "value",
-  //         (result) => {
-  //           const mentalMinutes = moment(result?.endDate).diff(
-  //             moment(result?.startDate),
-  //             "minutes",
-  //             true
-  //           );
-  //           return mentalMinutes;
-  //         }
-  //       );
-  //       const sleepData = await fetchData(
-  //         AppleHealthKit.getSleepSamples,
-  //         { startDate, endDate },
-  //         "sleep",
-  //         "value",
-  //         (result) => {
-  //           const hoursSleep = moment(result?.endDate).diff(
-  //             moment(result?.startDate),
-  //             "hours",
-  //             true
-  //           );
-  //           return hoursSleep;
-  //         }
-  //       );
-
-  //       const waterData = await fetchData(
-  //         AppleHealthKit.getWaterSamples,
-  //         { startDate, endDate },
-  //         "water"
-  //       );
-
-  //       // Combine all data
-  //       finalHealthData.push(
-  //         ...stepsData,
-  //         ...workoutMinutesData,
-  //         ...workoutDistanceData,
-  //         ...mentalMinutesData,
-  //         ...sleepData,
-  //         ...waterData
-  //       );
-
-  //       await syncData(userAuth, finalHealthData);
-  //     });
-  //   } catch (error) {
-  //     console.log("🚀 ~ AppleHealthInitializeAndSync ~ error:", error);
-  //     throw error;
-  //   }
-  // };
   const AppleHealthInitializeAndSync = async (
     userAuth,
     datesInRange = null
@@ -248,12 +143,18 @@ const useHealth = () => {
             { date: startDate, startDate, endDate },
             "sleep",
             "value",
-            (result) =>
-              moment(result?.endDate).diff(
+            (result) => {
+              const sleep_time = moment(result?.endDate).diff(
                 moment(result?.startDate),
-                "hours",
-                true
-              )
+                "minutes"
+              );
+              const hours = Math.floor(sleep_time / 60);
+              const minutes = sleep_time % 60;
+              const formattedTime = `${hours}.${minutes
+                .toString()
+                .padStart(2, "0")}`;
+              return formattedTime;
+            }
           );
           // console.log("Sleep Data Fetched:", sleepData);
 
