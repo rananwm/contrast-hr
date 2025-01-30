@@ -73,13 +73,13 @@ import { getGrantedPermissions } from "react-native-health-connect";
 const ChallengeScreen = ({ navigation, route: { params } }) => {
   const [step, setStep] = React.useState(0);
   const [challenge, setChallenge] = useState(null);
-
   const [auth, setAuth] = useState(null);
   const [loading, setLoading] = useState(true);
   const [comments, setComments] = useState([]);
   const [photoGallery, setPhotoGallery] = useState([]);
   const [isSwitch, setIsSwitch] = useState(false);
   const [selectAll, setSelectAll] = useState("");
+  const [selectAllParticipents, setSelectAllParticipents] = useState("");
   const [selectedChapter, setSelectedChapter] = useState({
     instance: null,
     index: 0,
@@ -98,7 +98,7 @@ const ChallengeScreen = ({ navigation, route: { params } }) => {
   const [commentLoading, setCommentLoading] = useState(false);
   const [startData, setStartData] = useState({
     invites: "",
-    participants: [],
+    participants: "",
     challenge_start: moment(),
     challenge_end: "",
     challenge_stakes: "",
@@ -106,7 +106,15 @@ const ChallengeScreen = ({ navigation, route: { params } }) => {
   const [healthModal, setHealthModal] = useState(false);
   const toggleHealthModal = () => setHealthModal(!healthModal);
   const theme = useTheme();
-  const { initializeAndSyncHealthData } = useHealth();
+  const { initializeAndSyncHealthData, getHealthData } = useHealth();
+  const isAdmin = auth?.data?.user_type === "admin";
+  const challenge_start = challenge?.challenge_start;
+  const challenge_end = challenge?.challenge_end;
+  useEffect(() => {
+    if (challenge) {
+      getHealthData(challenge_start, challenge_end);
+    }
+  }, [challenge_start, challenge_end]);
   const pickImage = async () => {
     // No permissions request is necessary for launching the image library
     let result = await ImagePicker.launchImageLibraryAsync({
@@ -169,7 +177,7 @@ const ChallengeScreen = ({ navigation, route: { params } }) => {
             value: "1",
           });
           data.push({
-            name: "answer",
+            name: "response_text",
             value: answer,
           });
         } else {
@@ -200,7 +208,6 @@ const ChallengeScreen = ({ navigation, route: { params } }) => {
   };
   const [leaderBoard, setLeaderBoard] = useState(null);
   const [chapterDetails, setChapterDetails] = useState(null);
-
   const [chapterLoading, setChapterLoading] = useState(false);
   const [commentsLoading, setCommentsLoading] = useState(false);
   const [photoLoading, setPhotoLoading] = useState(false);
@@ -230,8 +237,8 @@ const ChallengeScreen = ({ navigation, route: { params } }) => {
           ? moment(startData?.challenge_start).format("MM/DD/YYYY")
           : null,
         participants: JSON.stringify(
-          startData?.participants?.filter(Boolean)?.length > 0
-            ? startData?.participants?.filter(Boolean)
+          startData?.participants?.split(",").filter(Boolean)?.length > 0
+            ? startData?.participants?.split(",").filter(Boolean)
             : []
         ),
         invites: JSON.stringify(
@@ -582,26 +589,6 @@ const ChallengeScreen = ({ navigation, route: { params } }) => {
                               ? value?.slice(0, -1)
                               : value
                           );
-                          if (
-                            startData?.participants?.includes(
-                              selectedParticipant?.participant_auth
-                            )
-                          ) {
-                            onHandleChange(
-                              "participants",
-                              startData?.participants?.filter(
-                                (ele) =>
-                                  ele !== selectedParticipant?.participant_auth
-                              )
-                            );
-                          } else if (selectedParticipant?.participants) {
-                            onHandleChange(
-                              "participants",
-                              startData?.participants?.concat(
-                                selectedParticipant?.participant_auth
-                              )
-                            );
-                          }
                         }}
                         list={
                           participant?.length > 0
@@ -641,6 +628,74 @@ const ChallengeScreen = ({ navigation, route: { params } }) => {
                         <MText>{t("challenges.select_all")}</MText>
                       </MView>
                     </>
+                    {isAdmin && (
+                      <>
+                        <MText style={{ ...styles.label, marginBottom: 10 }}>
+                          Participants
+                        </MText>
+                        <>
+                          <MSelect
+                            mode="outlined"
+                            style={{
+                              height: 20,
+                            }}
+                            value={startData?.participants}
+                            setValue={(value) => {
+                              onHandleChange("participants", value);
+                              const selectedParticipant = participant?.find(
+                                (ele) =>
+                                  ele?.participant_auth ===
+                                  value?.startsWith(",")
+                                    ? value?.slice(1)
+                                    : value?.endsWith(",")
+                                    ? value?.slice(0, -1)
+                                    : value
+                              );
+                            }}
+                            list={
+                              participant?.length > 0
+                                ? participant?.map((item) => ({
+                                    label: item?.name + " " + item?.surname,
+                                    value: item?.participant_auth,
+                                  }))
+                                : []
+                            }
+                            placeholder={"Select"}
+                            multiSelect
+                            // required={required}
+                          />
+                          <MView
+                            style={{
+                              flexDirection: "row",
+                              alignItems: "center",
+                            }}
+                          >
+                            <Checkbox.Android
+                              theme={{
+                                colors: { accent: theme?.colors.primary },
+                              }}
+                              status={
+                                selectAllParticipents ? "checked" : "unchecked"
+                              }
+                              onPress={() => {
+                                setSelectAllParticipents(
+                                  !selectAllParticipents
+                                );
+                                setStartData((prev) => ({
+                                  ...prev,
+                                  participants: selectAllParticipents
+                                    ? ""
+                                    : participant
+                                        ?.map((item) => item?.participant_auth)
+                                        .join(","),
+                                }));
+                              }}
+                            />
+                            <MText>{t("challenges.select_all")}</MText>
+                          </MView>
+                        </>
+                      </>
+                    )}
                   </>
                 )}
 
@@ -835,7 +890,7 @@ const ChallengeScreen = ({ navigation, route: { params } }) => {
                           "days"
                         )
                         .format("LL")}
-                  {chapterDetails?.name?.includes("Week") &&
+                  {chapterDetails?.announce_unit?.includes("week") &&
                     ` - ${moment(challenge?.challenge_start)
                       .add(
                         parseInt(chapterDetails?.announce?.split(" ")[0]),
@@ -1280,7 +1335,7 @@ const ChallengeScreen = ({ navigation, route: { params } }) => {
       const result = await challenge_get(
         auth.data.profile_auth,
         auth.cookie,
-        params?.challengeInstanceAuth || instance
+        instance || params?.challengeInstanceAuth
       );
       if (result?.data) {
         const sortedChapters = sortChapters(result?.data?.chapters ?? {});

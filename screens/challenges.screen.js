@@ -472,16 +472,16 @@ const ChallengesScreen = ({ navigation, route: { params } }) => {
                   <ChallengeCard
                     key={index}
                     challenge={challenge}
-                    onPress={() =>
+                    onPress={() => {
                       navigation.navigate(ROUTES.CHALLENGE_DETAIL, {
                         challengeInstanceAuth:
-                          challenge?.challenge_instance_auth,
+                          challenge?.challenge_template_auth,
                         banner: `${WEB_URL}/${challenge?.banner}`,
                         challenge,
                         isActive: false,
                         isChallenge: true,
-                      })
-                    }
+                      });
+                    }}
                   />
                 );
               })

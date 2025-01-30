@@ -86,13 +86,13 @@ export const HomeNavigator = (props) => {
       options: {},
     },
   ];
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
   const [auth, setAuth] = useState(null);
   const [timeOffSummary, setTimeOffSummary] = useState(null);
   const [timeOffSettings, setTimeSettings] = useState(null);
   const navigation = useNavigation();
   useEffect(() => {
-    setLoading(true);
+    // setLoading(true);
     getAuthData()
       .then(async (auth) => {
         setAuth(auth);
@@ -123,13 +123,13 @@ export const HomeNavigator = (props) => {
         setLoading(false);
       });
   }, []);
-  if (loading) {
-    return (
-      <MView style={styles.loadingContainer}>
-        <ActivityIndicator color={COLORS.SECONDARY} />
-      </MView>
-    );
-  }
+  // if (loading) {
+  //   return (
+  //     <MView style={styles.loadingContainer}>
+  //       <ActivityIndicator color={COLORS.SECONDARY} />
+  //     </MView>
+  //   );
+  // }
   return (
     <SafeAreaView style={styles.container}>
       <Tab.Navigator

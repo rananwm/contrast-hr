@@ -41,7 +41,19 @@ export default ({ navigation }) => {
           alignItems: "center",
         }}
       >
-        <ActivityIndicator />
+        <View
+          style={{
+            backgroundColor: COLORS.BLACK,
+            padding: 10,
+            borderRadius: 10,
+          }}
+        >
+          <Image
+            source={APP_LOGO.WORKPLAY_STACKED}
+            style={{ height: 100, width: 100, resizeMode: "contain" }}
+          />
+        </View>
+        {/* <ActivityIndicator /> */}
       </View>
     </SafeAreaView>
   );
