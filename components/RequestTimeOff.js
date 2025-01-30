@@ -224,6 +224,9 @@ const RequestTimeOff = ({ navigation }) => {
             </MText>
             <MInput
               // multiline
+              style={{
+                backgroundColor: COLORS.WHITE,
+              }}
               mode="outlined"
               placeholder="Type Note"
               value={requestData?.timeoff_note}

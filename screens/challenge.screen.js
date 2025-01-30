@@ -1,4 +1,11 @@
-import React, { memo, useEffect, useMemo, useRef, useState } from "react";
+import React, {
+  memo,
+  useEffect,
+  useLayoutEffect,
+  useMemo,
+  useRef,
+  useState,
+} from "react";
 import {
   MButton,
   MCard,
@@ -16,6 +23,7 @@ import mime from "mime";
 import ChallengeSidebar from "../components/challenges/ChallengeSidebar";
 import MLayout from "../components/MLayout";
 import {
+  AppState,
   Dimensions,
   Image,
   Platform,
@@ -48,7 +56,7 @@ import {
   TextInput,
   useTheme,
 } from "react-native-paper";
-import { COLORS, ROUTES, WEB_URL } from "../constants";
+import { COLORS, REQUIRED_PERMISSIONS, ROUTES, WEB_URL } from "../constants";
 import HTMLView from "react-native-htmlview";
 import YoutubePlayer from "react-native-youtube-iframe";
 import TaskTableRow from "../components/TaskTableRow";
@@ -60,17 +68,18 @@ import { t } from "i18next";
 import { resizeImage } from "../utils";
 import useHealth from "../hooks/useHealth";
 import HealthDataSyncingModal from "../components/HealthDataSyncingModal";
+import { getGrantedPermissions } from "react-native-health-connect";
 
 const ChallengeScreen = ({ navigation, route: { params } }) => {
   const [step, setStep] = React.useState(0);
   const [challenge, setChallenge] = useState(null);
-
   const [auth, setAuth] = useState(null);
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
   const [comments, setComments] = useState([]);
   const [photoGallery, setPhotoGallery] = useState([]);
   const [isSwitch, setIsSwitch] = useState(false);
   const [selectAll, setSelectAll] = useState("");
+  const [selectAllParticipents, setSelectAllParticipents] = useState("");
   const [selectedChapter, setSelectedChapter] = useState({
     instance: null,
     index: 0,
@@ -84,11 +93,12 @@ const ChallengeScreen = ({ navigation, route: { params } }) => {
   const [participant, setParticipant] = useState([]);
   const [image, setImage] = useState(null);
   const [caption, setCaption] = useState("");
+  const [answer, setAnswer] = useState("");
   const [submitTaskLoading, setSubmitTaskLoading] = useState(false);
   const [commentLoading, setCommentLoading] = useState(false);
   const [startData, setStartData] = useState({
     invites: "",
-    participants: [],
+    participants: "",
     challenge_start: moment(),
     challenge_end: "",
     challenge_stakes: "",
@@ -96,7 +106,15 @@ const ChallengeScreen = ({ navigation, route: { params } }) => {
   const [healthModal, setHealthModal] = useState(false);
   const toggleHealthModal = () => setHealthModal(!healthModal);
   const theme = useTheme();
-  const { initializeAndSyncHealthData } = useHealth();
+  const { initializeAndSyncHealthData, getHealthData } = useHealth();
+  const isAdmin = auth?.data?.user_type === "admin";
+  const challenge_start = challenge?.challenge_start;
+  const challenge_end = challenge?.challenge_end;
+  useEffect(() => {
+    if (challenge) {
+      getHealthData(challenge_start, challenge_end);
+    }
+  }, [challenge_start, challenge_end]);
   const pickImage = async () => {
     // No permissions request is necessary for launching the image library
     let result = await ImagePicker.launchImageLibraryAsync({
@@ -153,6 +171,15 @@ const ChallengeScreen = ({ navigation, route: { params } }) => {
             name: "task_amount",
             value: "1",
           });
+        } else if (modalData?.task_type === "text") {
+          data.push({
+            name: "task_amount",
+            value: "1",
+          });
+          data.push({
+            name: "response_text",
+            value: answer,
+          });
         } else {
           data.push({
             name: "task_amount",
@@ -181,11 +208,12 @@ const ChallengeScreen = ({ navigation, route: { params } }) => {
   };
   const [leaderBoard, setLeaderBoard] = useState(null);
   const [chapterDetails, setChapterDetails] = useState(null);
-
   const [chapterLoading, setChapterLoading] = useState(false);
   const [commentsLoading, setCommentsLoading] = useState(false);
   const [photoLoading, setPhotoLoading] = useState(false);
   const [refreshing, setRefreshing] = useState(false);
+  const [isPermission, setIsPermission] = useState(false);
+  const isAndroid = Platform.OS === "android";
   const onHandleChange = (id, value) => {
     setStartData((prev) => ({
       ...prev,
@@ -209,8 +237,8 @@ const ChallengeScreen = ({ navigation, route: { params } }) => {
           ? moment(startData?.challenge_start).format("MM/DD/YYYY")
           : null,
         participants: JSON.stringify(
-          startData?.participants?.filter(Boolean)?.length > 0
-            ? startData?.participants?.filter(Boolean)
+          startData?.participants?.split(",").filter(Boolean)?.length > 0
+            ? startData?.participants?.split(",").filter(Boolean)
             : []
         ),
         invites: JSON.stringify(
@@ -251,6 +279,82 @@ const ChallengeScreen = ({ navigation, route: { params } }) => {
     } finally {
       setStartChallengeLoading(false);
     }
+  };
+  const checkPermission = () => {
+    getGrantedPermissions()
+      .then((permissions) => {
+        const allPermissionsGranted = REQUIRED_PERMISSIONS.every(
+          (requiredPermission) =>
+            permissions.some(
+              (permission) =>
+                permission.accessType === requiredPermission.accessType &&
+                permission.recordType === requiredPermission.recordType
+            )
+        );
+        if (allPermissionsGranted) {
+          setIsPermission(true);
+        } else {
+          setIsPermission(false);
+          console.log("Some required permissions are missing.");
+        }
+      })
+      .catch((error) => {
+        setIsPermission(false);
+        console.error("Error fetching permissions:", error);
+      });
+  };
+  useEffect(() => {
+    const handleAppStateChange = (nextAppState) => {
+      if (nextAppState === "active") {
+        checkPermission();
+      }
+    };
+    if (isAndroid) {
+      checkPermission();
+      const appStateListener = AppState.addEventListener(
+        "change",
+        handleAppStateChange
+      );
+      return () => {
+        appStateListener.remove();
+      };
+    }
+  }, []);
+  const verifyAndStartChallenge = () => {
+    if (isAndroid) {
+      if (!isPermission) {
+        toggleHealthModal();
+      }
+      if (isPermission) {
+        toggleHealthModal();
+        onStartChallenge();
+      }
+    } else {
+      toggleHealthModal();
+      onStartChallenge();
+    }
+  };
+  const handleDeviceSync = () => {
+    if (isAndroid) {
+      if (isPermission) {
+        onStartChallenge();
+      } else {
+        toggleHealthModal();
+      }
+    } else {
+      toggleHealthModal();
+    }
+  };
+  const handleStartChallengePress = () => {
+    if (!isStarted) {
+      setIsStarted(true);
+      return;
+    }
+    if (params?.challenge?.enable_device_sync === "1") {
+      handleDeviceSync();
+      return;
+    }
+    onStartChallenge();
   };
   const onAddComment = async () => {
     try {
@@ -485,26 +589,6 @@ const ChallengeScreen = ({ navigation, route: { params } }) => {
                               ? value?.slice(0, -1)
                               : value
                           );
-                          if (
-                            startData?.participants?.includes(
-                              selectedParticipant?.participant_auth
-                            )
-                          ) {
-                            onHandleChange(
-                              "participants",
-                              startData?.participants?.filter(
-                                (ele) =>
-                                  ele !== selectedParticipant?.participant_auth
-                              )
-                            );
-                          } else if (selectedParticipant?.participants) {
-                            onHandleChange(
-                              "participants",
-                              startData?.participants?.concat(
-                                selectedParticipant?.participant_auth
-                              )
-                            );
-                          }
                         }}
                         list={
                           participant?.length > 0
@@ -544,6 +628,74 @@ const ChallengeScreen = ({ navigation, route: { params } }) => {
                         <MText>{t("challenges.select_all")}</MText>
                       </MView>
                     </>
+                    {isAdmin && (
+                      <>
+                        <MText style={{ ...styles.label, marginBottom: 10 }}>
+                          Participants
+                        </MText>
+                        <>
+                          <MSelect
+                            mode="outlined"
+                            style={{
+                              height: 20,
+                            }}
+                            value={startData?.participants}
+                            setValue={(value) => {
+                              onHandleChange("participants", value);
+                              const selectedParticipant = participant?.find(
+                                (ele) =>
+                                  ele?.participant_auth ===
+                                  value?.startsWith(",")
+                                    ? value?.slice(1)
+                                    : value?.endsWith(",")
+                                    ? value?.slice(0, -1)
+                                    : value
+                              );
+                            }}
+                            list={
+                              participant?.length > 0
+                                ? participant?.map((item) => ({
+                                    label: item?.name + " " + item?.surname,
+                                    value: item?.participant_auth,
+                                  }))
+                                : []
+                            }
+                            placeholder={"Select"}
+                            multiSelect
+                            // required={required}
+                          />
+                          <MView
+                            style={{
+                              flexDirection: "row",
+                              alignItems: "center",
+                            }}
+                          >
+                            <Checkbox.Android
+                              theme={{
+                                colors: { accent: theme?.colors.primary },
+                              }}
+                              status={
+                                selectAllParticipents ? "checked" : "unchecked"
+                              }
+                              onPress={() => {
+                                setSelectAllParticipents(
+                                  !selectAllParticipents
+                                );
+                                setStartData((prev) => ({
+                                  ...prev,
+                                  participants: selectAllParticipents
+                                    ? ""
+                                    : participant
+                                        ?.map((item) => item?.participant_auth)
+                                        .join(","),
+                                }));
+                              }}
+                            />
+                            <MText>{t("challenges.select_all")}</MText>
+                          </MView>
+                        </>
+                      </>
+                    )}
                   </>
                 )}
 
@@ -597,17 +749,7 @@ const ChallengeScreen = ({ navigation, route: { params } }) => {
               mode="contained"
               style={styles.startChallengeBtn}
               disabled={startChallengeLoading}
-              onPress={() => {
-                if (!isStarted) {
-                  setIsStarted(true);
-                  return;
-                }
-                if (params?.challenge?.enable_device_sync === "1") {
-                  toggleHealthModal();
-                  return;
-                }
-                onStartChallenge();
-              }}
+              onPress={() => handleStartChallengePress()}
             >
               {!params?.isChallenge
                 ? "+START THE PROGRAM"
@@ -739,6 +881,24 @@ const ChallengeScreen = ({ navigation, route: { params } }) => {
                 }}
               >
                 <MText style={styles.title}>{chapterDetails?.name}</MText>
+                <MText style={styles.challengeDate}>
+                  {chapterDetails?.announce === "00:00:00"
+                    ? moment(challenge?.challenge_start).format("LL")
+                    : moment(challenge?.challenge_start)
+                        .add(
+                          parseInt(chapterDetails?.announce?.split(" ")[0]),
+                          "days"
+                        )
+                        .format("LL")}
+                  {chapterDetails?.announce_unit?.includes("week") &&
+                    ` - ${moment(challenge?.challenge_start)
+                      .add(
+                        parseInt(chapterDetails?.announce?.split(" ")[0]),
+                        "days"
+                      )
+                      .add(6, "days")
+                      .format("LL")}`}
+                </MText>
                 <MText>
                   {chapterDetails?.description || ""} {"\n"}
                 </MText>
@@ -769,6 +929,17 @@ const ChallengeScreen = ({ navigation, route: { params } }) => {
               <MText style={styles.title}>
                 {chapterDetails?.name} Challenge Task
               </MText>
+              <MText style={styles.challengeDate}>
+                {chapterDetails?.announce === "00:00:00"
+                  ? moment(challenge?.challenge_start).format("LL")
+                  : moment(challenge?.challenge_start)
+                      .add(
+                        parseInt(chapterDetails?.announce?.split(" ")[0]),
+                        "days"
+                      )
+                      .format("LL")}
+              </MText>
+
               {Object.values(chapterDetails?.tasks ?? {})
                 .filter((ele) => ele.name)
                 .map((item, index) => {
@@ -790,6 +961,7 @@ const ChallengeScreen = ({ navigation, route: { params } }) => {
                           setIsSwitch(false);
                           setImage(null);
                           setCaption("");
+                          setAnswer("");
                         }
                       }}
                       title={
@@ -835,7 +1007,7 @@ const ChallengeScreen = ({ navigation, route: { params } }) => {
                               </MView>
                             )}
                             <MText>
-                              {taskAmount}/{+item?.task_threshold}
+                              {Math.round(taskAmount)}/{+item?.task_threshold}
                             </MText>
                           </MView>
                         </MView>
@@ -881,7 +1053,13 @@ const ChallengeScreen = ({ navigation, route: { params } }) => {
         stepperChallenge?.length > 0 ? (
           <MView>
             <Stepper />
-            <MText>
+            <MText
+              style={{
+                marginBottom: 2,
+                marginTop: 12,
+                fontSize: 15,
+              }}
+            >
               {chapterDetails?.comment_prompt || challenge?.comment_prompt}
             </MText>
             {moment(params?.challenge?.challenge_end)?.isAfter() ? (
@@ -928,7 +1106,7 @@ const ChallengeScreen = ({ navigation, route: { params } }) => {
                   onChangeText={setMessage}
                   style={{
                     minHeight: 100,
-                    ...(Platform.OS === "android" && {
+                    ...(isAndroid && {
                       textAlignVertical: "top",
                     }),
                     fontSize: 18,
@@ -1157,7 +1335,7 @@ const ChallengeScreen = ({ navigation, route: { params } }) => {
       const result = await challenge_get(
         auth.data.profile_auth,
         auth.cookie,
-        params?.challengeInstanceAuth || instance
+        instance || params?.challengeInstanceAuth
       );
       if (result?.data) {
         const sortedChapters = sortChapters(result?.data?.chapters ?? {});
@@ -1243,11 +1421,18 @@ const ChallengeScreen = ({ navigation, route: { params } }) => {
   const onRefresh = () => {
     setRefreshing(true);
     setTimeout(() => {
-      getChallengeDetails();
-      getPhotoGallery();
-      if (params?.isChallenge) {
-        getChallengeLeaderBoard();
+      if (selectedChapter?.instance) {
+        getChapterDetails(selectedChapter?.instance);
+        if (params?.isChallenge) {
+          getChapterComments(selectedChapter?.instance);
+        }
+      } else {
+        getChallengeDetails();
+        if (params?.isChallenge) {
+          getChallengeLeaderBoard();
+        }
       }
+      getPhotoGallery();
       initializeAndSyncHealthData();
       setRefreshing(false);
     }, 1500);
@@ -1264,7 +1449,7 @@ const ChallengeScreen = ({ navigation, route: { params } }) => {
           style={{
             width: Dimensions.get("window").width * 0.8,
             aspectRatio: 16 / 9,
-            ...(Platform.OS === "android"
+            ...(isAndroid
               ? {
                   height: 200,
                 }
@@ -1335,7 +1520,7 @@ const ChallengeScreen = ({ navigation, route: { params } }) => {
       }
     }
   }, [selectedChapter, stepperChallenge, auth]);
-  useEffect(() => {
+  useLayoutEffect(() => {
     if (auth && params?.challengeInstanceAuth) {
       getChallengeDetails();
       getPhotoGallery();
@@ -1384,11 +1569,7 @@ const ChallengeScreen = ({ navigation, route: { params } }) => {
           />
         )}
         <MTouchable
-          onPress={() => {
-            navigation.navigate(ROUTES.CHALLENGES_STACK, {
-              screen: ROUTES.CHALLENGES,
-            });
-          }}
+          onPress={() => navigation.navigate(ROUTES.CHALLENGES)}
           style={{
             backgroundColor: "transparent",
             marginLeft: 20,
@@ -1442,6 +1623,7 @@ const ChallengeScreen = ({ navigation, route: { params } }) => {
           style={{
             fontWeight: "bold",
             fontSize: 18,
+            marginBottom: 8,
           }}
         >
           {modalData?.name ?? ""}
@@ -1449,9 +1631,10 @@ const ChallengeScreen = ({ navigation, route: { params } }) => {
         <MText>{modalData?.description}</MText>
         <MView
           style={{
-            borderWidth: 1,
-            borderColor: "gray",
-            padding: 10,
+            borderWidth: modalData?.task_type === "text" ? 0 : 1,
+            borderColor:
+              modalData?.task_type === "text" ? "transparent" : "gray",
+            padding: modalData?.task_type === "text" ? 5 : 10,
             marginTop: 10,
             borderRadius: 5,
             flexDirection:
@@ -1459,17 +1642,28 @@ const ChallengeScreen = ({ navigation, route: { params } }) => {
             width: "100%",
           }}
         >
-          <MText
-            style={{
-              width: "80%",
-            }}
-          >
-            Were you able to complete the{" "}
-            <MText style={{ fontWeight: "bold" }}>
-              {modalData?.name ?? "N/A"}
-            </MText>{" "}
-            challenge?
-          </MText>
+          {modalData?.task_type === "value" ? (
+            <MText
+              style={{
+                width: "80%",
+                marginBottom: 4,
+              }}
+            >
+              How many {modalData?.task_unit} did you do?
+            </MText>
+          ) : modalData?.task_type === "text" ? null : (
+            <MText
+              style={{
+                width: "80%",
+              }}
+            >
+              Were you able to complete the{" "}
+              <MText style={{ fontWeight: "bold" }}>
+                {modalData?.name ?? "N/A"}
+              </MText>{" "}
+              challenge?
+            </MText>
+          )}
           {modalData?.task_type === "boolean" ? (
             <MSwitch value={isSwitch} onValueChange={setIsSwitch} />
           ) : modalData?.task_type === "value" ? (
@@ -1530,6 +1724,20 @@ const ChallengeScreen = ({ navigation, route: { params } }) => {
                 Select A Photo
               </MButton>
             </>
+          ) : modalData?.task_type === "text" ? (
+            <MInput
+              value={answer}
+              onChangeText={(text) => setAnswer(text)}
+              mode="outlined"
+              // multiline={true}
+              numberOfLines={4}
+              placeholder="Type here..."
+              style={{
+                backgroundColor: "white",
+                marginTop: 10,
+              }}
+              required
+            />
           ) : null}
         </MView>
         {modalData?.task_direct_entry === "0" && (
@@ -1558,8 +1766,9 @@ const ChallengeScreen = ({ navigation, route: { params } }) => {
       </MModal>
       <HealthDataSyncingModal
         visible={healthModal}
-        onContinue={onStartChallenge}
+        onContinue={verifyAndStartChallenge}
         onDismiss={toggleHealthModal}
+        disabled={isAndroid ? !isPermission : false}
       />
     </MLayout>
   );
@@ -1818,6 +2027,12 @@ const styles = StyleSheet.create({
     padding: 12,
     borderRadius: 12,
     marginTop: 12,
+  },
+  challengeDate: {
+    fontSize: 14,
+    fontWeight: "semibold",
+    marginTop: 4,
+    marginBottom: 6,
   },
 });
 export default ChallengeScreen;

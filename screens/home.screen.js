@@ -45,6 +45,10 @@ export default ({ navigation }) => {
   const latestNotification = notifications?.sort(
     (a, b) => new Date(b?.created) - new Date(a?.created)
   )?.[0];
+  const { user } = useAuth();
+  const restricted_partners = ["sparkjoy", "contrast"].includes(
+    user?.data?.partner
+  );
   React.useEffect(() => {
     setNotificationsLoading(true);
     getAuthData(setAuth)
@@ -96,9 +100,10 @@ export default ({ navigation }) => {
         setNotificationsLoading(false);
       });
   }, []);
+  const { t, i18n } = useTranslation();
   React.useEffect(() => {
     if (profile?.localization) {
-      i18n.changeLanguage(profile?.localization);
+      i18n.changeLanguage(restricted_partners ? "en" : profile?.localization);
     }
   }, [profile, profile?.localization]);
 
@@ -109,7 +114,6 @@ export default ({ navigation }) => {
   const goToPrevious = () => {
     carouselRef.current.prev();
   };
-  const { t, i18n } = useTranslation();
   const updateLanguageCode = (newValue) => {
     // setLanguageCode(newValue);
     i18n.changeLanguage(newValue);

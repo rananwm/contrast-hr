@@ -50,6 +50,7 @@ import CompensationSummary from "../components/CompensationSummary";
 import ProfileAssets from "../components/ProfileAssets";
 import QualificationSummary from "../components/QualificationSummary";
 import useHealth from "../hooks/useHealth";
+import { useAuth } from "../context/AuthContext";
 
 export default ({ navigation, route }) => {
   const [auth, setAuth] = React.useState("");
@@ -64,6 +65,11 @@ export default ({ navigation, route }) => {
   const [isHealthSyncing, setIsHealthSyncing] = React.useState(false);
   const { initializeAndSyncHealthData } = useHealth();
   const toggleModal = () => setVisible(!visible);
+  const { user } = useAuth();
+  const restricted_partners = ["sparkjoy", "contrast"].includes(
+    user?.data?.partner
+  );
+
   const syncHealthData = () => {
     setIsHealthSyncing(true);
     const callback = (isSuccess) => {
@@ -341,7 +347,14 @@ export default ({ navigation, route }) => {
   };
 
   // let config = JSON.parse(JSON.stringify(profile_config));
-  const config = localizeConfig(t, profile_config);
+  // const config = localizeConfig(t, profile_config);
+  const config = localizeConfig(t, {
+    ...profile_config,
+    sections: profile_config.sections.filter(
+      (section) =>
+        !(restricted_partners && section.id === "language_preference")
+    ),
+  });
   // if (config && routeSection != '') {
   //   config.sections = config.sections.filter((section) => {
   //     return (section.id == route.params.section)

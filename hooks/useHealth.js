@@ -7,7 +7,7 @@ import {
 import { Platform } from "react-native";
 import AppleHealthKit from "react-native-health";
 import { submit_health_data } from "../src/api";
-import { getAuthData } from "../src/store";
+import { getAuthData, getData, storeData } from "../src/store";
 import { useState } from "react";
 const useHealth = () => {
   const [auth, setAuth] = useState(null);
@@ -18,7 +18,7 @@ const useHealth = () => {
     timestamp: moment(timestamp).format("MM/DD/YYYY hh:mm:ss"), // Timestamp of the data
     note,
     datatype,
-    value: Math.min(Math.max(value, 1), 1000000).toString(), // Clamp value between 1 and 1000000
+    value: Math.min(Math.max(value, 0), 1000000).toString(), // Clamp value between 1 and 1000000
   });
   const getAuth = async () => {
     try {
@@ -63,14 +63,16 @@ const useHealth = () => {
         auth.cookie,
         JSON.stringify(data)
       );
-
-      console.log("Data synced successfully: ", response);
     } catch (apiError) {
       console.log("Error syncing data to backend: ", apiError);
     }
   };
-  const AppleHealthInitializeAndSync = async (userAuth) => {
+  const AppleHealthInitializeAndSync = async (
+    userAuth,
+    datesInRange = null
+  ) => {
     try {
+      console.log("Initializing Apple HealthKit...");
       const finalHealthData = [];
 
       let options = {
@@ -93,94 +95,93 @@ const useHealth = () => {
           return;
         }
 
-        const challengeWindowStartDate = new Date(
-          new Date().setDate(new Date().getDate() - 1)
-        ).toISOString();
-        const challengeWindowEndDate = new Date().toISOString();
+        let dateList = datesInRange || [moment().format("YYYY-MM-DD")];
+        console.log("Processing dates:", dateList);
 
-        // Fetch all data in parallel
-        const stepsData = await fetchData(
-          AppleHealthKit.getStepCount,
-          {
-            startDate: challengeWindowStartDate,
-            endDate: challengeWindowEndDate,
-          },
-          "steps"
-        );
+        for (const date of dateList) {
+          let startDate = moment(date).startOf("day").toISOString();
+          let endDate = moment(date).endOf("day").toISOString();
+          console.log(`Fetching data for date: ${date}`);
+          // console.log("StepsRecords", StepsRecords.records);
+          const stepsData = await fetchData(
+            AppleHealthKit.getStepCount,
+            { date: startDate, startDate, endDate },
+            "steps"
+          );
+          // console.log("Steps Data Fetched:", stepsData);
 
-        const workoutMinutesData = await fetchData(
-          AppleHealthKit.getActiveEnergyBurned,
-          {
-            startDate: challengeWindowStartDate,
-            endDate: challengeWindowEndDate,
-          },
-          "workout_minutes"
-        );
+          const workoutMinutesData = await fetchData(
+            AppleHealthKit.getActiveEnergyBurned,
+            { date: startDate, startDate, endDate },
+            "workout_minutes"
+          );
+          // console.log("Workout Minutes Data Fetched:", workoutMinutesData);
 
-        const workoutDistanceData = await fetchData(
-          AppleHealthKit.getDistanceWalkingRunning,
-          {
-            startDate: challengeWindowStartDate,
-            endDate: challengeWindowEndDate,
-          },
-          "workout_distance"
-        );
-        const mentalMinutesData = await fetchData(
-          AppleHealthKit.getMindfulSession,
-          {
-            startDate: challengeWindowStartDate,
-            endDate: challengeWindowEndDate,
-          },
-          "mental_minutes",
-          "value",
-          (result) => {
-            const mentalMinutes = moment(result?.endDate).diff(
-              moment(result?.startDate),
-              "minutes",
-              true
-            );
-            return mentalMinutes;
-          }
-        );
+          const workoutDistanceData = await fetchData(
+            AppleHealthKit.getDistanceWalkingRunning,
+            { date: startDate, startDate, endDate },
+            "workout_distance"
+          );
+          // console.log("Workout Distance Data Fetched:", workoutDistanceData);
 
-        const sleepData = await fetchData(
-          AppleHealthKit.getSleepSamples,
-          {
-            startDate: challengeWindowStartDate,
-            endDate: challengeWindowEndDate,
-          },
-          "sleep",
-          "value",
-          (result) => {
-            const hoursSleep = moment(result?.endDate).diff(
-              moment(result?.startDate),
-              "hours",
-              true
-            );
-            return hoursSleep;
-          }
-        );
+          const mentalMinutesData = await fetchData(
+            AppleHealthKit.getMindfulSession,
+            { date: startDate, startDate, endDate },
+            "mental_minutes",
+            "value",
+            (result) =>
+              moment(result?.endDate).diff(
+                moment(result?.startDate),
+                "minutes",
+                true
+              )
+          );
+          // console.log("Mental Minutes Data Fetched:", mentalMinutesData);
 
-        const waterData = await fetchData(
-          AppleHealthKit.getWaterSamples,
-          {
-            startDate: challengeWindowStartDate,
-            endDate: challengeWindowEndDate,
-          },
-          "water"
-        );
+          const sleepData = await fetchData(
+            AppleHealthKit.getSleepSamples,
+            { date: startDate, startDate, endDate },
+            "sleep",
+            "value",
+            (result) => {
+              const sleep_time = moment(result?.endDate).diff(
+                moment(result?.startDate),
+                "minutes"
+              );
+              const hours = Math.floor(sleep_time / 60);
+              const minutes = sleep_time % 60;
+              const formattedTime = `${hours}.${minutes
+                .toString()
+                .padStart(2, "0")}`;
+              return formattedTime;
+            }
+          );
+          // console.log("Sleep Data Fetched:", sleepData);
 
-        // Combine all data
-        finalHealthData.push(
-          ...stepsData,
-          ...workoutMinutesData,
-          ...workoutDistanceData,
-          ...mentalMinutesData,
-          ...sleepData,
-          ...waterData
-        );
+          const waterData = await fetchData(
+            AppleHealthKit.getWaterSamples,
+            { date: startDate, startDate, endDate },
+            "water"
+          );
+          // console.log("Water Data Fetched:", waterData);
 
-        await syncData(userAuth, finalHealthData);
+          finalHealthData.push(
+            ...stepsData,
+            ...workoutMinutesData,
+            ...workoutDistanceData,
+            ...mentalMinutesData,
+            ...sleepData,
+            ...waterData
+          );
+        }
+
+        // console.log("Final Health Data to Sync:", finalHealthData);
+
+        if (finalHealthData.length === 0) {
+          console.log("No data to sync.");
+        } else {
+          await syncData(userAuth, finalHealthData);
+        }
       });
     } catch (error) {
       console.log("🚀 ~ AppleHealthInitializeAndSync ~ error:", error);
@@ -188,17 +189,11 @@ const useHealth = () => {
     }
   };
 
-  const AndroidHealthInitializeAndSync = async (userAuth) => {
+  const AndroidHealthInitializeAndSync = async (
+    userAuth,
+    datesInRange = null
+  ) => {
     try {
-      const filter = {
-        timeRangeFilter: {
-          operator: "between",
-          startTime: new Date(
-            new Date().setDate(new Date().getDate() - 1)
-          ).toISOString(),
-          endTime: new Date().toISOString(),
-        },
-      };
       await initialize();
       await requestPermission([
         { accessType: "read", recordType: "Steps" },
@@ -208,56 +203,71 @@ const useHealth = () => {
         { accessType: "read", recordType: "ExerciseSession" },
       ]);
       const data = [];
-      const { records: StepsRecords } = await readRecords("Steps", filter);
-      const { records: DistanceRecord } = await readRecords("Distance", filter);
-      const { records: SleepData } = await readRecords("SleepSession", filter);
-      const { records: HydrationRecord } = await readRecords(
-        "Hydration",
-        filter
-      );
-      const stepsData = StepsRecords.map((record) => {
-        return transformData(
-          "steps",
-          record?.count,
-          record?.metadata.lastModifiedTime
-        );
-      });
+      let dateList = datesInRange || [moment().format("YYYY-MM-DD")];
 
-      const distanceData = DistanceRecord.map((record) => {
-        return transformData(
-          "distance",
-          record?.distance.inKilometers,
-          record?.metadata.lastModifiedTime
-        );
-      });
+      for (const date of dateList) {
+        let startDate = moment(date).startOf("day").toISOString();
+        let endDate = moment(date).endOf("day").toISOString();
 
-      const sleepData = SleepData.map((record) => {
-        return transformData(
-          "sleep",
-          moment(record?.endTime).diff(
-            moment(record?.startTime),
-            "hours",
-            true
+        const filter = {
+          timeRangeFilter: {
+            operator: "between",
+            startTime: startDate,
+            endTime: endDate,
+          },
+        };
+
+        const fetchTasks = [
+          readRecords("Steps", filter),
+          readRecords("Distance", filter),
+          readRecords("SleepSession", filter),
+          readRecords("Hydration", filter),
+        ];
+
+        const [StepsRecords, DistanceRecord, SleepData, HydrationRecord] =
+          await Promise.all(fetchTasks);
+        data.push(
+          ...StepsRecords.records.map((record) =>
+            transformData(
+              "steps",
+              record?.count,
+              record?.metadata.lastModifiedTime
+            )
           ),
-          record?.metadata.lastModifiedTime
+          ...DistanceRecord.records.map((record) =>
+            transformData(
+              "distance",
+              record?.distance.inKilometers,
+              record?.metadata.lastModifiedTime
+            )
+          ),
+          ...SleepData.records.map((record) =>
+            transformData(
+              "sleep",
+              moment(record?.endTime).diff(
+                moment(record?.startTime),
+                "hours",
+                true
+              ),
+              record?.metadata.lastModifiedTime
+            )
+          ),
+          ...HydrationRecord.records.map((record) =>
+            transformData(
+              "water",
+              record?.volume.inMilliliters,
+              record?.metadata.lastModifiedTime
+            )
+          )
         );
-      });
-
-      const hydrationData = HydrationRecord.map((record) => {
-        return transformData(
-          "water",
-          record?.volume.inMilliliters,
-          record?.metadata.lastModifiedTime
-        );
-      });
-      data.push(...stepsData, ...distanceData, ...sleepData, ...hydrationData);
+      }
       await syncData(userAuth, data);
     } catch (error) {
-      console.log("🚀 ~ initializeHealthConnect ~ error:", error);
+      console.log("🚀 ~ AndroidHealthInitializeAndSync ~ error:", error);
       throw error;
     }
-    // check if granted
   };
+
   const initializeAndSyncHealthData = async (callback = () => {}) => {
     try {
       const auth = await getAuth();
@@ -278,10 +288,39 @@ const useHealth = () => {
       callback && callback(false, "Error syncing health data");
     }
   };
+  const getDatesInRange = (startDate, endDate) => {
+    const dates = [];
+    let currentDate = moment(startDate);
+    while (currentDate <= moment(endDate)) {
+      dates.push(currentDate.format("YYYY-MM-DD"));
+      currentDate = currentDate.add(1, "days");
+    }
+    return dates;
+  };
+  const getHealthData = async (challenge_start, challenge_end) => {
+    try {
+      const auth = await getAuth();
+      if (!auth?.data?.profile_auth) {
+        console.log("Health data sync failed: User not logged in.");
+        return;
+      }
+      const datesInRange = getDatesInRange(challenge_start, challenge_end);
+      console.log("Dates in range:", datesInRange);
+      if (Platform.OS === "ios") {
+        await AppleHealthInitializeAndSync(auth, datesInRange);
+      } else {
+        await AndroidHealthInitializeAndSync(auth, datesInRange);
+      }
+    } catch (error) {
+      console.log("🚀 ~ getHealthData ~ error:", error);
+    }
+  };
+
   return {
     AppleHealthInitializeAndSync,
     AndroidHealthInitializeAndSync,
     initializeAndSyncHealthData,
+    getHealthData,
   };
 };
 

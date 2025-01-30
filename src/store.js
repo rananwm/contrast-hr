@@ -91,6 +91,15 @@ export const getAuthData = async (stateHook) => {
     return false;
   }
 };
+export const getFeatures = async (stateHook) => {
+  const authJson = await getJSONData("auth");
+
+  if (authJson && authJson.data) {
+    return authJson;
+  } else {
+    return false;
+  }
+};
 
 export const getItem = async (authJson, key, stateHook, apiFallback) => {
   if (authJson) {

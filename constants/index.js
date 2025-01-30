@@ -27,6 +27,15 @@ const TELE_HEALTH_PLAN_NAME = {
   YRD895YT: "WHVC Medical",
   YDN67LR6: "WHVC Therapy",
 };
+const REQUIRED_PERMISSIONS = [
+  { accessType: "read", recordType: "CyclingPedalingCadence" },
+  { accessType: "read", recordType: "Distance" },
+  { accessType: "read", recordType: "ExerciseSession" },
+  { accessType: "read", recordType: "Hydration" },
+  { accessType: "read", recordType: "SleepSession" },
+  { accessType: "read", recordType: "StepsCadence" },
+  { accessType: "read", recordType: "Steps" },
+];
 const WEB_URL = "https://app.contrasthr.com";
 const API_KEY =
   "ZihESGeUZsP0bKf6l32l1GskLVDGzwckYIq5SN59u6DAYLpkH39atcObzeL7bDk";
@@ -48,4 +57,5 @@ export {
   API_BASE_URL,
   API_KEY,
   APP_LOGO,
+  REQUIRED_PERMISSIONS,
 };
